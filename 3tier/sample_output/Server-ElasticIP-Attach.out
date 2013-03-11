@@ -1,0 +1,23 @@
+HTTP/1.1 400 Bad Request
+Server: nginx/1.0.14
+Date: Mon, 11 Mar 2013 18:37:04 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 400 Bad Request
+X-Request-Uuid: 67e8c5e80e6a4ab8bf44a42d2df9a87a
+Set-Cookie: 
+Cache-Control: no-cache
+
+ParameterError: public_ip_address_href or port forwarding rule parameters must be passed.HTTP/1.1 400 Bad Request
+Server: nginx/1.0.14
+Date: Mon, 11 Mar 2013 18:37:05 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 400 Bad Request
+X-Request-Uuid: 382bd09ac53f4500ab3c23c46d163eda
+Set-Cookie: 
+Cache-Control: no-cache
+
+ParameterError: public_ip_address_href or port forwarding rule parameters must be passed.
