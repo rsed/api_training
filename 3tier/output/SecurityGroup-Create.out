@@ -1,0 +1,12 @@
+HTTP/1.1 422 Unprocessable Entity
+Server: nginx/1.0.14
+Date: Mon, 11 Mar 2013 11:27:01 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 422 Unprocessable Entity
+X-Request-Uuid: 463736f796214bf1bf82fcfb5eedcef8
+Set-Cookie: 
+Cache-Control: no-cache
+
+CloudException: 400: InvalidGroup.Duplicate: The security group 'myname Security Group' already exists (RequestID: ac304d9a-290e-4076-aafb-4197949afb99)
