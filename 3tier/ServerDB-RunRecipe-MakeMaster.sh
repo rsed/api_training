@@ -7,5 +7,5 @@ CURRDBINSTANCE="969GBPOIMG8QI" #Current DB Instance ID
 CLOUD="1"                      #Target Cloud ID number
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
--d recipe_name="db::do_dump_import" \
+-d recipe_name="db::do_init_and_become_master" \
 https://us-3.rightscale.com/api/clouds/$CLOUD/instances/$CURRDBINSTANCE/run_executable
