@@ -1,0 +1,43 @@
+Create Load Balancer Server
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Tue, 12 Mar 2013 15:12:24 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/servers/670392003
+X-Runtime: 442
+X-Request-Uuid: bc200cb6c10845829f2b887a048c0227
+Set-Cookie: 
+Cache-Control: no-cache
+
+ Create Application Server
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Tue, 12 Mar 2013 15:12:25 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/servers/670393003
+X-Runtime: 954
+X-Request-Uuid: c6b1298a9c8e49ae96c8c49108abb938
+Set-Cookie: 
+Cache-Control: no-cache
+
+ Create Database Server
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Tue, 12 Mar 2013 15:12:25 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/servers/670394003
+X-Runtime: 763
+X-Request-Uuid: 7351e78bf55a4b17840701e3714c0b91
+Set-Cookie: 
+Cache-Control: no-cache
+
+ 

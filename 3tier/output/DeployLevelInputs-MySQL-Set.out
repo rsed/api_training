@@ -1,0 +1,20 @@
+HTTP/1.1 204 No Content
+Server: nginx/1.0.14
+Date: Tue, 12 Mar 2013 16:20:17 GMT
+Connection: keep-alive
+Status: 204 No Content
+X-Runtime: 92
+X-Request-Uuid: 6857931a75d14c7eb4aaf881d2755b3f
+Set-Cookie: rs_gbl=eNotkM1ugkAYRd9l1k7C9w0_A0kXCtFgFcS0WNgYfkZRCSAMltb47oWku3uTe87iPklCLNJ3lJEZyTtiPcciWmKhqqrsNSMyIxYwnYGiIRgzcsnH_UmkJy0xEspTVCiAQJrqU0IGzESu5SIffVL8s4DqxI56ErnfD2P1iPTj3uO00yj47gXnUJzdq0Dwfzwb-vq3-nj35b68D23JHb8JlU_FVFe2DNRLVDnhbd7K9XG5LSOnLDwvBjMMimvPw0UQK_bihtVO1IdtJHWbSmobbO2evc0ii2MRhPx-aDDuhma5W2ndMq95kfrH4XpihtNsGtx8wbYFGrxNlwzTJUmW1X0liaWjyfnr9Qe_XVtp; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+HTTP/1.1 204 No Content
+Server: nginx/1.0.14
+Date: Tue, 12 Mar 2013 16:20:17 GMT
+Connection: keep-alive
+Status: 204 No Content
+X-Runtime: 61
+X-Request-Uuid: b4cf666cf43841b599a1db35fd29ef95
+Set-Cookie: rs_gbl=eNotkM1ugkAYRd9l1k7C9w0_A0kXCtFgFcS0WNgYfkZRCSAMltb47oWku3uTe87iPklCLNJ3lJEZyTtiPcciWmKhqqrsNSMyIxYwnYGiIRgzcsnH_UmkJy0xEspTVCiAQJrqU0IGzESu5SIffVL8s4DqxI56ErnfD2P1iPTj3uO00yj47gXnUJzdq0Dwfzwb-vq3-nj35b68D23JHb8JlU_FVFe2DNRLVDnhbd7K9XG5LSOnLDwvBjMMimvPw0UQK_bihtVO1IdtJHWbSmobbO2evc0ii2MRhPx-aDDuhma5W2ndMq95kfrH4XpihtNsGtx8wbYFGrxNlwzTJUmW1X0liaWjyfnr9Qe_XVtp; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+

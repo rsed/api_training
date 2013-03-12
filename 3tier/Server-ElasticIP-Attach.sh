@@ -3,8 +3,8 @@
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
-LB1="CN714V9PPF66L"
-LB2="3VD6OLAPL74EP"
+LB1="E360NL7QQSANS"
+LB2="AFD5SRR8KF7TB"
 IP1="1SFPJ9HH48PF9"
 IP2="B50R3SRMABS0D"
 CLOUD="1"

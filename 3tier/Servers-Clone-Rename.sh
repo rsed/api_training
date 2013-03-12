@@ -4,8 +4,8 @@
 # Written by John Fitzpatrick, March 2013
 
 MYNAME="myname"       #Replace with your name
-LB_CLONE="670352003"  #Cloned Load Balancer ID, ie "Location: /api/servers/670352003"
-APP_CLONE="670353003" #Cloned App Server ID, ie "Location: /api/servers/670353003"
+LB_CLONE="670395003"  #Load Balancer ID, ie 'Location: /api/servers/670395003'
+APP_CLONE="670396003" #App Server ID, ie 'Location: /api/servers/670396003'
 
 echo "Renaming cloned Load Balancer Server"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X PUT \

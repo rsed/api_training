@@ -4,11 +4,11 @@
 # Written by John Fitzpatrick, March 2013
 
 MYNAME="myname"         # Replace with your name
-DEPLOYMENT="350938003"  # Deployment to add Server to
+DEPLOYMENT="350944003"  # Deployment to add Server to
 CLOUD="1"               # Specify Cloud to add Server to
-LB_ST="282921003"       # Set the Load Balancer Server ServerTemplate
+LB_ST="282920003"       # Set the Load Balancer Server ServerTemplate
 APP_ST="282922003"      # Set the APP Server ServerTemplate
-DB_ST="282920003"       # Set the Database Server ServerTemplate
+DB_ST="282921003"       # Set the Database Server ServerTemplate
 SG="50K6AE2MB3LDL"      # Set the Security Group
 SSH="2OSIPDJU7Q55G"     # Set the SSH Key
 

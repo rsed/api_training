@@ -1,0 +1,29 @@
+Cloning Load Balancer Server
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Tue, 12 Mar 2013 15:16:16 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/servers/670395003
+X-Runtime: 210
+X-Request-Uuid: 04957a744eba40148f56f72ba33b0574
+Set-Cookie: 
+Cache-Control: no-cache
+
+ Cloning Application Server
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Tue, 12 Mar 2013 15:16:16 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/servers/670396003
+X-Runtime: 137
+X-Request-Uuid: 43ef541b385c4e0d95f1106b92e4c3d5
+Set-Cookie: 
+Cache-Control: no-cache
+
+ 

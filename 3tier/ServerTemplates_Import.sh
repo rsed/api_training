@@ -3,9 +3,9 @@
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
-LB_ID="47475"
+LB_ID="47477"
 APP_ID="47476"
-DB_ID="47477"
+DB_ID="47475"
 
 echo "***Importing Load Balancer ServerTemplate***"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
