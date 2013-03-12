@@ -4,9 +4,10 @@
 # Written by John Fitzpatrick, March 2013
 
 DEPLOYMENT="350944003"                             #Enter the Deployment ID to change inputs for
+MYNAME="myname"                                    #Replace with your name
 DBFQDN="myhandle-masterdb.rightscaletraining.com"  #FQDN of DB Server
 DDNSID="10079884"                                  #DDNS ID of DB Server
-MYNAMELINAGE="mynameLinage"                        #Replace "Myname"
+MYNAMELINAGE="MynameLinage"                        #Replace "Myname"
 MYNAMESCHEMA="mynameSchema"                        #Replace "Myname"
 
 # Please note the following inputs could all be populated with one API Request.  
@@ -29,8 +30,8 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
 -d inputs[][name]="db/dns/master/id" \
 -d inputs[][value]="text:$DDNSID" \
 -d inputs[][name]="db/dump/container" \
--d inputs[][value]="cred:DUMP_CONTAINER" \
--d inputs[][name]="db/dump/database_name" \
+-d inputs[][value]="cred:$DUMP_CONTAINER" \
+-d inputs[][name]="dump/database_name" \
 -d inputs[][value]="text:$MYNAMESCHEMA" \
 -d inputs[][name]="db/dump/prefix" \
 -d inputs[][value]="text:sampledb" \
