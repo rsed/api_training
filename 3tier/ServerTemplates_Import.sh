@@ -1,4 +1,8 @@
 #!/bin/bash -e 
+
+# This File is for use in the API Training Course
+# Written by John Fitzpatrick, March 2013
+
 LB_ID="47475"
 APP_ID="47476"
 DB_ID="47477"

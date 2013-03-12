@@ -1,4 +1,8 @@
 #!/bin/bash -e 
+
+# This File is for use in the API Training Course
+# Written by John Fitzpatrick, March 2013
+
 CLOUD="1"       #May need to change this
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \

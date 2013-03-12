@@ -1,23 +1,27 @@
-HTTP/1.1 400 Bad Request
+HTTP/1.1 201 Created
 Server: nginx/1.0.14
-Date: Mon, 11 Mar 2013 18:37:04 GMT
+Date: Tue, 12 Mar 2013 09:45:20 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Status: 400 Bad Request
-X-Request-Uuid: 67e8c5e80e6a4ab8bf44a42d2df9a87a
+Status: 201 Created
+Location: /api/clouds/1/ip_address_bindings/1HRD2F260S6T
+X-Runtime: 1244
+X-Request-Uuid: 7d4cebacd98c4581aaab334e232229ec
 Set-Cookie: 
 Cache-Control: no-cache
 
-ParameterError: public_ip_address_href or port forwarding rule parameters must be passed.HTTP/1.1 400 Bad Request
+ HTTP/1.1 201 Created
 Server: nginx/1.0.14
-Date: Mon, 11 Mar 2013 18:37:05 GMT
+Date: Tue, 12 Mar 2013 09:45:21 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Status: 400 Bad Request
-X-Request-Uuid: 382bd09ac53f4500ab3c23c46d163eda
+Status: 201 Created
+Location: /api/clouds/1/ip_address_bindings/DEJ4QTP1SVI87
+X-Runtime: 1064
+X-Request-Uuid: b4b4f8d067e14cdc95cd1395cd4d8a36
 Set-Cookie: 
 Cache-Control: no-cache
 
-ParameterError: public_ip_address_href or port forwarding rule parameters must be passed.
+ 

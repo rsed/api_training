@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This File is for use in the API Training Course
+# Written by John Fitzpatrick, March 2013
+
 LB_CLONE="670352003"  #Cloned Load Balancer ID, ie "Location: /api/servers/670352003"
 APP_CLONE="670353003" #Cloned App Server ID, ie "Location: /api/servers/670353003"
 

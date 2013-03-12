@@ -1,5 +1,8 @@
 #!/bin/bash -e
 
+# This File is for use in the API Training Course
+# Written by John Fitzpatrick, March 2013
+
 DEPLOYMENT="350938003"  # Deployment to add Server to
 CLOUD="1"               # Specify Cloud to add Server to
 LB_ST="282921003"       # Set the Load Balancer Server ServerTemplate

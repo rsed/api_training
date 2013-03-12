@@ -1,5 +1,8 @@
 #!/bin/bash -ex
 
+# This File is for use in the API Training Course
+# Written by John Fitzpatrick, March 2013
+
 CLOUD="1"             #May need to change this
 SG="50K6AE2MB3LDL"    #Will need to change this
 
