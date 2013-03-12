@@ -1,8 +1,9 @@
 #!/bin/bash -e
 
-# This File is for use in the API Training Course
+# This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
+MYNAME="myname"         # Replace with your name
 DEPLOYMENT="350938003"  # Deployment to add Server to
 CLOUD="1"               # Specify Cloud to add Server to
 LB_ST="282921003"       # Set the Load Balancer Server ServerTemplate
@@ -13,7 +14,7 @@ SSH="2OSIPDJU7Q55G"     # Set the SSH Key
 
 echo "Create Load Balancer Server"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
--d server[name]="myname Load Balancer 1" \
+-d server[name]="$MYNAME Load Balancer 1" \
 -d server[description]="Load Balancer server" \
 -d server[deployment_href]=/api/deployments/$DEPLOYMENT \
 -d server[instance][cloud_href]=/api/clouds/$CLOUD \
@@ -24,7 +25,7 @@ https://us-3.rightscale.com/api/servers
 
 echo "Create Application Server"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
--d server[name]="myname App Server 1" \
+-d server[name]="$MYNAME App Server 1" \
 -d server[description]="PHP App Server" \
 -d server[deployment_href]=/api/deployments/$DEPLOYMENT \
 -d server[instance][cloud_href]=/api/clouds/$CLOUD \
@@ -35,7 +36,7 @@ https://us-3.rightscale.com/api/servers
 
 echo "Create Database Server"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
--d server[name]="myname Database" \
+-d server[name]="$MYNAME Database" \
 -d server[description]="Database Server" \
 -d server[deployment_href]=/api/deployments/$DEPLOYMENT \
 -d server[instance][cloud_href]=/api/clouds/$CLOUD \

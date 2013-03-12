@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-# This File is for use in the API Training Course
+# This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
 LB1="CN714V9PPF66L"

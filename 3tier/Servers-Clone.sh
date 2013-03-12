@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This File is for use in the API Training Course
+# This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
 LB_SVR="670346003"  #Load Balancer ID, ie 'Location: /api/servers/670346003'
