@@ -6,7 +6,7 @@
 CLOUD="1"                            #Target Cloud ID number
 E2ESCRIPTID="426335003"              #ID for RightScript
 MYNAMESCHEMA="mynameSchema"          #Replace "myname".  
-DBFQDN="myhandle-masterdb.rightscaletraining.com"  #FQDN of DB Server
+DBFQDN="myname-masterdb.rightscaletraining.com"  #FQDN of DB Server
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -d filter[]="name==APP" -X POST \
 -d right_script_href="/api/right_scripts/$E2ESCRIPTID" \

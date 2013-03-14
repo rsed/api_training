@@ -4,7 +4,7 @@
 # Written by John Fitzpatrick, March 2013
 
 DEPLOYMENT="350944003"                             #Enter the Deployment ID to change inputs for
-DBFQDN="myhandle-masterdb.rightscaletraining.com"  #FQDN of DB Server
+DBFQDN="myname-masterdb.rightscaletraining.com"  #FQDN of DB Server
 DDNSID="10079884"                                  #DDNS ID of DB Server
 MYNAMELINAGE="mynameLinage"                        #Replace "Myname"
 MYNAMESCHEMA="mynameSchema"                        #Replace "Myname"
