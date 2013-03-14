@@ -4,7 +4,7 @@
 # Written by John FItzpatrick, March 2013
 
 # The following to get populated from a RightScript
-EMAIL="john.fitzpatrick@rightscale.com"  # The email address for your RightScale User in the Dashboard.
+EMAIL="myemail@example.com"  # The email address for your RightScale User in the Dashboard.
 ACCOUNT="62988"                # Account ID, obtained from navigation in the Dashboard (Student 02)
 
 unset password
@@ -21,9 +21,6 @@ do
     password+="$char"
 done
 
-# The following to get populated from a RightScript
-#EMAIL="john.fitzpatrick@rightscale.com"  # The email address for your RightScale User in the Dashboard.
-#ACCOUNT="62988"                # Account ID, obtained from navigation in the Dashboard (Student 02)
 
 echo ""
 curl -i -H X_API_VERSION:1.5 -c ~/mycookie -X POST \
