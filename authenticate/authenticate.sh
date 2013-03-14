@@ -5,7 +5,7 @@
 
 # The following to get populated from a RightScript
 EMAIL="myemail@example.com"  # The email address for your RightScale User in the Dashboard.
-ACCOUNT="62988"                # Account ID, obtained from navigation in the Dashboard (Student 02)
+ACCOUNT="12345"                # Account ID, obtained from navigation in the Dashboard (Student 02)
 
 unset password
 
