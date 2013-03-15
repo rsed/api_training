@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 # This script is for use in the API Training Course
-# Written by John FItzpatrick, March 2013
+# Written by John Fitzpatrick, March 2013
 
 # The following to get populated from a RightScript
 EMAIL="myemail@example.com"  # The email address for your RightScale User in the Dashboard.
