@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-# This file is for use in the API Training Course
+# This script is for use in the API Training Course
 # Written by John FItzpatrick, March 2013
 
 # The following to get populated from a RightScript
