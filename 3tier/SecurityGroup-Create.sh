@@ -4,7 +4,7 @@
 # Written by John Fitzpatrick, March 2013
 
 MYNAME="myname" #Replace with your name
-CLOUD="1"       #Target Cloud ID number
+CLOUD="1"       #Cloud ID for your chosen cloud
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d security_group[name]="$MYNAME Security Group2" \
