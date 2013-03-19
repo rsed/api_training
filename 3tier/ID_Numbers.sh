@@ -64,7 +64,15 @@ if [ -f output/Server-ElasticIP-Attach.out ]
 
 #if [ -f output/SecurityGroupRules-DBAccess-Add.out
 
+#ServerTemplates_Import.sh
+if [ -f output/ServerTemplates_Import.out ]
+        then
+        echo "***ServerTemplates***" 
+        egrep 'ServerTemplate|Location' output/ServerTemplates_Import.out
+        echo ""
+        fi
 
+#Servers
 if [ -f output/Servers-Create.out ] || [ -f Servers-Clone.out ]
         then
         echo "***Servers***" 
@@ -73,14 +81,6 @@ if [ -f output/Servers-Create.out ] || [ -f Servers-Clone.out ]
         echo ""
         fi
 
-
-#ServerTemplates_Import.sh
-if [ -f output/ServerTemplates_Import.out ]
-        then
-        echo "***ServerTemplates***" 
-        egrep 'ServerTemplate|Location' output/ServerTemplates_Import.out 
-        echo ""
-        fi
 
 
 #ServerDB-Launch.out
