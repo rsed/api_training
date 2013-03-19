@@ -22,5 +22,6 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -d filter[]="name==APP" -X POST \
 -d inputs[][value]="env:INSTANCE_ID" \
 -d inputs[][name]="DB_SCHEMA_NAME" \
 -d inputs[][value]="text:$MYNAMESCHEMA" \
-https://us-3.rightscale.com/api/clouds/$CLOUD/instances/multi_run_executable
+https://us-3.rightscale.com/api/clouds/$CLOUD/instances/multi_run_executable \
+| tee output/ServerAPPs-RunScript-E2EDemo.out
 
