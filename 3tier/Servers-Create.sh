@@ -34,7 +34,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[instance][ssh_key_href]=/api/clouds/$CLOUD/ssh_keys/$SSH \
 https://us-3.rightscale.com/api/servers
 
-echo "Create Database Server"
+echo "Database Server"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[name]="$MYNAME Database" \
 -d server[description]="Database Server" \
