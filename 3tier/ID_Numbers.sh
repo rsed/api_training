@@ -31,11 +31,11 @@ if [ -f output/SecurityGroup-Create.out ]
 
 #SecurityGroupRules-Create.out
 if [ -f output/SecurityGroupRules-Create.out ]
-then
-echo "***Security Group Rules***" 
-grep Location output/SecurityGroupRules-Create.out 
-echo ""
-fi
+        then
+        echo "***Security Group Rules***" 
+        grep Location output/SecurityGroupRules-Create.out 
+        echo ""
+        fi
 
 #SSHKey-Create.out
 if [ -f output/SSHKey-Create.out ]
