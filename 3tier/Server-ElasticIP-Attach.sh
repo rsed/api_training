@@ -12,9 +12,11 @@ CLOUD="1"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d ip_address_binding[instance_href]=/api/clouds/$CLOUD/instances/$LB1 \
 -d ip_address_binding[public_ip_address_href]=/api/clouds/$CLOUD/ip_addresses/$IP1 \
-https://us-3.rightscale.com/api/clouds/$CLOUD/ip_address_bindings
+https://us-3.rightscale.com/api/clouds/$CLOUD/ip_address_bindings \
+| tee output/Server-ElasticIP-Attach.out
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d ip_address_binding[instance_href]=/api/clouds/$CLOUD/instances/$LB2 \
 -d ip_address_binding[public_ip_address_href]=/api/clouds/$CLOUD/ip_addresses/$IP2 \
-https://us-3.rightscale.com/api/clouds/$CLOUD/ip_address_bindings
+https://us-3.rightscale.com/api/clouds/$CLOUD/ip_address_bindings \
+| tee -a output/Server-ElasticIP-Attach.out
