@@ -6,5 +6,6 @@
 DBSERVER="670394003"
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
-https://us-3.rightscale.com/api/servers/$DBSERVER/launch.xml
+https://us-3.rightscale.com/api/servers/$DBSERVER/launch.xml \
+| tee output/ServerDB-Launch.out
 
