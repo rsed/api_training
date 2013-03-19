@@ -6,11 +6,11 @@
 LB_SVR="670392003"  #Load Balancer ID, ie 'Location: /api/servers/670346003'
 APP_SVR="670393003" #App Server ID, ie 'Location: /api/servers/670347003'
 
-echo "Load Balancer Server 2"
+echo " Load Balancer Server 2"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$LB_SVR/clone
 
-echo "Application Server 2"
+echo " Application Server 2"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$APP_SVR/clone
 

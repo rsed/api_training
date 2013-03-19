@@ -1,4 +1,4 @@
-***Importing Load Balancer ServerTemplate***
+ Load Balancer ServerTemplate
 HTTP/1.1 201 Created
 Server: nginx/1.0.14
 Date: Tue, 12 Mar 2013 15:08:22 GMT
@@ -12,7 +12,7 @@ X-Request-Uuid: e32cd0ad8fce4952b67dc03bf5ec336c
 Set-Cookie: 
 Cache-Control: no-cache
 
- ***Importing Application Server ServerTemplate***
+ Application Server ServerTemplate
 HTTP/1.1 201 Created
 Server: nginx/1.0.14
 Date: Tue, 12 Mar 2013 15:08:37 GMT
@@ -26,7 +26,7 @@ X-Request-Uuid: a102e0ac92194b64955587abfd3f74ff
 Set-Cookie: 
 Cache-Control: no-cache
 
- ***Importing Database ServerTemplate***
+ Database ServerTemplate
 HTTP/1.1 201 Created
 Server: nginx/1.0.14
 Date: Tue, 12 Mar 2013 15:08:52 GMT

@@ -12,7 +12,7 @@ DB_ST="282921003"       # Set the Database Server ServerTemplate
 SG="50K6AE2MB3LDL"      # Set the Security Group
 SSH="2OSIPDJU7Q55G"     # Set the SSH Key
 
-echo "Load Balancer Server 1"
+echo " Load Balancer Server 1"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[name]="$MYNAME Load Balancer 1" \
 -d server[description]="Load Balancer server" \
@@ -23,7 +23,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[instance][ssh_key_href]=/api/clouds/$CLOUD/ssh_keys/$SSH \
 https://us-3.rightscale.com/api/servers
 
-echo "Application Server 1"
+echo " Application Server 1"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[name]="$MYNAME App Server 1" \
 -d server[description]="PHP App Server" \
@@ -34,7 +34,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[instance][ssh_key_href]=/api/clouds/$CLOUD/ssh_keys/$SSH \
 https://us-3.rightscale.com/api/servers
 
-echo "Database Server"
+echo " Database Server"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[name]="$MYNAME Database" \
 -d server[description]="Database Server" \
