@@ -8,4 +8,5 @@ CLOUD="1"                      #Target Cloud ID number
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d recipe_name="db::do_dump_import" \
-https://us-3.rightscale.com/api/clouds/$CLOUD/instances/$CURRDBINSTANCE/run_executable
+https://us-3.rightscale.com/api/clouds/$CLOUD/instances/$CURRDBINSTANCE/run_executable \
+| tee output/ServerDB-RunRecipe-LoadDB.out
