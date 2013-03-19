@@ -42,7 +42,8 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
 -d inputs[][value]="text:repluser" \
 -d inputs[][name]="db/replication/password" \
 -d inputs[][value]="text:replpassword" \
--X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update      
+-X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update \
+| tee output/DeployLevelInputs-MySQL-Set.out
 
 
 # Update Inputs in SYS_DNS Category
@@ -53,5 +54,6 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
 -d inputs[][value]="cred:DNS_PASSWORD" \
 -d inputs[][name]="sys_dns/user" \
 -d inputs[][value]="cred:DNS_USER" \
--X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update
+-X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update \
+| tee -a output/DeployLevelInputs-MySQL-Set.out
 
