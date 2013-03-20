@@ -1,0 +1,14 @@
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 20 Mar 2013 17:49:13 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/users/67421
+X-Runtime: 191
+X-Request-Uuid: b99e74a898a84e43923e05e775db24e7
+Set-Cookie: 
+Cache-Control: no-cache
+
+ 
