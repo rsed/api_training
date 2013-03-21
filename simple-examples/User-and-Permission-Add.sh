@@ -1,7 +1,11 @@
 #!/bin/bash -e
 
+# This first part of script works fine
+# But the second curl does not - 422 Unprocessable Entity
+# Issue passing the USERID variable
+
 COMPANYNAME="MyCompanyName"
-EMAIL="name9@example.com"
+EMAIL="name10@example.com"
 FIRSTNAME="Myfirstname"
 LASTNAME="Mylastname"
 PHONE="0123456789"
@@ -15,21 +19,19 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d user[password]=$PASSWORD \
 -d user[phone]=$PHONE \
 https://us-3.rightscale.com/api/users \
-| tee output/User-Add.out
+| tee output/User-and-Permission-Add.out
 
 
-
-USERID=`grep Location output/User-Add.out |cut -c 22-`
-#USERID=`grep Location output/User-Add.out |tail -c 7`
-
+USERID=`grep Location output/User-and-Permission-Add.out |cut -c 22-`
+#USERID=`grep Location output/User-and-Permission-Add.out |tail -c 7`
 echo $USERID
-#give the previous user add time to update
-sleep 30
 
+#give the previous user add time to update
+sleep 20
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d permission[role_title]=observer \
--d permission[user_href]=/api/users/USERID \
+-d permission[user_href]=/api/users/$USERID \
 https://us-3.rightscale.com/api/permissions \
-| tee output/Permission-Observer-Add.out
+| tee -a output/User-and-Permission-Add.out
 

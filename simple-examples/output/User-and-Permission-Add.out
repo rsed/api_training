@@ -1,0 +1,25 @@
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Thu, 21 Mar 2013 11:37:18 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/users/67466
+X-Runtime: 508
+X-Request-Uuid: 03477f5643194d5c99033e2baec9a628
+Set-Cookie: rs_gbl=eNotkFuPQ0AAhf_LPJMYY3RI9gFbFb0o7Wq3L8IYpaiuy5Y2_vuS7Ns5yfm-h_MGIVBB1_AIcCBugPqeCquBKkqShEYOtBSoEMmIyJggwoEsnvaUJJIsk5BXRCHmIWQiryRTwgpGMRGxksB48rXsn10gYWYnPahfwfJXKgtkWw8fmTq9euUut3vNWFlWvnVT-XR_DMFj6ev2YHvF-bW2L5Zut8zInk7x1H0Sa-bXjsK9O1RGl-BPgen5cW8GAZOL460Iu-wA8YYffjbrUvTDOq0db5-i757i9kWiteHfoox3cWssLnnEEldoHOF82q7K1LtaR0-pqoOVGNrHfEk_XxJSWnX3FqgIwYU4jn_M6V2j; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+ HTTP/1.1 422 Unprocessable Entity
+Server: nginx/1.0.14
+Date: Thu, 21 Mar 2013 11:37:38 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 422 Unprocessable Entity
+X-Request-Uuid: bd4dfa0abd544c2785f05e1e242d3f99
+Set-Cookie: rs_gbl=eNotkMuOgjAARf-la5rQB6UlmQUIOr4GREXGjSkUdIziiLzU-O-DyezuTe45i_sEEligvkECNKBuwHr2JSuBhSml5KWBKgUWIoxwZnCDa-BH9fuU55QxLqHAuoIIZRiKvE-GMIji2BA5Ur2vyv5Zk-hvtteD72QBi_g4u046f8qUG6Kxzf3aoV2VrdocOcIfB-5DQrLRh1nR5CSGi_3JfuxY1zrTdZ7AGHunzSGchb-psTczKq8RS8-e0FdVCRfzM5UhnofF1-rzSPXooM7LoZf06BaZtnP33KDxJYt5ORgF80Fsj4TbLpfbPV3bMPEuu2jQTGKbHtqP9yXd-xKZppe6qIBFCDLx6_UHfCNamw%3D%3D; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+InvalidHref: /api/users/67466 for user_href
