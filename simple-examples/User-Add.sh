@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 COMPANYNAME="MyCompanyName"
-EMAIL="name@example.com"
+EMAIL="name11@example.com"
 FIRSTNAME="Myfirstname"
 LASTNAME="Mylastname"
 PHONE="0123456789"

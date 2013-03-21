@@ -1,11 +1,11 @@
 #!/bin/bash -e
 
-# This first part of script works fine
-# But the second curl does not - 422 Unprocessable Entity
-# Issue passing the USERID variable
+# This script is for use in the API Training Course
+# The script creates a user, then creates observer permissions for the user
+# Written by John Fitzpatrick, March 2013
 
 COMPANYNAME="MyCompanyName"
-EMAIL="name10@example.com"
+EMAIL="name12@example.com"
 FIRSTNAME="Myfirstname"
 LASTNAME="Mylastname"
 PHONE="0123456789"
@@ -21,14 +21,10 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/users \
 | tee output/User-and-Permission-Add.out
 
+#Set the USERID to that of the user just created
+USERID=`grep Location output/User-and-Permission-Add.out |cut -c 22-|tr -d '\r'`
 
-USERID=`grep Location output/User-and-Permission-Add.out |cut -c 22-`
-#USERID=`grep Location output/User-and-Permission-Add.out |tail -c 7`
-echo $USERID
-
-#give the previous user add time to update
-sleep 20
-
+#Set the permissions for user
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d permission[role_title]=observer \
 -d permission[user_href]=/api/users/$USERID \
