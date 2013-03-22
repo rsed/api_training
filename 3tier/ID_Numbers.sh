@@ -7,7 +7,7 @@
 # Deployment-Create.out
 if [ -f output/Deployment-Create.out ]
         then
-        echo "***Deployment ID***" 
+        echo "***Deployment ID (\$DEPLOYMENT) ***" 
         grep Location output/Deployment-Create.out 
         echo ""
         fi
@@ -15,7 +15,7 @@ if [ -f output/Deployment-Create.out ]
 #Deployment-Create__WithConfirmation.sh
 if [ -f output/Deployment-Create__WithConfirmation.out ]
         then
-        echo "***Deployment ID***" 
+        echo "***Deployment ID (\$DEPLOYMENT) ***" 
         grep Location output/Deployment-Create__WithConfirmation.out 
         echo ""
         fi
@@ -24,7 +24,7 @@ if [ -f output/Deployment-Create__WithConfirmation.out ]
 #SecurityGroup-Create.out 
 if [ -f output/SecurityGroup-Create.out ]
         then
-        echo "***Security Group ID***" 
+        echo "***Security Group ID (\$SG)***" 
         grep Location output/SecurityGroup-Create.out 
         echo ""
         fi
@@ -40,7 +40,7 @@ if [ -f output/SecurityGroupRules-Create.out ]
 #SSHKey-Create.out
 if [ -f output/SSHKey-Create.out ]
         then
-        echo "***SSH Key***" 
+        echo "***SSH Key (\$SSH)***" 
         grep Location output/SSHKey-Create.out 
         echo ""
         fi
@@ -48,7 +48,7 @@ if [ -f output/SSHKey-Create.out ]
 #ElasticIPs-Create.out
 if [ -f output/ElasticIPs-Create.out ]
         then
-        echo "***Elastic IP 1 & Elastic IP2 ***" 
+        echo "***Elastic IP 1 & Elastic IP2 (\$EIP1 & \$EIP2)***" 
         grep Location output/ElasticIPs-Create.out 
         echo ""
         fi
@@ -56,7 +56,7 @@ if [ -f output/ElasticIPs-Create.out ]
 # Server-ElasticIP-Attach.out
 if [ -f output/Server-ElasticIP-Attach.out ]
         then
-        echo "***Server-Elastic IP Bindings – LB1/EIP1, LB2/EIP2***" 
+        echo "***Server-Elastic IP Bindings  (\$LB1EIP1, \$LB2EIP2) ***" 
         grep Location output/Server-ElasticIP-Attach.out 
         echo ""
         fi
@@ -67,7 +67,7 @@ if [ -f output/Server-ElasticIP-Attach.out ]
 #ServerTemplates_Import.sh
 if [ -f output/ServerTemplates_Import.out ]
         then
-        echo "***ServerTemplates***" 
+        echo "***ServerTemplates (\$LB_ST, \$APP_ST & \$DB_ST)***" 
         egrep 'ServerTemplate|Location' output/ServerTemplates_Import.out
         echo ""
         fi
@@ -75,7 +75,7 @@ if [ -f output/ServerTemplates_Import.out ]
 #Servers
 if [ -f output/Servers-Create.out ] || [ -f Servers-Clone.out ]
         then
-        echo "***Servers***" 
+        echo "***Servers (\$LB1, \$APP1, \$DB, \$LB2, \$APP2)***" 
         egrep 'Server|Location' output/Servers-Create.out |grep -v HTTP|grep -v 201 | grep -v nginx 
         egrep 'Server|Location' output/Servers-Clone.out |grep -v HTTP|grep -v 201| grep -v nginx 
         echo ""
@@ -86,7 +86,7 @@ if [ -f output/Servers-Create.out ] || [ -f Servers-Clone.out ]
 #ServerDB-Launch.out
 if [ -f output/ServerDB-Launch.out ]
         then
-        echo "***Current DB Instance***" 
+        echo "***Current DB Instance (\$CURRDBINSTANCE) ***" 
         grep Location output/ServerDB-Launch.out 
         echo ""
         fi
@@ -132,7 +132,7 @@ if [ -f output/ServerAPP-Launch.out ]
 #RightScript-APP-Import.out
 if [ -f output/RightScript-APP-Import.out ]
         then
-        echo "***End2End Script ID***" 
+        echo "***End2End Script ID (\$E2ESCRIPTID) ***" 
         grep Location output/RightScript-APP-Import.out 
         echo ""
         fi
@@ -145,6 +145,5 @@ if [ -f output/RunScript-E2EDemo.out ]
         grep Location output/RunScript-E2EDemo.out 
         echo ""
         fi
-
 
 

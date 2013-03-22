@@ -1,0 +1,12 @@
+HTTP/1.1 422 Unprocessable Entity
+Server: nginx/1.0.14
+Date: Fri, 22 Mar 2013 14:40:09 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 422 Unprocessable Entity
+X-Request-Uuid: c956ede551124076923d533be822ea71
+Set-Cookie: 
+Cache-Control: no-cache
+
+ResourceNotFound: For href /api/clouds/1/ssh_keys/2OSIPDJU7Q55G
