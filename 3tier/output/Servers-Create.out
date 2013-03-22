@@ -1,43 +1,34 @@
- Load Balancer Server 1
-HTTP/1.1 201 Created
+HTTP/1.1 422 Unprocessable Entity
 Server: nginx/1.0.14
-Date: Tue, 12 Mar 2013 15:12:24 GMT
+Date: Fri, 22 Mar 2013 17:29:19 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Status: 201 Created
-Location: /api/servers/670392003
-X-Runtime: 442
-X-Request-Uuid: bc200cb6c10845829f2b887a048c0227
+Status: 422 Unprocessable Entity
+X-Request-Uuid: 7c87d31e10564a56b0b6cd88f26b7ed8
 Set-Cookie: 
 Cache-Control: no-cache
 
- Application Server 1
-HTTP/1.1 201 Created
+ResourceNotFound: For href /api/deployments/350944003HTTP/1.1 422 Unprocessable Entity
 Server: nginx/1.0.14
-Date: Tue, 12 Mar 2013 15:12:25 GMT
+Date: Fri, 22 Mar 2013 17:29:19 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Status: 201 Created
-Location: /api/servers/670393003
-X-Runtime: 954
-X-Request-Uuid: c6b1298a9c8e49ae96c8c49108abb938
+Status: 422 Unprocessable Entity
+X-Request-Uuid: c369eddbd0a24ae4a8fec09f8259ad52
 Set-Cookie: 
 Cache-Control: no-cache
 
- Database Server
-HTTP/1.1 201 Created
+ResourceNotFound: For href /api/deployments/350944003HTTP/1.1 422 Unprocessable Entity
 Server: nginx/1.0.14
-Date: Tue, 12 Mar 2013 15:12:25 GMT
+Date: Fri, 22 Mar 2013 17:29:20 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Status: 201 Created
-Location: /api/servers/670394003
-X-Runtime: 763
-X-Request-Uuid: 7351e78bf55a4b17840701e3714c0b91
+Status: 422 Unprocessable Entity
+X-Request-Uuid: 9087d427ecdc47e6b0c0a4b08cf9ac48
 Set-Cookie: 
 Cache-Control: no-cache
 
- 
+ResourceNotFound: For href /api/deployments/350944003
