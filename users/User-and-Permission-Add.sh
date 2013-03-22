@@ -5,7 +5,7 @@
 # Written by John Fitzpatrick, March 2013
 
 COMPANYNAME="MyCompanyName"
-EMAIL="name12@example.com"
+EMAIL="name13@example.com"
 FIRSTNAME="Myfirstname"
 LASTNAME="Mylastname"
 PHONE="0123456789"
