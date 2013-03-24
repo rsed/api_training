@@ -26,7 +26,7 @@ SSH=`grep Location output/SSHKey-Create.out |cut -c 34-|tr -d '\r'`
 
 
 
-echo " Load Balancer Server 1" | tee output/Servers-Create-Automatic.out
+echo " Load Balancer Server 1" | tee output/Servers-Create.out
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[name]="$MYNAME Load Balancer 1" \
 -d server[description]="Load Balancer server" \
@@ -36,9 +36,9 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[instance][security_group_hrefs][]=/api/clouds/$CLOUD/security_groups/$SG \
 -d server[instance][ssh_key_href]=/api/clouds/$CLOUD/ssh_keys/$SSH \
 https://us-3.rightscale.com/api/servers \
-| tee -a output/Servers-Create-Automatic.out
+| tee -a output/Servers-Create.out
 
-echo " Application Server 1" | tee -a output/Servers-Create-Automatic.out
+echo " Application Server 1" | tee -a output/Servers-Create.out
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[name]="$MYNAME App Server 1" \
 -d server[description]="PHP App Server" \
@@ -48,9 +48,9 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[instance][security_group_hrefs][]=/api/clouds/$CLOUD/security_groups/$SG \
 -d server[instance][ssh_key_href]=/api/clouds/$CLOUD/ssh_keys/$SSH \
 https://us-3.rightscale.com/api/servers \
-| tee -a output/Servers-Create-Automatic.out
+| tee -a output/Servers-Create.out
 
-echo " Database Server" | tee -a output/Servers-Create-Automatic.out
+echo " Database Server" | tee -a output/Servers-Create.out
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[name]="$MYNAME Database" \
 -d server[description]="Database Server" \
@@ -60,5 +60,5 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[instance][security_group_hrefs][]=/api/clouds/$CLOUD/security_groups/$SG \
 -d server[instance][ssh_key_href]=/api/clouds/$CLOUD/ssh_keys/$SSH \
 https://us-3.rightscale.com/api/servers \
-| tee -a output/Servers-Create-Automatic.out
+| tee -a output/Servers-Create.out
 

@@ -5,10 +5,10 @@
 
 MYNAME="myname"       #Replace with your name
 #LB_CLONE="670395003"  #Load Balancer ID, ie 'Location: /api/servers/670395003'
-LB_CLONE=`grep Location output/Servers-Clone-Automatic.out|cut -c 24-|tr -d '\r' | sed -n 1p`
+LB_CLONE=`grep Location output/Servers-Clone.out|cut -c 24-|tr -d '\r' | sed -n 1p`
 
 #APP_CLONE="670396003" #App Server ID, ie 'Location: /api/servers/670396003'
-APP_CLONE=`grep Location output/Servers-Clone-Automatic.out|cut -c 24-|tr -d '\r' | sed -n 2p`
+APP_CLONE=`grep Location output/Servers-Clone.out|cut -c 24-|tr -d '\r' | sed -n 2p`
 
 echo "Renaming cloned Load Balancer Server" | tee output/Servers-Clone-Rename.out
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X PUT \

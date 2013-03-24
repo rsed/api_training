@@ -22,7 +22,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[instance][security_group_hrefs][]=/api/clouds/$CLOUD/security_groups/$SG \
 -d server[instance][ssh_key_href]=/api/clouds/$CLOUD/ssh_keys/$SSH \
 https://us-3.rightscale.com/api/servers \
-| tee ../output/Servers-Create.out
+| tee ../output/Servers-Create-Manual.out
 
 echo " Application Server 1"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
@@ -34,7 +34,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[instance][security_group_hrefs][]=/api/clouds/$CLOUD/security_groups/$SG \
 -d server[instance][ssh_key_href]=/api/clouds/$CLOUD/ssh_keys/$SSH \
 https://us-3.rightscale.com/api/servers \
-| tee -a ../output/Servers-Create.out
+| tee -a ../output/Servers-Create-Manual.out
 
 echo " Database Server"
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
@@ -46,5 +46,5 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[instance][security_group_hrefs][]=/api/clouds/$CLOUD/security_groups/$SG \
 -d server[instance][ssh_key_href]=/api/clouds/$CLOUD/ssh_keys/$SSH \
 https://us-3.rightscale.com/api/servers \
-| tee -a ../output/Servers-Create.out
+| tee -a ../output/Servers-Create-Manual.out
 
