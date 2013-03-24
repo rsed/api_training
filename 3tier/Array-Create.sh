@@ -3,9 +3,11 @@
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
+#CLOUD="1"            # Specify the Cloud to add the Server Array to
+CLOUD=`grep CLOUD CloudID | cut -c 7-|tr -d '\r'`
+
 DEPLOYMENT="373176003"  # Deployment to add Server Array to
 APP_ST="290032003"          # Set the ServerTemplate the Server Array will be based on
-CLOUD="1"            # Specify the Cloud to add the Server Array to
 SG="50K6AE2MB3LDL"      # Set the Security Group
 SSH="2OSIPDJU7Q55G"     # Set the SSH Key
 
