@@ -4,7 +4,8 @@
 # Written by John Fitzpatrick, March 2013
 
 MYNAME="myname"         # Replace with your name
-CLOUD="1"               # Specify Cloud to add Server to
+#CLOUD="1"            # Specify the Cloud to add the Server Array to
+CLOUD=`grep CLOUD CloudID | cut -c 7-|tr -d '\r'`
 
 #DEPLOYMENT="350944003"  # Deployment to add Server to
 DEPLOYMENT=`grep Location output/Deployment-Create.out |cut -c 28-|tr -d '\r'`

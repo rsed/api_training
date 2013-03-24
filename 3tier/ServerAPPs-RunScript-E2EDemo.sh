@@ -3,7 +3,8 @@
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
-CLOUD="1"                            #Target Cloud ID number
+#CLOUD="1"            # Specify the Cloud to add the Server Array to
+CLOUD=`grep CLOUD CloudID | cut -c 7-|tr -d '\r'`
 E2ESCRIPTID="426335003"              #ID for RightScript
 MYNAMESCHEMA="mynameSchema"          #Replace "myname".  
 DBFQDN="myname-masterdb.rightscaletraining.com"  #FQDN of DB Server

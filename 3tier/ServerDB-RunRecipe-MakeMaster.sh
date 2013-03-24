@@ -4,7 +4,8 @@
 # Written by John Fitzpatrick, March 2013
 
 CURRDBINSTANCE="969GBPOIMG8QI" #Current DB Instance ID
-CLOUD="1"                      #Target Cloud ID number
+#CLOUD="1"            # Specify the Cloud to add the Server Array to
+CLOUD=`grep CLOUD CloudID | cut -c 7-|tr -d '\r'`
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d recipe_name="db::do_init_and_become_master" \
