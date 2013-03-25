@@ -3,7 +3,8 @@
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
-DEPLOYMENT="350944003"                             #Enter the Deployment ID to change inputs for
+#DEPLOYMENT="350944003"                 #Enter the Deployment ID to change inputs for
+DEPLOYMENT=`grep Location output/Deployment-Create.sh.out |cut -c 28-|tr -d '\r' | sed -n 1p`
 
 # Please note the following inputs could all be populated with one API Request.  
 # They've been split here by category for clarification purposes only

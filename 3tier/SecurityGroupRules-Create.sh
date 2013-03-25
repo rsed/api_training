@@ -1,11 +1,12 @@
-#!/bin/bash -ex
+#!/bin/bash 
 
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
 #CLOUD="1"            # Specify the Cloud to add the Server Array to
 CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`
-SG="50K6AE2MB3LDL"    #Will need to change this
+#SG="50K6AE2MB3LDL"    #You can add the Sec Group ID Manually
+SG=`grep Location output/SecurityGroup-Create.sh.out |cut -c 41-|tr -d '\r'`    #Or you can retrieve it automatically
 
 #Open port 22 for SSH Access
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
@@ -40,7 +41,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/clouds/$CLOUD/security_groups/$SG/security_group_rules \
 | tee -a output/${0##*/}.out
 
-#Allow ICMP so we can ping the servers
+#Allow ICMP so you can ping the servers
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d security_group_rule[group_name]="LB APP Server Comms" \
 -d security_group_rule[protocol]=icmp \

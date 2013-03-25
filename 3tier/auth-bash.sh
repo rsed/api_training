@@ -3,7 +3,7 @@
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
-# The following to get populated from a RightScript
+# The following is populated from a boot RightScript
 EMAIL="myemail@example.com"  # The email address for your RightScale User in the Dashboard.
 ACCOUNT="12345"                # Account ID, obtained from navigation in the Dashboard (Student 02)
 

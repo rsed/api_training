@@ -3,7 +3,7 @@
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
-DEPLOYMENT="350944003"                             #Enter the Deployment ID to change inputs for
+DEPLOYMENT=`grep Location output/Deployment-Create.sh.out |cut -c 28-|tr -d '\r' | sed -n 1p`
 DBFQDN="myname-masterdb.rightscaletraining.com"  #FQDN of DB Server
 DDNSID="10079884"                                  #DDNS ID of DB Server
 MYNAMELINAGE="mynameLinage"                        #Replace "Myname"
