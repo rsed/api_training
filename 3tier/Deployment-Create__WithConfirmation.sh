@@ -1,8 +1,7 @@
 #!/bin/bash -e
 
-#!/bin/bash -e
-
-MYNAME="myname"       #Replace with your name
+#MYNAME="myname"                                        # Replace with your name
+MYNAME="grep MYNAME LabInfo | cut -c 8-|tr -d '\r'"     # Or, get your name form LabInfo file
 
 read -p \
 "Are you sure you want to create the Deployment '$MYNAME 3 Tier Deployment'? (y/n): "  -r

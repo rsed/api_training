@@ -8,7 +8,7 @@ LB2="AFD5SRR8KF7TB"
 IP1="1SFPJ9HH48PF9"
 IP2="B50R3SRMABS0D"
 #CLOUD="1"            # Specify the Cloud to add the Server Array to
-CLOUD=`grep CLOUD CloudID | cut -c 7-|tr -d '\r'`
+CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d ip_address_binding[instance_href]=/api/clouds/$CLOUD/instances/$LB1 \

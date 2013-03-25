@@ -4,7 +4,7 @@
 # Written by John Fitzpatrick, March 2013
 
 #CLOUD="1"            # Specify the Cloud to add the Server Array to
-CLOUD=`grep CLOUD CloudID | cut -c 7-|tr -d '\r'`
+CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`
 SG="50K6AE2MB3LDL"    #Replace with the Security Group ID
 
 #Open port 3306 so App servers can access the Database

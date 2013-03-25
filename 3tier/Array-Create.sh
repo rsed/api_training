@@ -4,7 +4,7 @@
 # Written by John Fitzpatrick, March 2013
 
 #CLOUD="1"            # Specify the Cloud to add the Server Array to
-CLOUD=`grep CLOUD CloudID | cut -c 7-|tr -d '\r'`
+CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`
 
 DEPLOYMENT="373176003"  # Deployment to add Server Array to
 APP_ST="290032003"          # Set the ServerTemplate the Server Array will be based on

@@ -3,9 +3,10 @@
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
-MYNAME="myname"         # Replace with your name
-#CLOUD="1"            # Specify the Cloud to add the Server Array to
-CLOUD=`grep CLOUD CloudID | cut -c 7-|tr -d '\r'`
+#MYNAME="myname"                                        # Replace with your name
+MYNAME="grep MYNAME LabInfo | cut -c 8-|tr -d '\r'"     # Or, get your name form LabInfo file
+#CLOUD="1"                                              # Specify the Cloud to add the Server Array to
+CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`       # Or, get cloud id form LabInfo file
 
 #DEPLOYMENT="350944003"  # Deployment to add Server to
 DEPLOYMENT=`grep Location output/Deployment-Create.out |cut -c 28-|tr -d '\r'`
