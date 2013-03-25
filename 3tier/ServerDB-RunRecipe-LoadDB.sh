@@ -10,4 +10,4 @@ CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`       # Or, get cloud id form 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d recipe_name="db::do_dump_import" \
 https://us-3.rightscale.com/api/clouds/$CLOUD/instances/$CURRDBINSTANCE/run_executable \
-| tee output/ServerDB-RunRecipe-LoadDB.out
+| tee output/${0##*/}.out

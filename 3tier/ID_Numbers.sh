@@ -1,148 +1,148 @@
 #!/bin/bash
 
-# This script lists the IDs of created objects by parsing the .out files in the output directory
+# This script lists the IDs of created objects by parsing the .sh.out files in the output directory
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
-# Deployment-Create.out
-if [ -f output/Deployment-Create.out ]
+# Deployment-Create.sh.out
+if [ -f output/Deployment-Create.sh.out ]
         then
         echo "***Deployment ID (\$DEPLOYMENT) ***" 
-        grep Location output/Deployment-Create.out 
+        grep Location output/Deployment-Create.sh.out 
         echo ""
         fi
 
 #Deployment-Create__WithConfirmation.sh
-if [ -f output/Deployment-Create__WithConfirmation.out ]
+if [ -f output/Deployment-Create__WithConfirmation.sh.out ]
         then
         echo "***Deployment ID (\$DEPLOYMENT) ***" 
-        grep Location output/Deployment-Create__WithConfirmation.out 
+        grep Location output/Deployment-Create__WithConfirmation.sh.out 
         echo ""
         fi
 
 
-#SecurityGroup-Create.out 
-if [ -f output/SecurityGroup-Create.out ]
+#SecurityGroup-Create.sh.out 
+if [ -f output/SecurityGroup-Create.sh.out ]
         then
         echo "***Security Group ID (\$SG)***" 
-        grep Location output/SecurityGroup-Create.out 
+        grep Location output/SecurityGroup-Create.sh.out 
         echo ""
         fi
 
-#SecurityGroupRules-Create.out
-if [ -f output/SecurityGroupRules-Create.out ]
+#SecurityGroupRules-Create.sh.out
+if [ -f output/SecurityGroupRules-Create.sh.out ]
         then
         echo "***Security Group Rules***" 
-        grep Location output/SecurityGroupRules-Create.out 
+        grep Location output/SecurityGroupRules-Create.sh.out 
         echo ""
         fi
 
-#SSHKey-Create.out
-if [ -f output/SSHKey-Create.out ]
+#SSHKey-Create.sh.out
+if [ -f output/SSHKey-Create.sh.out ]
         then
         echo "***SSH Key (\$SSH)***" 
-        grep Location output/SSHKey-Create.out 
+        grep Location output/SSHKey-Create.sh.out 
         echo ""
         fi
 
-#ElasticIPs-Create.out
-if [ -f output/ElasticIPs-Create.out ]
+#ElasticIPs-Create.sh.out
+if [ -f output/ElasticIPs-Create.sh.out ]
         then
         echo "***Elastic IP 1 & Elastic IP2 (\$EIP1 & \$EIP2)***" 
-        grep Location output/ElasticIPs-Create.out 
+        grep Location output/ElasticIPs-Create.sh.out 
         echo ""
         fi
 
-# Server-ElasticIP-Attach.out
-if [ -f output/Server-ElasticIP-Attach.out ]
+# Server-ElasticIP-Attach.sh.out
+if [ -f output/Server-ElasticIP-Attach.sh.out ]
         then
         echo "***Server-Elastic IP Bindings  (\$LB1EIP1, \$LB2EIP2) ***" 
-        grep Location output/Server-ElasticIP-Attach.out 
+        grep Location output/Server-ElasticIP-Attach.sh.out 
         echo ""
         fi
 
 
-#if [ -f output/SecurityGroupRules-DBAccess-Add.out
+#if [ -f output/SecurityGroupRules-DBAccess-Add.sh.out
 
 #ServerTemplates_Import.sh
-if [ -f output/ServerTemplates_Import.out ]
+if [ -f output/ServerTemplates_Import.sh.out ]
         then
         echo "***ServerTemplates (\$LB_ST, \$APP_ST & \$DB_ST)***" 
-        egrep 'ServerTemplate|Location' output/ServerTemplates_Import.out
+        egrep 'ServerTemplate|Location' output/ServerTemplates_Import.sh.out
         echo ""
         fi
 
 #Servers
-if [ -f output/Servers-Create.out ] || [ -f Servers-Clone.out ]
+if [ -f output/Servers-Create.sh.out ] || [ -f Servers-Clone.sh.out ]
         then
         echo "***Servers (\$LB1, \$APP1, \$DB, \$LB2, \$APP2)***" 
-        egrep 'Server|Location' output/Servers-Create.out |grep -v HTTP|grep -v 201 | grep -v nginx 
-        egrep 'Server|Location' output/Servers-Clone.out |grep -v HTTP|grep -v 201| grep -v nginx 
+        egrep 'Server|Location' output/Servers-Create.sh.out |grep -v HTTP|grep -v 201 | grep -v nginx 
+        egrep 'Server|Location' output/Servers-Clone.sh.out |grep -v HTTP|grep -v 201| grep -v nginx 
         echo ""
         fi
 
 
 
-#ServerDB-Launch.out
-if [ -f output/ServerDB-Launch.out ]
+#ServerDB-Launch.sh.out
+if [ -f output/ServerDB-Launch.sh.out ]
         then
         echo "***Current DB Instance (\$CURRDBINSTANCE) ***" 
-        grep Location output/ServerDB-Launch.out 
+        grep Location output/ServerDB-Launch.sh.out 
         echo ""
         fi
 
 
-#ServerDB-RunRecipe-LoadDB.out
-if [ -f output/ServerDB-RunRecipe-LoadDB.out ]
+#ServerDB-RunRecipe-LoadDB.sh.out
+if [ -f output/ServerDB-RunRecipe-LoadDB.sh.out ]
         then
         echo "***db::do_dump_import Audit Entries***" 
-        grep Location output/ServerDB-RunRecipe-LoadDB.out 
+        grep Location output/ServerDB-RunRecipe-LoadDB.sh.out 
         echo ""
         fi
 
 
-#ServerDB-RunRecipe-MakeMaster.out
-if [ -f output/ServerDB-RunRecipe-MakeMaster.out ]
+#ServerDB-RunRecipe-MakeMaster.sh.out
+if [ -f output/ServerDB-RunRecipe-MakeMaster.sh.out ]
         then
         echo "***db::do_init_and_become_master Audit Entries***" 
-        grep Location output/ServerDB-RunRecipe-MakeMaster.out 
+        grep Location output/ServerDB-RunRecipe-MakeMaster.sh.out 
         echo ""
         fi
 
 
-#ServerLB-Launch.out
-if [ -f output/ServerLB-Launch.out ]
+#ServerLB-Launch.sh.out
+if [ -f output/ServerLB-Launch.sh.out ]
         then
         echo "***LB1 and LB2 Current Instance IDs***" 
-        grep Location output/ServerLB-Launch.out 
+        grep Location output/ServerLB-Launch.sh.out 
         echo ""
         fi
 
 
 
-#ServerAPP-Launch.out
-if [ -f output/ServerAPP-Launch.out ]
+#ServerAPP-Launch.sh.out
+if [ -f output/ServerAPP-Launch.sh.out ]
         then
         echo "***APP1 and APP2 Current Instance IDs***" 
-        grep Location output/ServerAPP-Launch.out 
+        grep Location output/ServerAPP-Launch.sh.out 
         echo ""
         fi
 
 
-#RightScript-APP-Import.out
-if [ -f output/RightScript-APP-Import.out ]
+#RightScript-APP-Import.sh.out
+if [ -f output/RightScript-APP-Import.sh.out ]
         then
         echo "***End2End Script ID (\$E2ESCRIPTID) ***" 
-        grep Location output/RightScript-APP-Import.out 
+        grep Location output/RightScript-APP-Import.sh.out 
         echo ""
         fi
 
 
-#ServerAPPs-RunScript-E2EDemo.out
-if [ -f output/RunScript-E2EDemo.out ]
+#ServerAPPs-RunScript-E2EDemo.sh.out
+if [ -f output/RunScript-E2EDemo.sh.out ]
         then
         echo "***End2End Script Audit Entries***" 
-        grep Location output/RunScript-E2EDemo.out 
+        grep Location output/RunScript-E2EDemo.sh.out 
         echo ""
         fi
 

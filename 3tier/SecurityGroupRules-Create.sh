@@ -16,7 +16,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d security_group_rule[protocol_details][end_port]=22 \
 -d security_group_rule[source_type]=cidr_ips \
 https://us-3.rightscale.com/api/clouds/$CLOUD/security_groups/$SG/security_group_rules \
-| tee output/SecurityGroupRules-Create.out
+| tee output/${0##*/}.out
 
 #Open port 80 for web access to Load Balancers
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
@@ -27,7 +27,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d security_group_rule[protocol_details][end_port]=80 \
 -d security_group_rule[source_type]=cidr_ips \
 https://us-3.rightscale.com/api/clouds/$CLOUD/security_groups/$SG/security_group_rules \
-| tee -a output/SecurityGroupRules-Create.out
+| tee -a output/${0##*/}.out
 
 #Open port 8000 for LB to APP Server communications
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
@@ -38,7 +38,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d security_group_rule[protocol_details][end_port]=8000 \
 -d security_group_rule[source_type]=cidr_ips \
 https://us-3.rightscale.com/api/clouds/$CLOUD/security_groups/$SG/security_group_rules \
-| tee -a output/SecurityGroupRules-Create.out
+| tee -a output/${0##*/}.out
 
 #Allow ICMP so we can ping the servers
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
@@ -49,5 +49,5 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d security_group_rule[protocol_details][icmp_type]=-1 \
 -d security_group_rule[source_type]=cidr_ips \
 https://us-3.rightscale.com/api/clouds/$CLOUD/security_groups/$SG/security_group_rules \
-| tee -a output/SecurityGroupRules-Create.out
+| tee -a output/${0##*/}.out
 

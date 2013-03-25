@@ -8,9 +8,9 @@ LBSERVER2="670395003"  #Server ID for 'myname Load Balancer 2'
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$LBSERVER1/launch.xml \
-| tee output/ServerLB-Launch.out
+| tee output/${0##*/}.out
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$LBSERVER2/launch.xml \
-| tee -a output/ServerLB-Launch.out
+| tee -a output/${0##*/}.out
 

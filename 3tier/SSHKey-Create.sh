@@ -11,4 +11,4 @@ CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`       # Or, get cloud id form 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d ssh_key[name]="$MYNAME SSH Key" \
 https://us-3.rightscale.com/api/clouds/$CLOUD/ssh_keys.xml \
-| tee output/SSHKey-Create.out
+| tee output/${0##*/}.out

@@ -9,26 +9,26 @@ MYNAME="grep MYNAME LabInfo | cut -c 8-|tr -d '\r'"     # Or, get your name form
 CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`       # Or, get cloud id form LabInfo file
 
 #DEPLOYMENT="350944003"  # Deployment to add Server to
-DEPLOYMENT=`grep Location output/Deployment-Create.out |cut -c 28-|tr -d '\r'`
+DEPLOYMENT=`grep Location output/Deployment-Create.sh.out |cut -c 28-|tr -d '\r'`
 
 #LB_ST="282920003"       # Set the Load Balancer Server ServerTemplate
-LB_ST=`grep Location output/ServerTemplates_Import.out|cut -c 33-|tr -d '\r'|sed -n 1p`
+LB_ST=`grep Location output/ServerTemplates_Import.sh.out|cut -c 33-|tr -d '\r'|sed -n 1p`
 
 #APP_ST="282922003"      # Set the APP Server ServerTemplate
-APP_ST=`grep Location output/ServerTemplates_Import.out|cut -c 33-|tr -d '\r'|sed -n 2p`
+APP_ST=`grep Location output/ServerTemplates_Import.sh.out|cut -c 33-|tr -d '\r'|sed -n 2p`
 
 #DB_ST="282921003"       # Set the Database Server ServerTemplate
-DB_ST=`grep Location output/ServerTemplates_Import.out|cut -c 33-|tr -d '\r'|sed -n 3p`
+DB_ST=`grep Location output/ServerTemplates_Import.sh.out|cut -c 33-|tr -d '\r'|sed -n 3p`
 
 #SG="50K6AE2MB3LDL"      # Set the Security Group
-SG=`grep Location output/SecurityGroup-Create.out |cut -c 41-|tr -d '\r'`
+SG=`grep Location output/SecurityGroup-Create.sh.out |cut -c 41-|tr -d '\r'`
 
 #SSH="2OSIPDJU7Q55G"     # Set the SSH Key
-SSH=`grep Location output/SSHKey-Create.out |cut -c 34-|tr -d '\r'`
+SSH=`grep Location output/SSHKey-Create.sh.out |cut -c 34-|tr -d '\r'`
 
 
 
-echo " Load Balancer Server 1" | tee output/Servers-Create.out
+echo " Load Balancer Server 1" | tee output/${0##*/}.out
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[name]="$MYNAME Load Balancer 1" \
 -d server[description]="Load Balancer server" \
@@ -38,9 +38,9 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[instance][security_group_hrefs][]=/api/clouds/$CLOUD/security_groups/$SG \
 -d server[instance][ssh_key_href]=/api/clouds/$CLOUD/ssh_keys/$SSH \
 https://us-3.rightscale.com/api/servers \
-| tee -a output/Servers-Create.out
+| tee -a output/${0##*/}.out
 
-echo " Application Server 1" | tee -a output/Servers-Create.out
+echo " Application Server 1" | tee -a output/${0##*/}.out
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[name]="$MYNAME App Server 1" \
 -d server[description]="PHP App Server" \
@@ -50,9 +50,9 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[instance][security_group_hrefs][]=/api/clouds/$CLOUD/security_groups/$SG \
 -d server[instance][ssh_key_href]=/api/clouds/$CLOUD/ssh_keys/$SSH \
 https://us-3.rightscale.com/api/servers \
-| tee -a output/Servers-Create.out
+| tee -a output/${0##*/}.out
 
-echo " Database Server" | tee -a output/Servers-Create.out
+echo " Database Server" | tee -a output/${0##*/}.out
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[name]="$MYNAME Database" \
 -d server[description]="Database Server" \
@@ -62,5 +62,5 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server[instance][security_group_hrefs][]=/api/clouds/$CLOUD/security_groups/$SG \
 -d server[instance][ssh_key_href]=/api/clouds/$CLOUD/ssh_keys/$SSH \
 https://us-3.rightscale.com/api/servers \
-| tee -a output/Servers-Create.out
+| tee -a output/${0##*/}.out
 

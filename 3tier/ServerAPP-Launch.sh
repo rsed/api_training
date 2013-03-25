@@ -8,9 +8,9 @@ APPSERVER2="670396003"  #Server ID for 'myname Application Server 2'
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$APPSERVER1/launch.xml \
-| tee output/ServerAPP-Launch.out
+| tee output/${0##*/}.out
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$APPSERVER2/launch.xml \
-| tee -a output/ServerAPP-Launch.out
+| tee -a output/${0##*/}.out
 

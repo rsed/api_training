@@ -16,5 +16,5 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d security_group_rule[protocol_details][end_port]=3306 \
 -d security_group_rule[source_type]=cidr_ips \
 https://us-3.rightscale.com/api/clouds/$CLOUD/security_groups/$SG/security_group_rules \
-| tee output/SecurityGroupRules-DBAccess-Add.out
+| tee output/${0##*/}.out
 

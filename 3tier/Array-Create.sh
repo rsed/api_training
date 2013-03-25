@@ -28,4 +28,4 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d server_array[elasticity_params][pacing][resize_down_by]=1 \
 -d server_array[elasticity_params][pacing][resize_up_by]=1 \
 https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/server_arrays \
-| tee output/Array-Create.out
+| tee output/${0##*/}.out

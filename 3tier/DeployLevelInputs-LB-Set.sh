@@ -13,7 +13,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
 -d inputs[][name]="lb/session_stickiness" \
 -d inputs[][value]="text:false" \
 -X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update  \
-| tee output/DeployLevelInputs-LB-Set.out
+| tee output/${0##*/}.out
 
 
 # Update Inputs in Web Apache  Category
@@ -21,4 +21,4 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
 -d inputs[][name]="web_apache/mpm" \
 -d inputs[][value]="text:prefork" \
 -X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update  \
-| tee -a output/DeployLevelInputs-LB-Set.out
+| tee -a output/${0##*/}.out
