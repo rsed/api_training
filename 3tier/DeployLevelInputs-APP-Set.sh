@@ -3,9 +3,13 @@
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
-#DEPLOYMENT="350944003"                             #Enter the Deployment ID to change inputs for
+#Enter Manually
+#DEPLOYMENT="350944003"            #Enter the Deployment ID to change inputs for
+#DBSCHEMA="mynameSchema"           #Replace "Myname"
+
+#Enter Programatically
 DEPLOYMENT=`grep Location output/Deployment-Create.sh.out |cut -c 28-|tr -d '\r' | sed -n 1p`
-MYNAMESCHEMA="mynameSchema"                        #Replace "Myname"
+DBSCHEMA=`grep DBSCHEMA LabInfo | cut -c 10-|tr -d '\r'` 
 
 # Please note the following inputs could all be populated with one API Request.  
 # They've been split here by category for clarification purposes only
@@ -13,7 +17,7 @@ MYNAMESCHEMA="mynameSchema"                        #Replace "Myname"
 # Update Inputs in APP Category
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
 -d inputs[][name]="app/database_name" \
--d inputs[][value]="text:$MYNAMESCHEMA" \
+-d inputs[][value]="text:$DBSCHEMA" \
 -X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update \
 | tee output/${0##*/}.out
 

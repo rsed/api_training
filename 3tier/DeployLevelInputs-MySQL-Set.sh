@@ -1,13 +1,21 @@
-#!/bin/bash -e
+#!/bin/bash -ex
 
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
+#Enter Manually
+#DBFQDN="myname-masterdb.rightscaletraining.com"   #FQDN of DB Server
+#DDNSID="10079884"                                 #DDNS ID of DB Server
+#DBLINAGE="mynamelinage"                           #Replace "Myname"
+#DBSCHEMA="mynameschema"                           #Replace "Myname"
+
+#Enter Programatically
 DEPLOYMENT=`grep Location output/Deployment-Create.sh.out |cut -c 28-|tr -d '\r' | sed -n 1p`
-DBFQDN="myname-masterdb.rightscaletraining.com"  #FQDN of DB Server
-DDNSID="10079884"                                  #DDNS ID of DB Server
-MYNAMELINAGE="mynameLinage"                        #Replace "Myname"
-MYNAMESCHEMA="mynameSchema"                        #Replace "Myname"
+DBFQDN=`grep DBFQDN LabInfo | cut -c 8-|tr -d '\r'`            #FQDN of DB Server
+DDNSID=`grep DDNSID LabInfo | cut -c 8-|tr -d '\r'`            #DDNS ID of DB Server
+DBLINAGE=`grep DBLINAGE LabInfo | cut -c 10-|tr -d '\r'`   #Replace "Myname"
+DBSCHEMA=`grep DBSCHEMA LabInfo | cut -c 10-|tr -d '\r'`   #Replace "Myname"
+
 
 # Please note the following inputs could all be populated with one API Request.  
 # They've been split here by category for clarification purposes only
@@ -23,7 +31,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
 -d inputs[][name]="db/application/password" \
 -d inputs[][value]="text:apppasword123" \
 -d inputs[][name]="db/backup/lineage" \
--d inputs[][value]="text:$MYNAMELINAGE" \
+-d inputs[][value]="text:$DBLINAGE" \
 -d inputs[][name]="db/dns/master/fqdn" \
 -d inputs[][value]="text:$DBFQDN" \
 -d inputs[][name]="db/dns/master/id" \
@@ -31,7 +39,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
 -d inputs[][name]="db/dump/container" \
 -d inputs[][value]="cred:DUMP_CONTAINER" \
 -d inputs[][name]="db/dump/database_name" \
--d inputs[][value]="text:$MYNAMESCHEMA" \
+-d inputs[][value]="text:$DBSCHEMA" \
 -d inputs[][name]="db/dump/prefix" \
 -d inputs[][value]="text:sampledb" \
 -d inputs[][name]="db/dump/storage_account_id" \

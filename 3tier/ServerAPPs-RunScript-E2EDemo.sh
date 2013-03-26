@@ -6,12 +6,14 @@
 # Enter Manually
 #MYNAME="myname"                                        # Replace with your name
 #CLOUD="1"                                              # Specify the Cloud to add the Server Array to
-MYNAMESCHEMA="mynameSchema"                             # Replace "myname".  
-DBFQDN="myname-masterdb.rightscaletraining.com"         # FQDN of DB Server
+#DBSCHEMA="mynameSchema"                                # Replace "myname".  
+#DBFQDN="myname-masterdb.rightscaletraining.com"        # FQDN of DB Server
 
-#Or Enter Programatically
-CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`       # Or, get cloud id form LabInfo file
-MYNAME=`grep MYNAME LabInfo | cut -c 8-|tr -d '\r'`     # Or, get your name form LabInfo file
+# Or Enter Programatically
+MYNAME=`grep MYNAME LabInfo | cut -c 8-|tr -d '\r'`  
+CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`  
+DBSCHEMA=`grep DBSCHEMA LabInfo | cut -c 10-|tr -d '\r'`
+DBFQDN=`grep DBFQDN LabInfo | cut -c 8-|tr -d '\r'`
 E2ESCRIPTID=`grep Location output/RightScript-APP-Import.sh.out|cut -c 30-|tr -d '\r'` # ID for RightScript
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -d filter[]="name==APP" -X POST \
@@ -27,7 +29,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -d filter[]="name==APP" -X POST \
 -d inputs[][name]="INSTANCE" \
 -d inputs[][value]="env:INSTANCE_ID" \
 -d inputs[][name]="DB_SCHEMA_NAME" \
--d inputs[][value]="text:$MYNAMESCHEMA" \
+-d inputs[][value]="text:$DBSCHEMA" \
 https://us-3.rightscale.com/api/clouds/$CLOUD/instances/multi_run_executable \
 | tee output/${0##*/}.out
 

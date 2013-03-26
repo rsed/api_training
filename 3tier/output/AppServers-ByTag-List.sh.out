@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Server: nginx/1.0.14
+Date: Tue, 26 Mar 2013 10:22:38 GMT
+Content-Type: application/vnd.rightscale.resource_tag+xml;type=collection;charset=utf-8
+Connection: keep-alive
+Status: 200 OK
+X-Runtime: 42
+Content-Length: 56
+X-Request-Uuid: fe0cd29dc54f42d99ec942140c260a29
+Set-Cookie: 
+Cache-Control: private, max-age=0, must-revalidate
+
+<?xml version="1.0" encoding="UTF-8"?>
+<resource_tags/>

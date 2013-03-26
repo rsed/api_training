@@ -1,0 +1,12 @@
+HTTP/1.1 405 Method Not Allowed
+Server: nginx/1.0.14
+Date: Tue, 26 Mar 2013 11:52:02 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 405 Method Not Allowed
+Set-Cookie: rs_gbl=eNolkMuOgjAARf-la5v0QYGSzEIHn-OAgo4DG1NaVIqCD1DU-O-DmeVN7jmL8wQCOKC-QAo6QF2A82xHegYOMQyDvjqgksDB1DQIty1COiBT7R8JpBJbIMhNhCHGKYE2TzmUggrCNwxxZrW-Kv1nKWL8zbZ64OXBeNq3xwcTLU_BNl4FrJrspNzryF030152sRd-0gzNz67G1ndeFm50VXWZeW6-RLMYDkx_dvxVEp59cfN6I2Pj3atppKK4zsO4Yfdgn6FdDI1JKL-Gk_lj3U3YJvnJKESrK6d8tC-25OEjV49FX3p4fjBTjE7hQB8107nS_q4oF4sQfbyTNO8kQsqyLirgUIot8nr9AStyXIg%3D; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+Allow: GET, POST
+
+Only get and post requests are allowed.
