@@ -14,9 +14,9 @@ CLOUD=1
 MYNAME=john
 
 #Database Lineage, e.g. jdoelinage
-DBLINAGE=mynamelinage
+DBLINAGE=johnlinage
 
 #Database schema name, e.g. jdoeschema
-DBSCHEMA=mynameschema
+DBSCHEMA=johnschema
 
 
