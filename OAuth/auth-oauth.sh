@@ -1,7 +1,7 @@
 #!/bin/bash
 
 my_token_endpoint="https://us-3.rightscale.com/api/oauth2"
-my_refresh_token="aad92f9d39e8ae03af59b75c0dd70b6d708f56b2"
+my_refresh_token="81b33983c832b8283c9d008d472139dba2280c43"
 
 curl --include \
   -H "X-API-Version:1.5" \
