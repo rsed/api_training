@@ -3,16 +3,17 @@
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
-NEXTLB1="AEMOJCAPQTR1O"
-NEXTLB2="25OE4ROCCCVKS"
-
 #Either Hard code the values
+#NEXTLB2="25OE4ROCCCVKS"
+#NEXTLB2="25OE4ROCCCVKS"
 #EIP1="1SFPJ9HH48PF9"
 #EIP2="B50R3SRMABS0D"
-#CLOUD="1"            # Specify the Cloud to add the Server Array to
+#CLOUD="1"
 
-
-#Or read them in programatically
+#Or read them in programatically 
+# Note the NEXTLB values assume you've already launched the Server (should really be CURRENTLB)
+NEXTLB1=`grep Location output/ServerLB-Launch.sh.out|cut -c 35-|tr -d '\r' | sed -n 1p`
+NEXTLB1=`grep Location output/ServerLB-Launch.sh.out|cut -c 35-|tr -d '\r' | sed -n 2p`
 EIP1=`grep Location output/ElasticIPs-Create.sh.out|cut -c 38-|tr -d '\r' | sed -n 1p`
 EIP2=`grep Location output/ElasticIPs-Create.sh.out|cut -c 38-|tr -d '\r' | sed -n 2p`
 CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`
