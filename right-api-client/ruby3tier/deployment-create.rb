@@ -21,6 +21,7 @@ cloud=@client.clouds(:id => '1').show
 
 #Create SSH Key
 
+#Deployment name needs to contain 'myname' from labinfo.yaml
 #mydeployment=@client.deployments.create({:deployment => {:name => [@myname.join(" Ruby Deploymemt")] }})
 #mydeployment=@client.deployments.create({:deployment => {:name => [@myname + " Ruby Deploymemt"] }})
 mydeployment=@client.deployments.create({:deployment => {:name => "Ruby Deploymemt" }})
@@ -28,6 +29,9 @@ mydeployment=@client.deployments.create({:deployment => {:name => "Ruby Deployme
 lb_server_template_href=@client.server_templates.index(:filter => ['name==Load Balancer']).first.href
 app_server_template_href=@client.server_templates.index(:filter => ['name==App']).first.href
 db_server_template_href=@client.server_templates.index(:filter => ['name==Database']).first.href
+
+#Need to use the SecGroup & SSH key created earlier.  
+#Also use 'mydeployment'
 
 lb_params = { :server => {
   :name => 'Load Balancer Server',
@@ -62,8 +66,14 @@ db_params = { :server => {
   :datacenter_href  => cloud.datacenters.index.first.href
   }}}
 
+#need to loop through these to create two LB & 2 APP servers
+#Pass the server name as a parameter with incrementing id - LB1, LB2, App1, App2 etc
 new_lb_server=@client.servers.create(lb_params)
 new_app_server=@client.servers.create(app_params)
 new_db_server=@client.servers.create(db_params)
  
 new_server.api_methods
+
+#Set Inputs at deployment level
+#
+#Launch Servers
