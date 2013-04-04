@@ -1,0 +1,20 @@
+defaults:
+  user: myemail@example.com
+  pass: mypassword
+  account: 12345
+  accountname: default
+  apiurl: 'https://us-3.rightscale.com'
+
+#defaults
+#  user: myemail@example.com
+#  pass: mypassword
+#  account: 58650
+#  accountname: coursedev
+#  apiurl: 'https://my.rightscale.com'
+
+#defaults
+#  user: myemail@example.com
+#  pass: mypassword
+#  account: 33172
+#  accountname: student04uc
+#  apiurl: 'https://us-3.rightscale.com'
