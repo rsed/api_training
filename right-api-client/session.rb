@@ -14,6 +14,13 @@ end
 @client=''
 def init_client(email,pass,id)
   @client = RightApi::Client.new(:api_url => 'https://us-3.rightscale.com', :email => email, :password => pass, :account_id => id)
+  puts "Authenticated"
   puts "Available methods: #{pp @client.api_methods}"
 end
 
+def init
+  init_auth
+  init_client(@user,@pass,@account)
+end
+
+init
