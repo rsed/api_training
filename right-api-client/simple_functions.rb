@@ -13,7 +13,7 @@ end
  
 @client=''
 def init_client(email,pass,id)
-  @client = RightApi::Client.new(:email => email, :password => pass, :account_id => id)
+  @client = RightApi::Client.new(:api_url => 'https://us-3.rightscale.com', :email => email, :password => pass, :account_id => id)
   puts "Available methods: #{pp @client.api_methods}"
 end
 
