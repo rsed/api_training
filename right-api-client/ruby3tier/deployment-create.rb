@@ -14,6 +14,7 @@ def labinfo
   @dblineage=parsed_file["inputs"]["dblineage"]
   @dbschema=parsed_file["inputs"]["dbschema"]
 end
+labinfo
 
 cloud=@client.clouds(:id => '1').show
 
