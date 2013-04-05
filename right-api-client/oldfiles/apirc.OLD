@@ -1,4 +1,0 @@
-defaults:
-  user: myemail@example.com
-  pass: mypassword
-  account: 12345
