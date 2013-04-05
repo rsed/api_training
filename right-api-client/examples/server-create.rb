@@ -5,10 +5,9 @@ require 'yaml'
 require 'uri'
 require './session.rb'
 
+# Written for API Course
+# John Fitzpatrick, April 2013
 
-#def create_deployment(depname)
-#  return @deployment=@client.deployments.create({:deployment => {:name => depname}})
-#end
 
 puts "What would you like to call your deployment?"
 depname = STDIN.gets.chomp()
@@ -16,7 +15,6 @@ depname = STDIN.gets.chomp()
 puts "What would you like to call your server?"
 servname = STDIN.gets.chomp()
 
-#create_deployment(depname)
 
 deploy_href = @client.deployments.create({:deployment => {:name => depname}}).href
 
