@@ -3,7 +3,7 @@ require 'pp'
 require 'right_api_client'
 require 'yaml'
 require 'uri'
-require './session.rb'
+require '../auth/session.rb'
 
 # Written for API Course
 # John Fitzpatrick, April 2013
@@ -33,4 +33,4 @@ cloud = @client.clouds(:id => '1').show
 new_server = @client.servers.create(params)
 new_server.api_methods
 "\n"
-puts "Complete.  Now go check the Dashboard"
+puts "Complete.  Now go verify this Deployment and Server in the Dashboard"
