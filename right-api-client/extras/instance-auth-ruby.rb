@@ -6,7 +6,7 @@ require 'rubygems'
 require 'pp'                 # require the pp Pretty Print rubygem. 
 require 'right_api_client'
 
-my_token="33172:46abe5011c8a5d9a19cc10b635c9d268e912816a"
+my_token="33172:46abe5011c8a5d9..."
 my_account_id="33172"
 
 @instance_client = RightApi::Client.new(:api_url => 'https://us-3.rightscale.com', :instance_token => 'my_token', :account_id => 'my_account_id')
