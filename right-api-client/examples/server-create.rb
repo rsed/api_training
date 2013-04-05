@@ -5,7 +5,7 @@ require 'yaml'
 require 'uri'
 
 def labinfo
-  parsed_file=YAML.load(File.read(File.join(File.dirname(__FILE__),"labinfo")))
+  parsed_file=YAML.load(File.read(File.join(File.dirname(__FILE__),"labinfo.yaml")))
   @dbfqdn=parsed_file["inputs"]["dbfqdn"]
   @ddnsid=parsed_file["inputs"]["ddnsid"]
   @cloud=parsed_file["inputs"]["cloud"]
