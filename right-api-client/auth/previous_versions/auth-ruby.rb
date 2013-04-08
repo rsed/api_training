@@ -6,12 +6,7 @@ require 'rubygems'
 require 'pp'                 # require the pp Pretty Print rubygem. 
 require 'right_api_client'
 
-puts "Please enter your account password:-"
-`stty -echo`
-mypassword = STDIN.gets.chomp()
-`stty echo`
-
-@client = RightApi::Client.new(:api_url => 'https://us-3.rightscale.com', :email => 'john.fitzpatrick@rightscale.com', :password => mypassword, :account_id => '33172')
+@client = RightApi::Client.new(:api_url => 'https://us-3.rightscale.com', :email => 'myemail@example.com', :password => 'mypassword', :account_id => '12345')
 
 puts "Available methods: #{pp @client.api_methods}"    # Use pretty print for more readable output
 #puts "Available methods: #{@client.api_methods}"      # Use standard puts call.  Less readable.  Commented out so it will not be executed.

@@ -3,7 +3,7 @@ require 'pp'
 require 'right_api_client'
 require 'yaml'
 require 'uri'
-require '/opt/api/right-api-client/session.rb'
+require '/opt/api/right-api-client/auth/session.rb'
 
 def labinfo
   parsed_file=YAML.load(File.read(File.join(File.dirname(__FILE__),"labinfo.yaml")))

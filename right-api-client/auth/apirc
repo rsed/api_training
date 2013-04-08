@@ -1,6 +1,6 @@
-defaults:
+efaults:
   user: myemail@example.com
-  pass: mypassword
+# pass: mypassword  #You do not need to populate this, as its read in from keyboard
   account: 12345
   accountname: default
   apiurl: 'https://us-3.rightscale.com'

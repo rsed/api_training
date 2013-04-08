@@ -3,7 +3,7 @@ require 'pp'
 require 'right_api_client'
 require 'yaml'
 require 'uri'
-require '../auth/session.rb'
+require './auth/session.rb'
 
 # Written for API Course
 # John Fitzpatrick, April 2013

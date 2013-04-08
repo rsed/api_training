@@ -102,52 +102,6 @@ def create_server(deployment, hash)
   deployment.show().servers.create(:server => hash)
 end
 
-def enterprise_child_accounts_show
-  @client.child_accounts.index
-end
-
-def enterprise_child_accounts_create(name)
-  return @new_child_account = @client.child_accounts.create(:child_account => {:name => "#{name}"})
-end
-
-def enterprise_get_current_child_account(name)
-  return @current_child=@client.child_accounts.index(:filter => "name==#{name}").first
-end
-
-def enterprise_child_account_login(child_account,user,pass)
-  puts "Loggin into child account: #{child_account.href.split('/').last}"
-  return @sub_account_client = RightApi::Client.new(:email => user, :password => pass, :account_id => child_account.href.split('/').last)
-end
-
-def enterprise_child_account_aws_credential_add(child_client,aws_account_number,aws_access_key_id,aws_secret_access_key,ec2_cert=nil,ec2_key=nil)
-  child_client.cloud_accounts.create(:cloud_account => {
-                                        :cloud_href => "aws",
-                                        :creds => {
-                                          :aws_account_number => "#{aws_account_number}",
-                                          :aws_access_key_id => "#{aws_access_key_id}",
-                                          :aws_secret_access_key => "#{aws_secret_access_key}",
-                                          :ec2_cert => '',
-                                          :ec2_key => ''
-                                        }
-                                      } )
-end
-
-def enterprise_child_account_generic_credential_add(child_client,token,cloud_owner,access_key_id,secret_access_key)
- child_client.cloud_accounts.create(:cloud_account => {
-                                      :cloud_href => "#{cloud_href}",
-                                      :creds => {
-                                        :token => "#{token}",
-                                        :cloud_owner => "#{cloud_owner}",
-                                        :access_key_id => "#{access_key_id}",
-                                        :secret_access_key => "#{secret_access_key}"
-                                      }
-                                    } )
-end
-
-def enterprise_child_account_rename(old_name, new_name)
-  @client.child_accounts.index(:filter => "name==#{old_name}").first.update({ :child_account =>{:name => "#{new_name}"} })
-end
-
 #always last item
 def init
   init_auth
