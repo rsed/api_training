@@ -1,0 +1,22 @@
+Renaming cloned Load Balancer Server
+HTTP/1.1 204 No Content
+Server: nginx/1.0.14
+Date: Tue, 12 Mar 2013 15:38:28 GMT
+Connection: keep-alive
+Status: 204 No Content
+X-Runtime: 809
+X-Request-Uuid: 90887bab88494a258a7c5075fdcaf56c
+Set-Cookie: rs_gbl=eNo1kE1vgkAARP_LniVZdhdcSHrQikpQkbZW4UJgP5RQFWRdpYb_Xjj0NpPMe4d5gQy44N4YGIwAb4D76ou4ARcRQnA3AooB18Q2NiEaQzoCBe_3UuTSysaZQXMEDdMUyMjtISFsYgdRiwve-5T4Zx1nYHs9SKLwqAuKg0csM67Oy1Obq7uzrsoonhFh6bMu2Kwq5l-8rdqo0NCvSeBtllGJxYVMnBP7_VzFAWtUA8tyU6dj8Z6LpX6giZ96t-tC7rbX7fQY7cPg41ztU6wPzwUMiOV9r1exlsaB6x0sfe8iD9CqI55PtR-HErEf3SYokdS3WzVv12_DJc_hkoyx6_2igGsjh9Ku-wO1rl8p; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+Renaming cloned Application Server
+HTTP/1.1 204 No Content
+Server: nginx/1.0.14
+Date: Tue, 12 Mar 2013 15:38:28 GMT
+Connection: keep-alive
+Status: 204 No Content
+X-Runtime: 87
+X-Request-Uuid: 1d532b19c1a440018f23a9606a3d3445
+Set-Cookie: rs_gbl=eNo1kE1vgkAARP_LniVZdhdcSHrQikpQkbZW4UJgP5RQFWRdpYb_Xjj0NpPMe4d5gQy44N4YGIwAb4D76ou4ARcRQnA3AooB18Q2NiEaQzoCBe_3UuTSysaZQXMEDdMUyMjtISFsYgdRiwve-5T4Zx1nYHs9SKLwqAuKg0csM67Oy1Obq7uzrsoonhFh6bMu2Kwq5l-8rdqo0NCvSeBtllGJxYVMnBP7_VzFAWtUA8tyU6dj8Z6LpX6giZ96t-tC7rbX7fQY7cPg41ztU6wPzwUMiOV9r1exlsaB6x0sfe8iD9CqI55PtR-HErEf3SYokdS3WzVv12_DJc_hkoyx6_2igGsjh9Ku-wO1rl8p; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+

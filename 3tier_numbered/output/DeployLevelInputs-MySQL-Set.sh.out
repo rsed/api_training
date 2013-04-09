@@ -1,0 +1,23 @@
+HTTP/1.1 404 Not Found
+Server: nginx/1.0.14
+Date: Tue, 26 Mar 2013 13:36:23 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Status: 404 Not Found
+Set-Cookie: rs_gbl=eNotkMtugkAAAP9lz5Kw7EKBpIci6LoCSnzwuJB9AEUEi2LVGP-9kvQ-M4d5AgZscL0oCEyAvAD7-ZqAQQAbIgMjFVumNgG1fDOagYSABlMsAzIFwkJTLNXEClY5g2apQ4n5uzEU_y7U4Oi-kyA7TkWXrKCgrRucD53_4PtQL3T6s6D4Vql3h6dT2n_EstpU17nZMiZ2WraOC8R_3WVynIdksRZBG3V1SGZx41DvlpgbD6ndyRkO36uNzDNCwzj1XIJYXn_t08OWUH2Gl03v9sfSaCI010gfcJmoQbolvl86lXychsqKeO6k7So7N8ruc9xwHze8_gAu11Tv; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+NotFound: No route matches "/api/deployments//inputs/multi_update" with {:method=>:put}HTTP/1.1 404 Not Found
+Server: nginx/1.0.14
+Date: Tue, 26 Mar 2013 13:36:24 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Status: 404 Not Found
+Set-Cookie: rs_gbl=eNotkMFugjAAQP-lZ5qsLbRgsgMEBZljq0yGXAilgI4BOhAnxn8fJLu_9w7vDlKwAJcOEqAA2YHF_aGAPgMLRKhKnlRDJwo4yonBVDCMCh0aFKUQoRxDQ0s1KDLGMNNUmuvF1OjzfxdhNLtTEpjCyRKOl-EQ2JURy69b4OmQJmLVWsPRG2Ptx3-x8zHyk0rqpHRO2ccoGtQ0-97M5YbGa2-H4Hu7d5jHvm-Cp4fGLuxdWC8_LebbZuC3Q3TIEz5ezw7pWARPTZlcDTfsIve1ro2RD9F4odxGfeTWiSYtNsTd25pnq3Pl47bcskDdbM3necPvvOHxB1HPVY4%3D; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+NotFound: No route matches "/api/deployments//inputs/multi_update" with {:method=>:put}

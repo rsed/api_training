@@ -1,0 +1,15 @@
+***Importing RightScript '3Tier-End-to-End Demo [RSED]'***
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 13 Mar 2013 17:27:49 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/right_scripts/426335003
+X-Runtime: 433
+X-Request-Uuid: 2e5a9bea01544a5b86a9597b18b973e4
+Set-Cookie: 
+Cache-Control: no-cache
+
+ 
