@@ -8,6 +8,8 @@
 #SEARCHTAG="appserver:active=true"
 SEARCHTAG="rs_monitoring:state=active"
 
+cd /opt/api/3tier
+
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d resource_type=servers \
 -d tags[]=$SEARCHTAG \

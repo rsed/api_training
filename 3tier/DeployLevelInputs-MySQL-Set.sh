@@ -20,6 +20,8 @@ DBSCHEMA=`grep DBSCHEMA LabInfo | cut -c 10-|tr -d '\r'`   #Replace "Myname"
 # Please note the following inputs could all be populated with one API Request.  
 # They've been split here by category for clarification purposes only
 
+cd /opt/api/3tier
+
 # Update Inputs in DB Category
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
 -d inputs[][name]="db/admin/user" \

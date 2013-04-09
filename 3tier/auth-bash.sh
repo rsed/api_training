@@ -21,8 +21,10 @@ do
     password+="$char"
 done
 
-
 echo ""
+
+cd /opt/api/3tier
+
 curl -i -H X_API_VERSION:1.5 -c ~/mycookie -X POST \
 -d email=$EMAIL \
 -d password=$password \

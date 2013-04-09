@@ -16,6 +16,8 @@ DBSCHEMA=`grep DBSCHEMA LabInfo | cut -c 10-|tr -d '\r'`
 DBFQDN=`grep DBFQDN LabInfo | cut -c 8-|tr -d '\r'`
 E2ESCRIPTID=`grep Location output/RightScript-APP-Import.sh.out|cut -c 30-|tr -d '\r'` # ID for RightScript
 
+cd /opt/api/3tier
+
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -d filter[]="name==APP" -X POST \
 -d right_script_href="/api/right_scripts/$E2ESCRIPTID" \
 -d inputs[][name]="DBADMIN_PASSWORD" \

@@ -11,6 +11,8 @@
 APP1=`grep Location output/Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 2p`
 APP2=`grep Location output/Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 2p`
 
+cd /opt/api/3tier
+
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$APP1/launch.xml \
 | tee output/${0##*/}.out

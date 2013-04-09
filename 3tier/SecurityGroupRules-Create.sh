@@ -8,6 +8,8 @@ CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`
 #SG="50K6AE2MB3LDL"    #You can add the Sec Group ID Manually
 SG=`grep Location output/SecurityGroup-Create.sh.out |cut -c 41-|tr -d '\r'`    #Or you can retrieve it automatically
 
+cd /opt/api/3tier
+
 #Open port 22 for SSH Access
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d security_group_rule[group_name]="SSH" \

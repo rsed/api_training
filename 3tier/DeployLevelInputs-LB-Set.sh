@@ -9,6 +9,8 @@ DEPLOYMENT=`grep Location output/Deployment-Create.sh.out |cut -c 28-|tr -d '\r'
 # Please note the following inputs could all be populated with one API Request.  
 # They've been split here by category for clarification purposes only
 
+cd /opt/api/3tier
+
 # Update Inputs in LB Category
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
 -d inputs[][name]="lb/session_stickiness" \

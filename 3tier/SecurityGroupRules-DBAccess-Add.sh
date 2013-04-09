@@ -11,6 +11,7 @@
 SG=`grep Location output/SecurityGroup-Create.sh.out |cut -c 41-|tr -d '\r'`
 CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`
 
+cd /opt/api/3tier
 
 #Open port 3306 so App servers can access the Database
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \

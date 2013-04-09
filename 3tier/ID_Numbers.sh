@@ -5,6 +5,9 @@
 # Written by John Fitzpatrick, March 2013
 
 # Deployment-Create.sh.out
+
+cd /opt/api/3tier
+
 if [ -f output/Deployment-Create.sh.out ]
         then
         echo "***Deployment ID (\$DEPLOYMENT) ***" 

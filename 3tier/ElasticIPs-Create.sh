@@ -11,6 +11,7 @@
 CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`       # Get cloud id form LabInfo file
 MYNAME=`grep MYNAME LabInfo | cut -c 8-|tr -d '\r'`     # Get your name form LabInfo file
 
+cd /opt/api/3tier
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d ip_address[name]="$MYNAME EIP1" \

@@ -11,6 +11,7 @@ APP1=`grep Location output/Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 
 APP2=`grep Location output/Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 2p`
 DBSERVER=`grep Location output/Servers-Create.sh.out |cut -c 24-|tr -d '\r' | sed -n 3p`
 
+cd /opt/api/3tier
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X DELETE \
 https://us-3.rightscale.com/api/servers/$LB1 \

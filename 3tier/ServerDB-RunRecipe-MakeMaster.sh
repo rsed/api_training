@@ -9,6 +9,8 @@ CURRDBINSTANCE=`grep Location output/ServerDB-Launch.sh.out |cut -c 35-|tr -d '\
 #CLOUD="1"                                              # Specify the Cloud to add the Server Array to
 CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`       # Or, get cloud id form LabInfo file
 
+cd /opt/api/3tier
+
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d recipe_name="db::do_init_and_become_master" \
 https://us-3.rightscale.com/api/clouds/$CLOUD/instances/$CURRDBINSTANCE/run_executable \

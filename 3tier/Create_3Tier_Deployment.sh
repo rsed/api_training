@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /opt/api/3tier
+
 echo "Creating Security Groups"
 ./SecurityGroup-Create.sh
 ./SecurityGroupRules-Create.sh
