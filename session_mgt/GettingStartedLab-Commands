@@ -1,12 +1,10 @@
-2.1	Authenticating using CURL - Creating a SessionI
+2.1	Authenticating using CURL - Creating a Session
 curl -i -H X_API_VERSION:1.5 -c mycookie -X POST -d email=jdoe@example.com -d password=mypassword -d account_href=/api/accounts/12345 https://us-3.rightscale.com/api/session
 
 
 2.2	Verify Session
 curl -H X_API_VERSION:1.5 -b mycookie -X GET https://us-3.rightscale.com/api/session 
-
 curl -H X_API_VERSION:1.5 -b mycookie -X GET https://us-3.rightscale.com/api/session.xml
-
 curl -H X_API_VERSION:1.5 -b mycookie -X GET https://us-3.rightscale.com/api/session | python -mjson.tool
 
 
@@ -19,4 +17,8 @@ rm mycookie
 curl -i -H X_API_VERSION:1.5 -b mycookie -X GET https://us-3.rightscale.com/api/session 
 curl -H X_API_VERSION:1.5 -c mycookie -X POST -d \ email=jdoe@example.com -d password=mypassword -d \ account_href=/api/accounts/12345 https://us-3.rightscale.com/api/session
 curl -H X_API_VERSION:1.5 -b mycookie -X GET https://us-3.rightscale.com/api/session
+
+
+3.2	Update Authentication Script & Obtain Access Token
+vim /opt/api/OAuth/auth-oauth.sh
 
