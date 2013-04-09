@@ -1,0 +1,22 @@
+1.1	Create a Session
+curl -i -H X_API_VERSION:1.5 -c mycookie -X POST -d email=jdoe@example.com -d password=mypassword -d account_href=/api/accounts/12345 https://us-3.rightscale.com/api/session
+alias mycurl='curl -i -H X_API_VERSION:1.5 -b mycookie '
+mycurl -X GET https://us-3.rightscale.com/api/clouds.xml
+
+1.3.1	List All Deployments
+mycurl -X GET https://us-3.rightscale.com/api/deployments.xml
+
+1.3.2	Filter the Response
+mycurl -d filter[]="name==Test" -X GET https://us-3.rightscale.com/api/deployments.xml
+
+1.3.3	List Servers in the Deployment
+mycurl -X GET https://us-3.rightscale.com/api/deployments/339864003/servers.xml
+
+1.3.4	Create a New Deployment
+mycurl -X POST -d deployment[name]="myname Test API Deployment" -d deployment[description]="myname's Test Deployment created by the API" https://us-3.rightscale.com/api/deployments.xml
+
+1.3.5	Delete the Deployment
+mycurl -X DELETE https://us-3.rightscale.com/api/deployments/339865003
+
+
+
