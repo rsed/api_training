@@ -8,8 +8,8 @@
 #LB2="670395003"  #Server ID for 'myname Load Balancer 2'
 
 #Or enter the values programatically
-LB1=`grep Location output/Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
-LB2=`grep Location output/Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
+LB1=`grep Location output/07_Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
+LB2=`grep Location output/08_Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
 
 cd /opt/api/3tier
 

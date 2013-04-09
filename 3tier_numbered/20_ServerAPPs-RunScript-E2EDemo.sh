@@ -14,7 +14,7 @@ MYNAME=`grep MYNAME LabInfo | cut -c 8-|tr -d '\r'`
 CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`  
 DBSCHEMA=`grep DBSCHEMA LabInfo | cut -c 10-|tr -d '\r'`
 DBFQDN=`grep DBFQDN LabInfo | cut -c 8-|tr -d '\r'`
-E2ESCRIPTID=`grep Location output/RightScript-APP-Import.sh.out|cut -c 30-|tr -d '\r'` # ID for RightScript
+E2ESCRIPTID=`grep Location output/19_RightScript-APP-Import.sh.out|cut -c 30-|tr -d '\r'` # ID for RightScript
 
 cd /opt/api/3tier
 

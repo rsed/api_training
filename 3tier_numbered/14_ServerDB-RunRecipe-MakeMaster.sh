@@ -4,7 +4,7 @@
 # Written by John Fitzpatrick, March 2013
 
 #CURRDBINSTANCE="969GBPOIMG8QI"                          # Current DB Instance ID
-CURRDBINSTANCE=`grep Location output/ServerDB-Launch.sh.out |cut -c 35-|tr -d '\r'`  # Current DB Instance ID
+CURRDBINSTANCE=`grep Location output/12_ServerDB-Launch.sh.out |cut -c 35-|tr -d '\r'`  # Current DB Instance ID
 
 #CLOUD="1"                                              # Specify the Cloud to add the Server Array to
 CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`       # Or, get cloud id form LabInfo file

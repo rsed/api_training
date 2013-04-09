@@ -3,7 +3,7 @@
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
-DBSERVER=`grep Location output/Servers-Create.sh.out |cut -c 24-|tr -d '\r' | sed -n 3p`
+DBSERVER=`grep Location output/07_Servers-Create.sh.out |cut -c 24-|tr -d '\r' | sed -n 3p`
 
 cd /opt/api/3tier
 

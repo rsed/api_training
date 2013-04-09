@@ -5,7 +5,7 @@
 # Written by John Fitzpatrick, March 2013
 
 
-ARRAY=`grep Location output/Array-Create.sh.out |cut -c 30-|tr -d '\r'`
+ARRAY=`grep Location output/22_Array-Create.sh.out |cut -c 30-|tr -d '\r'`
 
 cd /opt/api/3tier
 

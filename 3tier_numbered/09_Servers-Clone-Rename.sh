@@ -7,10 +7,10 @@
 MYNAME=`grep MYNAME LabInfo | cut -c 8-|tr -d '\r'`     # Or, get your name form LabInfo file
 
 #LB_CLONE="670395003"  #Load Balancer ID, ie 'Location: /api/servers/670395003'
-LB_CLONE=`grep Location output/Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
+LB_CLONE=`grep Location output/08_Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
 
 #APP_CLONE="670396003" #App Server ID, ie 'Location: /api/servers/670396003'
-APP_CLONE=`grep Location output/Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 2p`
+APP_CLONE=`grep Location output/08_Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 2p`
 
 cd /opt/api/3tier
 

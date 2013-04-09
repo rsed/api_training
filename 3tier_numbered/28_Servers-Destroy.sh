@@ -5,11 +5,11 @@
 # Written by John Fitzpatrick, March 2013
 
 
-LB1=`grep Location output/Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
-LB2=`grep Location output/Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
-APP1=`grep Location output/Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 2p`
-APP2=`grep Location output/Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 2p`
-DBSERVER=`grep Location output/Servers-Create.sh.out |cut -c 24-|tr -d '\r' | sed -n 3p`
+LB1=`grep Location output/07_Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
+LB2=`grep Location output/08_Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
+APP1=`grep Location output/07_Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 2p`
+APP2=`grep Location output/08_Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 2p`
+DBSERVER=`grep Location output/07_Servers-Create.sh.out |cut -c 24-|tr -d '\r' | sed -n 3p`
 
 cd /opt/api/3tier
 

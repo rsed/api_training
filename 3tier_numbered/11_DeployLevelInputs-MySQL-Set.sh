@@ -10,7 +10,7 @@
 #DBSCHEMA="mynameschema"                           #Replace "Myname"
 
 #Enter Programatically
-DEPLOYMENT=`grep Location output/Deployment-Create.sh.out |cut -c 28-|tr -d '\r' | sed -n 1p`
+DEPLOYMENT=`grep Location output/06_Deployment-Create.sh.out |cut -c 28-|tr -d '\r' | sed -n 1p`
 DBFQDN=`grep DBFQDN LabInfo | cut -c 8-|tr -d '\r'`            #FQDN of DB Server
 DDNSID=`grep DDNSID LabInfo | cut -c 8-|tr -d '\r'`            #DDNS ID of DB Server
 DBLINAGE=`grep DBLINAGE LabInfo | cut -c 10-|tr -d '\r'`   #Replace "Myname"

@@ -4,7 +4,7 @@
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
 
-DEPLOYMENT=`grep Location output/Deployment-Create.sh.out |cut -c 28-|tr -d '\r'`
+DEPLOYMENT=`grep Location output/06_Deployment-Create.sh.out |cut -c 28-|tr -d '\r'`
 
 cd /opt/api/3tier
 

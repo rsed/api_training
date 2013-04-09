@@ -12,10 +12,10 @@
 
 #Or read them in programatically 
 # Note the NEXTLB values assume you've already launched the Server (should really be CURRENTLB)
-NEXTLB1=`grep Location output/ServerLB-Launch.sh.out|cut -c 35-|tr -d '\r' | sed -n 1p`
-NEXTLB1=`grep Location output/ServerLB-Launch.sh.out|cut -c 35-|tr -d '\r' | sed -n 2p`
-EIP1=`grep Location output/ElasticIPs-Create.sh.out|cut -c 38-|tr -d '\r' | sed -n 1p`
-EIP2=`grep Location output/ElasticIPs-Create.sh.out|cut -c 38-|tr -d '\r' | sed -n 2p`
+NEXTLB1=`grep Location output/16_ServerLB-Launch.sh.out|cut -c 35-|tr -d '\r' | sed -n 1p`
+NEXTLB1=`grep Location output/16_ServerLB-Launch.sh.out|cut -c 35-|tr -d '\r' | sed -n 2p`
+EIP1=`grep Location output/04_ElasticIPs-Create.sh.out|cut -c 38-|tr -d '\r' | sed -n 1p`
+EIP2=`grep Location output/04_ElasticIPs-Create.sh.out|cut -c 38-|tr -d '\r' | sed -n 2p`
 CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`
 
 cd /opt/api/3tier

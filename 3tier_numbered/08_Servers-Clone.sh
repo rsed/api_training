@@ -4,10 +4,10 @@
 # Written by John Fitzpatrick, March 2013
 
 #LB_SVR="670392003"  #Load Balancer ID, ie 'Location: /api/servers/670346003'
-LB_SVR=`grep Location output/Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
+LB_SVR=`grep Location output/07_Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
 
 #APP_SVR="670393003" #App Server ID, ie 'Location: /api/servers/670347003'
-APP_SVR=`grep Location output/Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 2p`
+APP_SVR=`grep Location output/07_Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 2p`
 
 cd /opt/api/3tier
 

@@ -8,7 +8,7 @@
 #DBSCHEMA="mynameSchema"           #Replace "Myname"
 
 #Enter Programatically
-DEPLOYMENT=`grep Location output/Deployment-Create.sh.out |cut -c 28-|tr -d '\r' | sed -n 1p`
+DEPLOYMENT=`grep Location output/06_Deployment-Create.sh.out |cut -c 28-|tr -d '\r' | sed -n 1p`
 DBSCHEMA=`grep DBSCHEMA LabInfo | cut -c 10-|tr -d '\r'` 
 
 # Please note the following inputs could all be populated with one API Request.  
