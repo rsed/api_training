@@ -27,4 +27,5 @@ curl -i -H X_API_VERSION:1.5 -c ~/mycookie -X POST \
 -d email=$EMAIL \
 -d password=$password \
 -d account_href=/api/accounts/$ACCOUNT \
-https://us-3.rightscale.com/api/session
+https://us-3.rightscale.com/api/session \
+| tee output/${0##*/}.out
