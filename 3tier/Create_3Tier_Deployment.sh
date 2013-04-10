@@ -1,42 +1,42 @@
 #!/bin/bash
 
-cd /opt/api/3tier
+cd /opt/api/3tier_numbered
 
 echo "Creating Security Groups"
-./SecurityGroup-Create.sh
-./SecurityGroupRules-Create.sh
+./01_SecurityGroup-Create.sh
+./02_SecurityGroupRules-Create.sh
 
 echo "Creating SSH Keys"
-./SSHKey-Create.sh
+./03_SSHKey-Create.sh
 
 echo "Creating Deployment"
-./Deployment-Create.sh
+./06_Deployment-Create.sh
 
 echo "Importing ServerTemplates"
-./ServerTemplates_Import.sh
+./05_ServerTemplates_Import.sh
 
 echo "Creating Servers"
-./Servers-Create.sh
-./Servers-Clone.sh
-./Servers-Clone-Rename.sh
+./07_Servers-Create.sh
+./08_Servers-Clone.sh
+./09_Servers-Clone-Rename.sh
 
 echo "Creating Elastic IPs"
-./ElasticIPs-Create.sh
+./04_ElasticIPs-Create.sh
 
 echo "Attaching Elastic IPs"
-#./Server-ElasticIP-Attach.sh
+#./10_Server-ElasticIP-Attach.sh
 
 echo "Setting Inputs"
-./DeployLevelInputs-APP-Set.sh
-./DeployLevelInputs-LB-Set.sh
-./DeployLevelInputs-MySQL-Set.sh
+./17_DeployLevelInputs-APP-Set.sh
+./15_DeployLevelInputs-LB-Set.sh
+./11_DeployLevelInputs-MySQL-Set.sh
 
 echo "Lauching Servers..."
 echo "...Launching Database"
-./ServerDB-Launch.sh
+./12_ServerDB-Launch.sh
 echo "...Launching Load Balancers"
-./ServerLB-Launch.sh
+./16_ServerLB-Launch.sh
 echo "...Launching Application Servers"
-./ServerAPP-Launch.sh
+./18_ServerAPP-Launch.sh
 
 
