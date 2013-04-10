@@ -23,7 +23,7 @@ done
 
 echo ""
 
-cd /opt/api/3tier
+cd /opt/api/3tier_numbered
 
 curl -i -H X_API_VERSION:1.5 -c ~/mycookie -X POST \
 -d email=$EMAIL \

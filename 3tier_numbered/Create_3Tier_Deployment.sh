@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /opt/api/3tier
+cd /opt/api/3tier_numbered
 
 echo "Creating Security Groups"
 ./01_SecurityGroup-Create.sh

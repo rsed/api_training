@@ -5,7 +5,7 @@
 
 ARRAY=`grep Location output/22_Array-Create.sh.out |cut -c 30-|tr -d '\r'`
 
-cd /opt/api/3tier
+cd /opt/api/3tier_numbered
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X PUT \
 -d server_array[state]=disabled \

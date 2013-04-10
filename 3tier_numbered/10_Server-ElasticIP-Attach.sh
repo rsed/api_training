@@ -18,7 +18,7 @@ EIP1=`grep Location output/04_ElasticIPs-Create.sh.out|cut -c 38-|tr -d '\r' | s
 EIP2=`grep Location output/04_ElasticIPs-Create.sh.out|cut -c 38-|tr -d '\r' | sed -n 2p`
 CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`
 
-cd /opt/api/3tier
+cd /opt/api/3tier_numbered
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d ip_address_binding[instance_href]=/api/clouds/$CLOUD/instances/$NEXTLB1 \

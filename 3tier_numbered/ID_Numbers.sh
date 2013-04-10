@@ -6,7 +6,7 @@
 
 # Deployment-Create.sh.out
 
-cd /opt/api/3tier
+cd /opt/api/3tier_numbered
 
 if [ -f output/06_Deployment-Create.sh.out ]
         then

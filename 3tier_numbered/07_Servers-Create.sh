@@ -26,7 +26,7 @@ SG=`grep Location output/01_SecurityGroup-Create.sh.out |cut -c 41-|tr -d '\r'`
 #SSH="2OSIPDJU7Q55G"     # Set the SSH Key
 SSH=`grep Location output/03_SSHKey-Create.sh.out |cut -c 34-|tr -d '\r'`
 
-cd /opt/api/3tier
+cd /opt/api/3tier_numbered
 
 echo " Load Balancer Server 1" | tee output/${0##*/}.out
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \

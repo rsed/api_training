@@ -8,7 +8,7 @@ read -p \
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
  
-cd /opt/api/3tier
+cd /opt/api/3tier_numbered
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d deployment[name]="$MYNAME 3 Tier Deployment" \
