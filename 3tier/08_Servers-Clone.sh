@@ -9,7 +9,7 @@ LB_SVR=`grep Location output/07_Servers-Create.sh.out|cut -c 24-|tr -d '\r' | se
 #APP_SVR="670393003" #App Server ID, ie 'Location: /api/servers/670347003'
 APP_SVR=`grep Location output/07_Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 2p`
 
-cd /opt/api/3tier_numbered
+cd /opt/api/3tier
 
 echo " Load Balancer Server 2" | tee output/${0##*/}.out
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \

@@ -3,7 +3,7 @@
 #MYNAME="myname"                                        # Replace with your name
 MYNAME=`grep MYNAME LabInfo | cut -c 8-|tr -d '\r'`     # Or, get your name form LabInfo file
 
-cd /opt/api/3tier_numbered
+cd /opt/api/3tier
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d deployment[name]="$MYNAME 3 Tier Deployment" \

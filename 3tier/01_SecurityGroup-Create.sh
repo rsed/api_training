@@ -8,7 +8,7 @@ MYNAME=`grep MYNAME LabInfo | cut -c 8-|tr -d '\r'`     # Or, get your name form
 #CLOUD="1"                                              # Specify the Cloud to add the Server Array to
 CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`       # Or, get cloud id form LabInfo file
 
-cd /opt/api/3tier_numbered
+cd /opt/api/3tier
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d security_group[name]="$MYNAME Security Group" \

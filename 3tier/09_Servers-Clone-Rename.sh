@@ -12,7 +12,7 @@ LB_CLONE=`grep Location output/08_Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | s
 #APP_CLONE="670396003" #App Server ID, ie 'Location: /api/servers/670396003'
 APP_CLONE=`grep Location output/08_Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 2p`
 
-cd /opt/api/3tier_numbered
+cd /opt/api/3tier
 
 echo "Renaming cloned Load Balancer Server" | tee output/${0##*/}.out
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X PUT \

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /opt/api/3tier_numbered
+cd /opt/api/3tier
 
 echo "Creating Security Groups"
 ./01_SecurityGroup-Create.sh
@@ -24,7 +24,7 @@ echo "Creating Elastic IPs"
 ./04_ElasticIPs-Create.sh
 
 echo "Attaching Elastic IPs"
-#./10_Server-ElasticIP-Attach.sh
+#./10_Server-ElasticIP-Attach-NextInstance.sh
 
 echo "Setting Inputs"
 ./17_DeployLevelInputs-APP-Set.sh

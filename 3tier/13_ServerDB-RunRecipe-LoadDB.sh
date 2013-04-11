@@ -7,7 +7,7 @@ CURRDBINSTANCE=`grep Location output/12_ServerDB-Launch.sh.out |cut -c 35-|tr -d
 #CLOUD="1"                                              # Specify the Cloud to add the Server Array to
 CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`       # Or, get cloud id form LabInfo file
 
-cd /opt/api/3tier_numbered
+cd /opt/api/3tier
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d recipe_name="db::do_dump_import" \

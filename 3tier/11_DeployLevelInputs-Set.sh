@@ -22,6 +22,35 @@ DBSCHEMA=`grep DBSCHEMA LabInfo | cut -c 10-|tr -d '\r'`   #Replace "Myname"
 
 cd /opt/api/3tier
 
+# Update Inputs in APP Category
+curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
+-d inputs[][name]="app/database_name" \
+-d inputs[][value]="text:$DBSCHEMA" \
+-X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update \
+| tee output/${0##*/}.out
+
+# Update Inputs in APP_PHP Category
+curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
+-d inputs[][name]="app_php/modules_list" \
+-d inputs[][value]="array:php53u-mysql,php53u-pecl-memcache" \
+-X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update \
+| tee -a output/${0##*/}.out
+
+# Update Inputs in LB Category
+curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
+-d inputs[][name]="lb/session_stickiness" \
+-d inputs[][value]="text:false" \
+-X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update  \
+| tee -a output/${0##*/}.out
+
+
+# Update Inputs in Web Apache  Category
+curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
+-d inputs[][name]="web_apache/mpm" \
+-d inputs[][value]="text:prefork" \
+-X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update  \
+| tee -a output/${0##*/}.out
+
 # Update Inputs in DB Category
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
 -d inputs[][name]="db/admin/user" \
@@ -52,8 +81,10 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
 -d inputs[][value]="text:repluser" \
 -d inputs[][name]="db/replication/password" \
 -d inputs[][value]="text:replpassword" \
+-d inputs[][name]="db/provider_type" \
+-d inputs[][value]="text:db_mysql_5.5" \
 -X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update \
-| tee output/${0##*/}.out
+| tee -a output/${0##*/}.out
 
 
 # Update Inputs in SYS_DNS Category

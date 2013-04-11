@@ -6,7 +6,7 @@
 
 # Deployment-Create.sh.out
 
-cd /opt/api/3tier_numbered
+cd /opt/api/3tier
 
 if [ -f output/06_Deployment-Create.sh.out ]
         then
@@ -57,7 +57,7 @@ if [ -f output/04_ElasticIPs-Create.sh.out ]
         fi
 
 # Server-ElasticIP-Attach.sh.out
-if [ -f output/10_Server-ElasticIP-Attach.sh.out ]
+if [ -f output/10_Server-ElasticIP-Attach-NextInstance.sh.out ]
         then
         echo "***Server-Elastic IP Bindings  (\$LB1EIP1, \$LB2EIP2) ***" 
         grep Location output/10_Server-ElasticIP-Attach.sh.out 

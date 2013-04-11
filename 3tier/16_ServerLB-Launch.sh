@@ -11,7 +11,7 @@
 LB1=`grep Location output/07_Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
 LB2=`grep Location output/08_Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p`
 
-cd /opt/api/3tier_numbered
+cd /opt/api/3tier
 
 curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$LB1/launch.xml \
