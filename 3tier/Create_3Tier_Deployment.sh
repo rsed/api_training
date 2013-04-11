@@ -26,10 +26,8 @@ echo "Creating Elastic IPs"
 echo "Attaching Elastic IPs"
 #./10_Server-ElasticIP-Attach-NextInstance.sh
 
-echo "Setting Inputs"
-./17_DeployLevelInputs-APP-Set.sh
-./15_DeployLevelInputs-LB-Set.sh
-./11_DeployLevelInputs-MySQL-Set.sh
+echo "Setting Inputs at Deployment Level"
+./11_DeployLevelInputs-Set.sh
 
 echo "Lauching Servers..."
 echo "...Launching Database"

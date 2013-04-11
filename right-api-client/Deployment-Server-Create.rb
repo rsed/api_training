@@ -15,7 +15,7 @@ depname = STDIN.gets.chomp()
 puts "What would you like to call your server?"
 servname = STDIN.gets.chomp()
 
-
+puts "Creating Server...."
 deploy_href = @client.deployments.create({:deployment => {:name => depname}}).href
 
 server_template_href = @client.server_templates.index(:filter => ['name==Base ServerTemplate']).first.href
@@ -32,5 +32,10 @@ cloud = @client.clouds(:id => '1').show
   }}}
 new_server = @client.servers.create(params)
 new_server.api_methods
+
+#Launch the Server
+puts "Starting Server...."
+new_server.show.launch
 "\n"
-puts "Complete.  Now go verify this Deployment and Server in the Dashboard"
+puts "The Server '#{servname}' has been launched.  Now go verify this Deployment and Server in the Dashboard"
+

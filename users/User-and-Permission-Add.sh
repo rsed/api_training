@@ -19,7 +19,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d user[password]=$PASSWORD \
 -d user[phone]=$PHONE \
 https://us-3.rightscale.com/api/users \
-| tee output/User-and-Permission-Add.out
+| tee output/${0##*/}.out
 
 #Set the USERID to that of the user just created
 USERID=`grep Location output/User-and-Permission-Add.out |cut -c 22-|tr -d '\r'`
@@ -29,5 +29,4 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
 -d permission[role_title]=observer \
 -d permission[user_href]=/api/users/$USERID \
 https://us-3.rightscale.com/api/permissions \
-| tee -a output/User-and-Permission-Add.out
-
+| tee -a output/${0##*/}.out
