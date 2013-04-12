@@ -23,7 +23,7 @@ DBSCHEMA=`grep DBSCHEMA LabInfo | cut -c 10-|tr -d '\r'`   #Replace "Myname"
 cd /opt/api/3tier
 
 # Update Inputs in DB Category
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
+curl -i -H X-API-Version:1.5 -b ~/mycookie \
 -d inputs[][name]="db/admin/user" \
 -d inputs[][value]="text:adminuser" \
 -d inputs[][name]="db/admin/password" \
@@ -57,7 +57,7 @@ curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
 
 
 # Update Inputs in SYS_DNS Category
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie \
+curl -i -H X-API-Version:1.5 -b ~/mycookie \
 -d inputs[][name]="sys_dns/choice" \
 -d inputs[][value]="text:DNSMadeEasy" \
 -d inputs[][name]="sys_dns/password" \

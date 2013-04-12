@@ -21,7 +21,7 @@ MYNAME=`grep MYNAME LabInfo | cut -c 8-|tr -d '\r'`
 
 cd /opt/api/3tier
 
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d server_array[name]="$MYNAME Array" \
 -d server_array[description]=my_app_server_description \
 -d server_array[array_type]=alert \

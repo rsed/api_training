@@ -13,11 +13,11 @@ APP2=`grep Location output/08_Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -
 
 cd /opt/api/3tier
 
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$APP1/launch.xml \
 | tee output/${0##*/}.out
 
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$APP2/launch.xml \
 | tee -a output/${0##*/}.out
 

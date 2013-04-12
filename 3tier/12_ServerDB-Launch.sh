@@ -7,7 +7,7 @@ DBSERVER=`grep Location output/07_Servers-Create.sh.out |cut -c 24-|tr -d '\r' |
 
 cd /opt/api/3tier
 
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$DBSERVER/launch.xml \
 | tee output/${0##*/}.out
 

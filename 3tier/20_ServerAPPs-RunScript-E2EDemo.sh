@@ -18,7 +18,7 @@ E2ESCRIPTID=`grep Location output/19_RightScript-APP-Import.sh.out|cut -c 30-|tr
 
 cd /opt/api/3tier
 
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -d filter[]="name==APP" -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -d filter[]="name==APP" -X POST \
 -d right_script_href="/api/right_scripts/$E2ESCRIPTID" \
 -d inputs[][name]="DBADMIN_PASSWORD" \
 -d inputs[][value]="text:adminpassword" \

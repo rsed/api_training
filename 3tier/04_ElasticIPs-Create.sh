@@ -13,12 +13,12 @@ MYNAME=`grep MYNAME LabInfo | cut -c 8-|tr -d '\r'`     # Get your name form Lab
 
 cd /opt/api/3tier
 
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d ip_address[name]="$MYNAME EIP1" \
 https://us-3.rightscale.com/api/clouds/$CLOUD/ip_addresses \
 | tee output/${0##*/}.out
 
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d ip_address[name]="$MYNAME EIP2" \
 https://us-3.rightscale.com/api/clouds/$CLOUD/ip_addresses \
 | tee -a output/${0##*/}.out
