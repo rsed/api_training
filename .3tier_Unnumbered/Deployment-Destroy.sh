@@ -8,7 +8,7 @@ DEPLOYMENT=`grep Location output/Deployment-Create.sh.out |cut -c 28-|tr -d '\r'
 
 cd /opt/api/3tier
 
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X DELETE \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X DELETE \
 https://us-3.rightscale.com/api/deployments/$DEPLOYMENT \
 | tee -a output/${0##*/}.out
 

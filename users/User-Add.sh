@@ -7,7 +7,7 @@ LASTNAME="Mylastname"
 PHONE="0123456789"
 PASSWORD="P@ssword123"
 
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d user[company]=$COMPANYNAME \
 -d user[email]=$EMAIL \
 -d user[first_name]=$FIRSTNAME \

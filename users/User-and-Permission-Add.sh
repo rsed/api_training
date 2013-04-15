@@ -11,7 +11,7 @@ LASTNAME="Mylastname"
 PHONE="0123456789"
 PASSWORD="P@ssword123"
 
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d user[company]=$COMPANYNAME \
 -d user[email]=$EMAIL \
 -d user[first_name]=$FIRSTNAME \
@@ -25,7 +25,7 @@ https://us-3.rightscale.com/api/users \
 USERID=`grep Location output/User-and-Permission-Add.out |cut -c 22-|tr -d '\r'`
 
 #Set the permissions for user
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d permission[role_title]=observer \
 -d permission[user_href]=/api/users/$USERID \
 https://us-3.rightscale.com/api/permissions \

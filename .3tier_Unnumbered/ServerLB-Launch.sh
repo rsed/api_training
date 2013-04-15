@@ -13,11 +13,11 @@ LB2=`grep Location output/Servers-Clone.sh.out|cut -c 24-|tr -d '\r' | sed -n 1p
 
 cd /opt/api/3tier
 
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$LB1/launch.xml \
 | tee output/${0##*/}.out
 
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$LB2/launch.xml \
 | tee -a output/${0##*/}.out
 

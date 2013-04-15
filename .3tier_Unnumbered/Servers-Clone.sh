@@ -12,12 +12,12 @@ APP_SVR=`grep Location output/Servers-Create.sh.out|cut -c 24-|tr -d '\r' | sed 
 cd /opt/api/3tier
 
 echo " Load Balancer Server 2" | tee output/${0##*/}.out
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$LB_SVR/clone \
 | tee -a output/${0##*/}.out
 
 echo " Application Server 2" | tee -a output/${0##*/}.out
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/servers/$APP_SVR/clone \
 | tee -a output/${0##*/}.out
 

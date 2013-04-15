@@ -13,7 +13,7 @@ SG="50K6AE2MB3LDL"      # Set the Security Group
 SSH="2OSIPDJU7Q55G"     # Set the SSH Key
 
 echo " Load Balancer Server 1"
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d server[name]="$MYNAME Load Balancer 1" \
 -d server[description]="Load Balancer server" \
 -d server[deployment_href]=/api/deployments/$DEPLOYMENT \
@@ -25,7 +25,7 @@ https://us-3.rightscale.com/api/servers \
 | tee ../output/Servers-Create-Manual.out
 
 echo " Application Server 1"
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d server[name]="$MYNAME App Server 1" \
 -d server[description]="PHP App Server" \
 -d server[deployment_href]=/api/deployments/$DEPLOYMENT \
@@ -37,7 +37,7 @@ https://us-3.rightscale.com/api/servers \
 | tee -a ../output/Servers-Create-Manual.out
 
 echo " Database Server"
-curl -i -H X_API_VERSION:1.5 -b ~/mycookie -X POST \
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d server[name]="$MYNAME Database" \
 -d server[description]="Database Server" \
 -d server[deployment_href]=/api/deployments/$DEPLOYMENT \
