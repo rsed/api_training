@@ -1,0 +1,53 @@
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Mon, 15 Apr 2013 11:52:49 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/security_group_rules/365939003
+X-Runtime: 757
+X-Request-Uuid: 6c3658091208457fabeb132a2e970493
+Set-Cookie: 
+Cache-Control: no-cache
+
+ HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Mon, 15 Apr 2013 11:52:51 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/security_group_rules/365940003
+X-Runtime: 1079
+X-Request-Uuid: 7b553c073b3f46e69c24bb4ebeb53912
+Set-Cookie: 
+Cache-Control: no-cache
+
+ HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Mon, 15 Apr 2013 11:52:52 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/security_group_rules/365941003
+X-Runtime: 718
+X-Request-Uuid: a2975e040c134e4eb192680ea9a9f9ec
+Set-Cookie: 
+Cache-Control: no-cache
+
+ HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Mon, 15 Apr 2013 11:52:53 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/security_group_rules/365942003
+X-Runtime: 1254
+X-Request-Uuid: 5160f278331b441dba0015b12492ed1a
+Set-Cookie: 
+Cache-Control: no-cache
+
+ 

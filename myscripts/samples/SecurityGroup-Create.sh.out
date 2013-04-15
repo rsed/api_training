@@ -1,0 +1,14 @@
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Mon, 15 Apr 2013 11:32:33 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/clouds/1/security_groups/7IHT5MDOJU1DJ
+X-Runtime: 743
+X-Request-Uuid: 0cfddd161ffa48e3b37714aed48463c2
+Set-Cookie: 
+Cache-Control: no-cache
+
+ 

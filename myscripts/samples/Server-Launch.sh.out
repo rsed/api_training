@@ -1,0 +1,14 @@
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Mon, 15 Apr 2013 14:14:02 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/clouds/1/instances/FDU3R63K2C613
+X-Runtime: 5870
+X-Request-Uuid: 78879bd4a6754ea696e7e7bd5b66aa43
+Set-Cookie: rs_gbl=eNotkMtugkAARf9l1k7CvABJumjFQilSECyBjRkGELQOrQyUaPz3YtLlTe45i3MDHFhg6CEBC1D2wLrNo7oAC1NKyX0BlAAWIrquEYYpXoC2nP-EF8TQTQo5ExVEqMKwoBRBhAkiS2yysipnn6r-WTrbZnbWg68mMhrpqeAUsmitC_PzXYT1sNlKbbw4psaWU-qFx_Gapy5sD0HtJjieJpgmifThq9PHH-cxTLOY-KGT5C-HuMu47bd2JJ0g2gws5m2fJ6e6kGgr6sjzwn7wfLXDaaHO0lwpuztEwfUt2xU_gfvdNw17bvJVxur9fq0ffe1X8OUW22v69EgyPZJwIbpBKmARggx8v_8BRSxc8g%3D%3D; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+ 
