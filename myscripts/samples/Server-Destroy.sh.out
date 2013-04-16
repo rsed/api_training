@@ -1,0 +1,12 @@
+HTTP/1.1 422 Unprocessable Entity
+Server: nginx/1.0.14
+Date: Tue, 16 Apr 2013 10:46:43 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 422 Unprocessable Entity
+X-Request-Uuid: bf1a13cdc5d04261b5ed6121fe36474a
+Set-Cookie: rs_gbl=eNotkMtugkAYRt9l1pDMBWcYki4qikqMVeRS3JARfrxGKxcda3j3YtLll3znLM4LKeSgtjYZMlBRI-fVD6iQQy3LYp2Bmhw5hHFOsKSYGuhQ9H8JW06xjU3FxcAkBKgpsUVNlgslsU2ZKO3e18A_S7j1Zns9ynl534dBRquGxadh4lI4-klTLh5iL58qPtfuziegPqeQpOckENeQHdJFUYUw8qcaam_imcEv3nluFNnXZTEqmLYHow0_ZvPYvzRqPIXt6hYxsSqj5UQNZfVNyVzMzrPZbfV1B6Bp1rJEe3uixmUJMl4_FuuTziZxoMeb6qAt7-7-qOjjnUS_k6g8v7aXBjmMEUG77g_GgFyF; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+ResourceNotFound: ActiveRecord::RecordNotFound
