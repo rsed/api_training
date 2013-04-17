@@ -1,0 +1,12 @@
+HTTP/1.1 400 Bad Request
+Server: nginx/1.0.14
+Date: Fri, 22 Mar 2013 14:57:12 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 400 Bad Request
+X-Request-Uuid: d85ecd54a01c41f6a82dbb54e710941b
+Set-Cookie: 
+Cache-Control: no-cache
+
+ParameterError: Parameter 'server_array[instance][security_group_hrefs]' should be of the type: Array

@@ -1,0 +1,27 @@
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:09:23 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/clouds/2/ip_addresses/1QJK24EH2M7LD
+X-Runtime: 1411
+X-Request-Uuid: 5e4bc7a04c8e4e50a3dcb2f2299ea43d
+Set-Cookie: 
+Cache-Control: no-cache
+
+ HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:09:25 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/clouds/2/ip_addresses/9BT6LJNB79OL1
+X-Runtime: 1333
+X-Request-Uuid: 27e357d6db9d46079fa96f169258a377
+Set-Cookie: 
+Cache-Control: no-cache
+
+ 

@@ -86,6 +86,14 @@ curl -i -H X-API-Version:1.5 -b ~/mycookie \
 -X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update \
 | tee -a output/${0##*/}.out
 
+# Update Inputs in REPO Category
+curl -i -H X-API-Version:1.5 -b ~/mycookie \
+-d inputs[][name]="repo/default/repository" \
+-d inputs[][value]="text:git://github.com/rightscale/examples.git" \
+-d inputs[][name]="repo/default/revision" \
+-d inputs[][value]="text:unified_php" \
+-X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update \
+| tee -a output/${0##*/}.out
 
 # Update Inputs in SYS_DNS Category
 curl -i -H X-API-Version:1.5 -b ~/mycookie \

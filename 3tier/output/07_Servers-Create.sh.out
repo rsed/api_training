@@ -1,0 +1,43 @@
+ Load Balancer Server 1
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:13:19 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/servers/747495003
+X-Runtime: 718
+X-Request-Uuid: 4aff44e510954aeea4fc486e8c858d80
+Set-Cookie: rs_gbl=eNotkFtvgjAARv9Ln2liW6WUZA_CYNR5gW5C4ovhUmDowFnrQON_HyZ7_JLvnIdzBymwgVaQAAMUCtj3ccgzsPF0OiUPA1xyYCNimhhZlDEDfBXjn05KXKJMwpRSBhGSGGYoxxBhggjD1qyQxei7yH8Wz9iTHfWgSlfLrgkcSv2QsUCrjVcJxbibtPt6FYo-akUx6bdt_Cu4e2PVmh7OuyiKVolVZXOvW5DN8rokwskaFWuzDz8Pg0Re8FNX_aL78MK37y6J0zU8YgSDjfvKXct0g6tVzgYRxQM39b7B66ueO1tuhWXi1CflJ8pphvem9vhp53OxOGqpXp5J-meSNM873V6ATQii-PH4A14DXRc%3D; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+  Application Server 1
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:13:20 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/servers/747496003
+X-Runtime: 915
+X-Request-Uuid: d8e576d514df49b693c53ba7a2561bdf
+Set-Cookie: rs_gbl=eNotkM1ugkAYRd9l1pLMfENngKQLQ1WwVImCJW4MzvArYgtMBI3vXki6vMk9Z3GeKEYWUq1G0QzJFlnPcSQNskDXdfqaoU4gi1DGgBgGxjNUyPHPcQopOSdazLmpEZKAdiYCNAKUUBOMN5nI0dcl_ywwPLGjHtX3h-vXfo6Da5VG6rj8NgovAxneq7KJ2kWJ3cL2L3F9M7UwvuxCfgh7z8jN0-9m-AyHH2d_5NvO11NvX252B8-Do02rOYFHFK9Vhl1yOangzOV1vnSWQcUaW-BBEuWL6KsRzHM-WMHLnimer7O0zSJnKIbtYK7U5rbKF3nO7-D21cl9n5L0U5JYiJuqO2RRSji8Xn_v3V4T; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+  Database Server
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:13:21 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/servers/747497003
+X-Runtime: 829
+X-Request-Uuid: 8c56d7a1ad4a4d68b779a12222897f7b
+Set-Cookie: rs_gbl=eNotkM1ugkAYRd9l1k7C9w3OAEkXakUNlbG28uOGIAz-tdBhxLQ1vnsx6fIm95zFuZGceKQzlJEBKQ3xbv1QLfHQtm12H5BLQTxgnCM4jgUDciz7v7AqrGCnaC6ESwEU0h0USAEZMBedYanK3ndR_yxy68H2evK6RpqKwlVapjxxhBSzpfZDRF1PU2km0lplbV6O2yvu-SL9fIPzgVXJ9qPSTOls1ti7jYw1nCvbRFlzPIxfapXqr1XsS96ZSUbTSMbdUD_XizE_yY0T6tW7icOmHe3r-fbVN1uomuk6Ov1OA9-VUZhAeE0YHkb1KYBlYFTA54X52Tw9knw_kuRF0XT1hXiMgcD7_Q_sqVx5; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+ 

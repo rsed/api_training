@@ -1,0 +1,40 @@
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:09:52 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/server_templates/290031003
+X-Runtime: 9690
+X-Request-Uuid: 2628ab5372344951a38b2aeee5cdbddc
+Set-Cookie: 
+Cache-Control: no-cache
+
+ HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:10:01 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/server_templates/290032003
+X-Runtime: 9051
+X-Request-Uuid: 826fb895de8246d1b4a1b3a696dfc8e9
+Set-Cookie: 
+Cache-Control: no-cache
+
+ HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:10:11 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/server_templates/290033003
+X-Runtime: 10155
+X-Request-Uuid: 887194472e504c9eb8d0e10e54c920d2
+Set-Cookie: 
+Cache-Control: no-cache
+
+ 

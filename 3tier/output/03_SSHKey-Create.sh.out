@@ -1,0 +1,14 @@
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:09:12 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/clouds/2/ssh_keys/E0QMGS6U1C72R
+X-Runtime: 1296
+X-Request-Uuid: 124dff34ea4146b0872dbb721cc4521f
+Set-Cookie: 
+Cache-Control: no-cache
+
+ 

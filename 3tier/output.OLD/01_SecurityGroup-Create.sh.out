@@ -1,0 +1,13 @@
+HTTP/1.1 403 Forbidden
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 15:55:55 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Status: 403 Forbidden
+X-Request-Uuid: 2baf408d2584498080fd87028ed8193c
+Set-Cookie: rs_gbl=eNotkMGOgjAURf-la0iktBRIZjGiMIzaRFEH3UFBqSCVUiKM8d8HM-5ecnPufTkPkAAXdK1uAg1kLXAfgNetSmqWA7fuqkobw1z-308NKAZcw7QsaCADYw3wbMSRYyOEINMTQohuGDnUHWif9GziJBk-pdYEOWO9yt8sNMwXO66BC-QiKvb34dj6jJj8S9xIhppduL3VTSPj2ZzxoOFDRZNgWii8UuzQbujsEot2Ob353eQcnIXnD3iNGFyvJFG0D9XxW5R4tZOCbuiB1l70c0w3FcQdXuCUwzImeJ9_zsd3KxnJe9TnwxL2xdXy09_GTulum3bKi9bDQTSl3F7D-aL8eBnqX4YSxkRXq7eU5x-U3WYy; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+Permission denied

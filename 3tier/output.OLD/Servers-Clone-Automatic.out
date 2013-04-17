@@ -1,0 +1,27 @@
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Sun, 24 Mar 2013 16:47:19 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/servers/746804003
+X-Runtime: 182
+X-Request-Uuid: 7fa8f774a7564946851935a06d7f9a87
+Set-Cookie: 
+Cache-Control: no-cache
+
+ HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Sun, 24 Mar 2013 16:47:20 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/servers/746805003
+X-Runtime: 126
+X-Request-Uuid: 32c3b6b8f673436eb205176141e3c478
+Set-Cookie: 
+Cache-Control: no-cache
+
+ 

@@ -1,0 +1,29 @@
+ Load Balancer Server 2
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:13:42 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/servers/747498003
+X-Runtime: 134
+X-Request-Uuid: ff9dca2259734201b14e988ebf610458
+Set-Cookie: rs_gbl=eNotkMtugkAYRt9l1k7C_AMzI0kXWLWW2gIlBe2GDBdFbioMRjS-ezHp8ku-cxbnjiQyUd9hiiYo7ZB5H0fWIhN0XaePCVIJMgllDIgQABN0SMc_13awI3GGJedTTEgGOCYJYAKU0CkII83S0aeyfxaY9mRHPWpgCKq5LZiz825WUgzf3XnVr_elt3DZVUTYDf1j7Pbd7-n2rrjlyyBoeApn3SvbD0e0my2rV9O8zqHg224JFSZlvijn3klbBP3lVbZxbe-LU63ETAYzz9rk7VfSNZUoWM-Hz_CgolwaUaq97ZvwIjO7Usp1fNtxI21teD94tvT9q11YL88k12cSmSTHvlHIpJRweDz-AAfxXj8%3D; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+  Application Server 2
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:13:42 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/servers/747499003
+X-Runtime: 157
+X-Request-Uuid: dee6368d5f0849508e8b4f20c05b3b68
+Set-Cookie: rs_gbl=eNotkMtugkAYRt9l1k7C_AMzI0kXWLWW2gIlBe2GDBdFbioMRjS-ezHp8ku-cxbnjiQyUd9hiiYo7ZB5H0fWIhN0XaePCVIJMgllDIgQABN0SMc_13awI3GGJedTTEgGOCYJYAKU0CkII83S0aeyfxaY9mRHPWpgCKq5LZiz825WUgzf3XnVr_elt3DZVUTYDf1j7Pbd7-n2rrjlyyBoeApn3SvbD0e0my2rV9O8zqHg224JFSZlvijn3klbBP3lVbZxbe-LU63ETAYzz9rk7VfSNZUoWM-Hz_CgolwaUaq97ZvwIjO7Usp1fNtxI21teD94tvT9q11YL88k12cSmSTHvlHIpJRweDz-AAfxXj8%3D; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+ 

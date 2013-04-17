@@ -1,0 +1,27 @@
+HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:14:09 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/clouds/2/ip_address_bindings/6FM9BD2N5B1D7
+X-Runtime: 854
+X-Request-Uuid: c086b7bbe6a846778b0b94b2215194cd
+Set-Cookie: rs_gbl=eNotkMtugkAARf9l1k4yL55JF6TYDqZgBhWrG8IbkZcCQTD-ezHp8ib3nMV5ggDoYOggBSsQd0B_LiO5A50wxuhrBfoI6JjKMsGqyrQVuMTLX0EpSXGYwEBRNIhxQmCIIwIxoZhqRJXiJF58ffLPEhm92UUPcsksP91tcbtvhTPPFiQiyNubZHiYt24BhV-gpho2pDqV19LL10dn17lZgDQe5OajnrhfdD4WnEGhkpLvj-1U3cfQTa0mO57DQ7a5xRaKvteOy5OfR_a7a6ZxrA1Uf83eIUxj54pMDS7iyRfwbM_lpq8vJ9eXhDE5NqsqO3J4pTHr453k8U4SRFEz1D3QKcUKeb3-AAzbXlU%3D; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+ HTTP/1.1 201 Created
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:14:10 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 201 Created
+Location: /api/clouds/2/ip_address_bindings/6OE67T5TH8U7E
+X-Runtime: 885
+X-Request-Uuid: ed2032ed0ea64a20a25db4c21b24c71c
+Set-Cookie: rs_gbl=eNotkN1ugjAARt-l1zShP1BKsgvBRbaJcXECckMKVESdFYuKGN99kOzyS75zLs4TCOCCq4YEGKDUwH0OQ16Aiyml5GWAtgAuIraNkeNYpgHqcvgzc4u3KJdQMMYhQhLDHBUYIkwQ4dixSlkOvlb-s9g2R3bQgxXSXp0689t3ezZT_6B0zM8XLaMyDFKRWZdm-tGkey5vR5ur6nr-XFlJQrpI5YXnvEv4S2F_Z3I_WZyUsLNUH-az3WHTR01Ld2HfII_M6yprbCuI7yz0llrEtJZdssDKqXnR0E39M1kGa1Xtve5xinoiw8yqpiL8ymfH3K_89B53D7V-G5N0YxJRFOp6aoFLCGL49foDRLRfFg%3D%3D; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+ 

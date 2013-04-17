@@ -12,7 +12,7 @@ CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`       # Or, get cloud id form 
 DEPLOYMENT=`grep Location output/06_Deployment-Create.sh.out |cut -c 28-|tr -d '\r'`
 
 #LB_ST="282920003"       # Set the Load Balancer Server ServerTemplate
-LB_ST=`grep Location output/o5_ServerTemplates_Import.sh.out|cut -c 33-|tr -d '\r'|sed -n 1p`
+LB_ST=`grep Location output/05_ServerTemplates_Import.sh.out|cut -c 33-|tr -d '\r'|sed -n 1p`
 
 #APP_ST="282922003"      # Set the APP Server ServerTemplate
 APP_ST=`grep Location output/05_ServerTemplates_Import.sh.out|cut -c 33-|tr -d '\r'|sed -n 2p`
