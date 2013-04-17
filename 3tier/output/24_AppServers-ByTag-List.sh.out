@@ -1,0 +1,23 @@
+HTTP/1.1 200 OK
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:53:07 GMT
+Content-Type: application/vnd.rightscale.resource_tag+xml;type=collection;charset=utf-8
+Connection: keep-alive
+Status: 200 OK
+X-Runtime: 506
+Content-Length: 322
+X-Request-Uuid: 80a8723e6235426c951a595294c87f10
+Set-Cookie: rs_gbl=eNo1kMtugkAARf9l1k7CzACDJF3YomCMAtYWZEOYB4QGEAQ6qPHfi4sub3LPWZwHyIANxh4SsACiB_ZjHvIKbKzrOnkuwMCBjYhpYoyQRRegFPOfajnOEZMwo3QJEZIYMsQxRJggssSWIaSYfYP8Zy3yYmc9iEyVoHO8pewatrxle7rPtU1CGE5cuT3W94IggXsjdVw_q-k9Esfxoyt3k1HkZO1Ij6kqSVN1K72mSuSqK8LObaNbXE0iPJQODJOMd-MF6ge18gPoF2UgvPOUk_68USuzji-sWbdRf_XUfpOxn9_43fj81tyT_hWc-LopirKOp50zqLdXkumVJOP8MjYDsAlBFD-ffwdnXwc%3D; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: private, max-age=0, must-revalidate
+
+<?xml version="1.0" encoding="UTF-8"?>
+<resource_tags>
+  <resource_tag>
+    <actions></actions>
+    <tags></tags>
+    <links>
+      <link href="/api/clouds/2/instances/4O80A40M39350" rel="resource"/>
+      <link href="/api/clouds/2/instances/D8BSK8L4DGT4G" rel="resource"/>
+    </links>
+  </resource_tag>
+</resource_tags>
