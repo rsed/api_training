@@ -5,7 +5,7 @@
 # Written by John Fitzpatrick, March 2013
 
 COMPANYNAME="MyCompanyName"
-EMAIL="name13@example.com"
+EMAIL="name12340@example.com"
 FIRSTNAME="Myfirstname"
 LASTNAME="Mylastname"
 PHONE="0123456789"
@@ -22,7 +22,8 @@ https://us-3.rightscale.com/api/users \
 | tee output/${0##*/}.out
 
 #Set the USERID to that of the user just created
-USERID=`grep Location output/User-and-Permission-Add.out |cut -c 22-|tr -d '\r'`
+USERID=`grep Location output/${0##*/}.out |cut -c 22-|tr -d '\r'|sed -n 1p`
+#USERID=`grep Location output/User-and-Permission-Add.sh.out |cut -c 22-|tr -d '\r'|sed -n 1p`
 
 #Set the permissions for user
 curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
