@@ -1,0 +1,14 @@
+HTTP/1.1 202 Accepted
+Server: nginx/1.0.14
+Date: Wed, 17 Apr 2013 17:28:32 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 202 Accepted
+Location: /api/clouds/2/instances/A5VK2TOGVMF77/live/tasks/ae-163980551003
+X-Runtime: 991
+X-Request-Uuid: 284879c588d44418b175b615e5cab37f
+Set-Cookie: rs_gbl=eNotkF1vgjAYRv9Lr21i33aUkuzCYVSIuKF1oDemUEjqN59zGP77MNnlkzznXJwnUshBTYUpGiFdIec5jKxEDjDGaD9CdYocQi0LiOAERsjo4c_HOeQkybDiXGBCMsAJSQEToIQKsN90pgdfnf2zYIkXO-jRrE5iGbAwWW9ZcQmnQYvZxTz8RbGStjeR-bpauqvmFn7EkV222hTecWKFQsd2sOi4NEVwFsbrvs_S4yWbjWWzdecmcjfF7V6tYjMWu1JcpAUmbx-_7ArHL-z7_j4-5LPrMj_N26AypVC7jhvF3PshldEpgJ2XzKvpZ7dvIu2q2lY_3vsryeOVRKXprbnWyKGUcOj7P4-SXdw%3D; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
+ 
