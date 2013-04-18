@@ -1,0 +1,10 @@
+HTTP/1.1 204 No Content
+Server: nginx/1.0.14
+Date: Thu, 18 Apr 2013 11:16:14 GMT
+Connection: keep-alive
+Status: 204 No Content
+X-Runtime: 1053
+X-Request-Uuid: 4846642887e8418e8be9a3dd854e52c3
+Set-Cookie: rs_gbl=eNotkMtugkAYRt9l1k4yN65JF0irFCkWVBi7aUb4sSjVqINCjO9eTLr8ku-cxbkjhVzUXjBHI1RekHsfBpyRy4QQ_DFCukAu5abJbG5ZYoTqcvjDxjKh3NhY2ZRgSoFh2xAEK8MgRsGBA60Gn4Z_1iHOkx30qILY2Usb6NX0N_xWXY6i8fp1vqaiSn2yWFA4tWEovQSvpO7SNNjVzVuQxGN2nFsVIxKCA46ij3EitVZZ5Pyw5hQmE9glkTNlQSd4NIPxZ5Z3xrIrf6fxVoK393Fjt5NdTfxuq9qcpOYs_r56ERf9Inx_XYXqPCsN-ZXRXs_r5WmV3l6eSbpnElUUx_agkcs5tdjj8Qf3lVv_; domain=.rightscale.com; path=/; HttpOnly
+Cache-Control: no-cache
+
