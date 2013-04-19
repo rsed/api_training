@@ -28,6 +28,8 @@ def validate_input(value)
       puts "text value"
     when 'cred'
       puts "cred"
+    when 'array'
+      puts "array"
     else
       raise "Unsupported input value"
   end

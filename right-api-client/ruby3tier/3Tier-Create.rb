@@ -34,7 +34,7 @@ lbservname = STDIN.gets.chomp()
 puts "What would you like to call your app server?"
 appservname = STDIN.gets.chomp()
 puts "What would you like to call your database server?"
-bbservname = STDIN.gets.chomp()
+dbservname = STDIN.gets.chomp()
 
 puts "Creating Deployment...."
 deploy_href = @client.deployments.create({:deployment => {:name => depname}}).href
@@ -57,7 +57,7 @@ newlb_server.api_methods
 puts "Creating App Server...."
 cloud = @client.clouds(:id => '1').show
  appparams = { :server => {
- :name => lbservname,
+ :name => appbservname,
  :deployment_href => deploy_href,
  :instance => {
    :server_template_href => app_server_template_href,
@@ -72,7 +72,7 @@ newapp_server.api_methods
 puts "Creating DB Server...."
 cloud = @client.clouds(:id => '1').show
  dbparams = { :server => {
- :name => lbservname,
+ :name => dbservname,
  :deployment_href => deploy_href,
  :instance => {
    :server_template_href => db_server_template_href,
