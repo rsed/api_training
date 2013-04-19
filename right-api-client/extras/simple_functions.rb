@@ -4,19 +4,6 @@ require 'right_api_client'
 require 'yaml'
 require 'uri'
 
-def init_auth
-  parsed_file=YAML.load(File.read(File.join(File.dirname(__FILE__),"apirc")))
-  @user=parsed_file["defaults"]["user"]
-  @pass=parsed_file["defaults"]["pass"]
-  @account=parsed_file["defaults"]["account"]
-end
- 
-@client=''
-def init_client(email,pass,id)
-  @client = RightApi::Client.new(:api_url => 'https://us-3.rightscale.com', :email => email, :password => pass, :account_id => id)
-  puts "Available methods: #{pp @client.api_methods}"
-end
-
 def show_deployments
   pp @client.deployments.index
 end
@@ -102,10 +89,3 @@ def create_server(deployment, hash)
   deployment.show().servers.create(:server => hash)
 end
 
-#always last item
-def init
-  init_auth
-  init_client(@user,@pass,@account)
-end
-
-init
