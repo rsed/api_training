@@ -1,8 +1,8 @@
 inputs:
-  dbfqdn: myname-masterdb.rightscaletraining.com   #Fully Qualifed Domain Name of DB Server
+  dbfqdn: john12345-masterdb.rightscaletraining.com   #Fully Qualifed Domain Name of DB Server
   ddnsid: 10079884   #DDNS ID of DB Server
   cloud: 1   #Replace with the ID of the cloud number you're using for the lab
-  myname: john   #Replace with your own name.
-  dblineage johnlinage   #Database Lineage, e.g. jdoelinage
-  dbschema: johnschema   #Database schema name, e.g. jdoeschema
+  myname: john12345   #Replace with your own name.
+  dblineage: john12345linage   #Database Lineage, e.g. jdoelinage
+  dbschema: john12345schema   #Database schema name, e.g. jdoeschema
 

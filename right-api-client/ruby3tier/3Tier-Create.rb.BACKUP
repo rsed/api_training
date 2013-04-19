@@ -1,27 +1,15 @@
+#!/usr/bin/ruby
+#
 require 'rubygems'
 require 'pp'
 require 'right_api_client'
 require 'yaml'
 require 'uri'
 require '../auth/session.rb'
+require '../extras/simple_functions.rb'
 
 # Written for API Course
 # John Fitzpatrick, April 2013
-
-def get_deployment(name)
-  return @deployment=@client.deployments.index(:name => name).first
-end
-
-def deployment_set_inputs(deployment,inputs)
-  deployment.show().inputs.multi_update(list_inputs(inputs))
-end
-
-def add_inputs(name,value)
-  @inputs = Array.new unless @inputs
-  validate_input(value)
-  @inputs << { name => value }
-end
-
 
 lb_server_template_href = @client.server_templates.index(:filter => ['name==Load Balancer with HAProxy (v13.2.1) [RSED]']).first.href
 app_server_template_href = @client.server_templates.index(:filter => ['name==PHP App Server (v13.2.1) [RSED]']).first.href
@@ -87,31 +75,32 @@ newdb_server.api_methods
 
 #Set Inputs
 puts "Setting Inputs..."
-add_input('appapp/database_name','text:$DBSCHEMA')
-add_input('appapp_php/modules_list','array:php53u-mysql,php53u-pecl-memcache')
-add_input('applb/session_stickiness','text:false')
-add_input('appweb_apache/mpm','text:prefork')
-add_input('appdb/admin/user','text:adminuser')
-add_input('appdb/admin/password','text:adminpassword')
-add_input('appdb/application/user','text:appuser123')
-add_input('appdb/application/password','text:apppasword123')
-add_input('appdb/backup/lineage','text:$DBLINAGE')
-add_input('appdb/dns/master/fqdn','text:$DBFQDN')
-add_input('appdb/dns/master/id','text:$DDNSID')
-add_input('appdb/dump/container','cred:DUMP_CONTAINER')
-add_input('appdb/dump/database_name','text:$DBSCHEMA')
-add_input('appdb/dump/prefix','text:sampledb')
-add_input('appdb/dump/storage_account_id','cred:AWS_ACCESS_KEY_ID')
-add_input('appdb/dump/storage_account_secret','cred:AWS_SECRET_ACCESS_KEY')
-add_input('appdb/replication/user','text:repluser')
-add_input('appdb/replication/password','text:replpassword')
-add_input('appdb/provider_type','text:db_mysql_5.5')
-add_input('apprepo/default/repository','text:git://github.com/rightscale/examples.git')
-add_input('apprepo/default/revision','text:unified_php')
-add_input('appsys_dns/choice','text:DNSMadeEasy')
-add_input('appsys_dns/password','cred:DNS_PASSWORD')
-add_input('appsys_dns/user','cred:DNS_USER')
-
+get_deployment(depname)
+add_inputs('appapp/database_name','text:$DBSCHEMA')
+add_inputs('appapp_php/modules_list','array:php53u-mysql,php53u-pecl-memcache')
+add_inputs('applb/session_stickiness','text:false')
+add_inputs('appweb_apache/mpm','text:prefork')
+add_inputs('appdb/admin/user','text:adminuser')
+add_inputs('appdb/admin/password','text:adminpassword')
+add_inputs('appdb/application/user','text:appuser123')
+add_inputs('appdb/application/password','text:apppasword123')
+add_inputs('appdb/backup/lineage','text:$DBLINAGE')
+add_inputs('appdb/dns/master/fqdn','text:$DBFQDN')
+add_inputs('appdb/dns/master/id','text:$DDNSID')
+add_inputs('appdb/dump/container','cred:DUMP_CONTAINER')
+add_inputs('appdb/dump/database_name','text:$DBSCHEMA')
+add_inputs('appdb/dump/prefix','text:sampledb')
+add_inputs('appdb/dump/storage_account_id','cred:AWS_ACCESS_KEY_ID')
+add_inputs('appdb/dump/storage_account_secret','cred:AWS_SECRET_ACCESS_KEY')
+add_inputs('appdb/replication/user','text:repluser')
+add_inputs('appdb/replication/password','text:replpassword')
+add_inputs('appdb/provider_type','text:db_mysql_5.5')
+add_inputs('apprepo/default/repository','text:git://github.com/rightscale/examples.git')
+add_inputs('apprepo/default/revision','text:unified_php')
+add_inputs('appsys_dns/choice','text:DNSMadeEasy')
+add_inputs('appsys_dns/password','cred:DNS_PASSWORD')
+add_inputs('appsys_dns/user','cred:DNS_USER')
+deployment_set_inputs(@deployment, @inputs)
 
 #Launch the Servers
 puts "Starting Servers...."
