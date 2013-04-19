@@ -85,9 +85,10 @@ newdb_server = @client.servers.create(dbparams)
 newdb_server.api_methods
 
 #Set Inputs
+#I think the inherited values are being used on launch - so these Deployment Level Inputs arent taking effect!!
 puts "Setting Inputs..."
 get_deployment(depname)
-add_inputs('app/database_name','text:#[dbschema]') #Cannot be missing (RuntimeError)
+add_inputs('app/database_name','text:#[dbschema]') #Cannot be missing (RuntimeError) JF: Had to add array to 'add_inputs'
 add_inputs('app_php/modules_list','array:php53u-mysql,php53u-pecl-memcache') #Unsupported input value
 add_inputs('lb/session_stickiness','text:false')
 add_inputs('web_apache/mpm','text:prefork')
