@@ -96,6 +96,8 @@ puts "Setting Inputs..."
 #puts "Deployment Name #{depname}"
 
 get_deployment(depname)
+puts "returned1: #{@deployment}"
+#@deployid=@client.deployments.index(:name => depname).id
 
 add_inputs('app/database_name','text:'"#{@dbschema}") #Cannot be missing (RuntimeError) JF: Had to add array to 'add_inputs'
 add_inputs('app_php/modules_list','array:php53u-mysql,php53u-pecl-memcache') #Unsupported input value
@@ -126,7 +128,9 @@ add_inputs('sys_dns/user','cred:DNS_USER')
 
 #deployment_set_inputs(@deployment, @inputs)
 #deployment_set_inputs(depname, @inputs)
-@client.deployments(:deployment => {:name => depname}).show.inputs.multi_update(list_inputs(@inputs))
+#@client.deployments(:deployment => {:name => depname}).show.inputs.multi_update(list_inputs(@inputs))
+@client.deployments(:id => '390992003').show.inputs.multi_update(list_inputs(@inputs))
+#@client.deployments(@deployment).show.inputs.multi_update(list_inputs(@inputs))
 
 #Launch the Servers
 puts "Starting Servers...."
