@@ -57,7 +57,7 @@ newlb_server.api_methods
 puts "Creating App Server...."
 cloud = @client.clouds(:id => '1').show
  appparams = { :server => {
- :name => appbservname,
+ :name => appservname,
  :deployment_href => deploy_href,
  :instance => {
    :server_template_href => app_server_template_href,
@@ -87,17 +87,19 @@ newdb_server.api_methods
 #Set Inputs
 #I think the inherited values are being used on launch - so these Deployment Level Inputs arent taking effect!!
 puts "Setting Inputs..."
+
+#puts "Deployment Name #{depname}"
+
 get_deployment(depname)
+
 add_inputs('app/database_name','text:#[dbschema]') #Cannot be missing (RuntimeError) JF: Had to add array to 'add_inputs'
 add_inputs('app_php/modules_list','array:php53u-mysql,php53u-pecl-memcache') #Unsupported input value
 add_inputs('lb/session_stickiness','text:false')
 add_inputs('web_apache/mpm','text:prefork')
 add_inputs('db/admin/user','text:adminuser')
 add_inputs('db/admin/password','text:adminpassword')
-#add_inputs('db/application/user','text:appuser123') #The selected credential does not exist on this account
-add_inputs('db/application/user','text:appuser') #The selected credential does not exist on this account
-#add_inputs('db/application/password','text:apppasword123') #The selected credential does not exist on this account
-add_inputs('db/application/password','text:apppasword') #The selected credential does not exist on this account
+add_inputs('db/application/user','text:appuser123') #The selected credential does not exist on this account
+add_inputs('db/application/password','text:apppasword123') #The selected credential does not exist on this account
 add_inputs('db/backup/lineage','text:$DBLINAGE')
 add_inputs('db/dns/master/fqdn','text:#[dbfqdn]') #Cannot be missing
 add_inputs('db/dns/master/id','text:#[ddnsid]')
@@ -109,23 +111,26 @@ add_inputs('db/dump/storage_account_secret','cred:AWS_SECRET_ACCESS_KEY')
 add_inputs('db/replication/user','text:repluser')
 add_inputs('db/replication/password','text:replpassword')
 add_inputs('db/provider_type','text:db_mysql_5.5') #Cannot be missing
-add_inputs('db/provider_type','text:"db_mysql_5.5"') #Cannot be missing
+#add_inputs('db/provider_type','text:"db_mysql_5.5"') #Cannot be missing
 add_inputs('repo/default/repository','text:git://github.com/rightscale/examples.git') #Cannot be missing!!
-add_inputs('repo/default/repository','text:"git://github.com/rightscale/examples.git"') #Cannot be missing!!
+#add_inputs('repo/default/repository','text:"git://github.com/rightscale/examples.git"') #Cannot be missing!!
 add_inputs('repo/default/revision','text:unified_php')
 add_inputs('sys_dns/choice','text:DNSMadeEasy')
 add_inputs('sys_dns/password','cred:DNS_PASSWORD')
 add_inputs('sys_dns/user','cred:DNS_USER')
+
+
 deployment_set_inputs(@deployment, @inputs)
+#deployment_set_inputs(depname, @inputs)
 
 #Launch the Servers
 puts "Starting Servers...."
-newlb_server.show.launch
+#newlb_server.show.launch
 "\n"
 puts "The Server '#{lbservname}' has been launched"
-newapp_server.show.launch
+#newapp_server.show.launch
 "\n"
 puts "The Server '#{appservname}' has been launched"
-newdb_server.show.launch
+#newdb_server.show.launch
 "\n"
 puts "The Server '#{dbservname}' has been launched"
