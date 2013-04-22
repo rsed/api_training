@@ -130,6 +130,11 @@ add_inputs('sys_dns/user','cred:DNS_USER')
 
 deployment.show.inputs.multi_update(list_inputs(@inputs))
 
+print "Would you like to launch the servers? (y or n) "
+launch = gets
+
+if launch=='y' then
+begin
 #Launch the Servers
 puts "Starting Servers...."
 newlb_server.show.launch
@@ -141,3 +146,6 @@ puts "The Server '#{appservname}' has been launched"
 newdb_server.show.launch
 "\n"
 puts "The Server '#{dbservname}' has been launched"
+end
+else
+end
