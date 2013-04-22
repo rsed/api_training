@@ -10,11 +10,27 @@ require '../extras/simple_functions.rb'
 
 # Written for API Course
 # John Fitzpatrick, April 2013
+#
+# TO DO
+# 1) Create SSH Key (prompt for name)
+# 2) Create Sec Group (prompt for name)
+# 3) Prompt for number of LBs and App Servers, and iterate through
 
 lb_server_template_href = @client.server_templates.index(:filter => ['name==Load Balancer with HAProxy (v13.2.1) [RSED]']).first.href
 app_server_template_href = @client.server_templates.index(:filter => ['name==PHP App Server (v13.2.1) [RSED]']).first.href
 db_server_template_href = @client.server_templates.index(:filter => ['name==Database Manager for MySQL 5.5 (v13.2.1) [RSED]']).first.href
 
+def labinfo
+  parsed_file=YAML.load(File.read(File.join(File.dirname(__FILE__),"labinfo.yaml")))
+  @dbfqdn=parsed_file["inputs"]["dbfqdn"]
+  @ddnsid=parsed_file["inputs"]["ddnsid"]
+  @cloud=parsed_file["inputs"]["cloud"]
+  @myname=parsed_file["inputs"]["myname"]
+  @dblineage=parsed_file["inputs"]["dblineage"]
+  @dbschema=parsed_file["inputs"]["dbschema"]
+end
+
+labinfo
 
 puts "What would you like to call your deployment?"
 depname = STDIN.gets.chomp()
@@ -23,7 +39,7 @@ lbservname = STDIN.gets.chomp()
 puts "What would you like to call your app server?"
 appservname = STDIN.gets.chomp()
 puts "What would you like to call your database server?"
-bbservname = STDIN.gets.chomp()
+dbservname = STDIN.gets.chomp()
 
 puts "Creating Deployment...."
 deploy_href = @client.deployments.create({:deployment => {:name => depname}}).href
@@ -46,7 +62,7 @@ newlb_server.api_methods
 puts "Creating App Server...."
 cloud = @client.clouds(:id => '1').show
  appparams = { :server => {
- :name => lbservname,
+ :name => appservname,
  :deployment_href => deploy_href,
  :instance => {
    :server_template_href => app_server_template_href,
@@ -61,7 +77,7 @@ newapp_server.api_methods
 puts "Creating DB Server...."
 cloud = @client.clouds(:id => '1').show
  dbparams = { :server => {
- :name => lbservname,
+ :name => dbservname,
  :deployment_href => deploy_href,
  :instance => {
    :server_template_href => db_server_template_href,
@@ -74,33 +90,47 @@ newdb_server = @client.servers.create(dbparams)
 newdb_server.api_methods
 
 #Set Inputs
+#I think the inherited values are being used on launch - so these Deployment Level Inputs arent taking effect!!
 puts "Setting Inputs..."
+
+#puts "Deployment Name #{depname}"
+
 get_deployment(depname)
-add_inputs('appapp/database_name','text:$DBSCHEMA')
-add_inputs('appapp_php/modules_list','array:php53u-mysql,php53u-pecl-memcache')
-add_inputs('applb/session_stickiness','text:false')
-add_inputs('appweb_apache/mpm','text:prefork')
-add_inputs('appdb/admin/user','text:adminuser')
-add_inputs('appdb/admin/password','text:adminpassword')
-add_inputs('appdb/application/user','text:appuser123')
-add_inputs('appdb/application/password','text:apppasword123')
-add_inputs('appdb/backup/lineage','text:$DBLINAGE')
-add_inputs('appdb/dns/master/fqdn','text:$DBFQDN')
-add_inputs('appdb/dns/master/id','text:$DDNSID')
-add_inputs('appdb/dump/container','cred:DUMP_CONTAINER')
-add_inputs('appdb/dump/database_name','text:$DBSCHEMA')
-add_inputs('appdb/dump/prefix','text:sampledb')
-add_inputs('appdb/dump/storage_account_id','cred:AWS_ACCESS_KEY_ID')
-add_inputs('appdb/dump/storage_account_secret','cred:AWS_SECRET_ACCESS_KEY')
-add_inputs('appdb/replication/user','text:repluser')
-add_inputs('appdb/replication/password','text:replpassword')
-add_inputs('appdb/provider_type','text:db_mysql_5.5')
-add_inputs('apprepo/default/repository','text:git://github.com/rightscale/examples.git')
-add_inputs('apprepo/default/revision','text:unified_php')
-add_inputs('appsys_dns/choice','text:DNSMadeEasy')
-add_inputs('appsys_dns/password','cred:DNS_PASSWORD')
-add_inputs('appsys_dns/user','cred:DNS_USER')
-deployment_set_inputs(@deployment, @inputs)
+puts "returned1: #{@deployment}"
+#@deployid=@client.deployments.index(:name => depname).id
+
+add_inputs('app/database_name','text:'"#{@dbschema}") #Cannot be missing (RuntimeError) JF: Had to add array to 'add_inputs'
+add_inputs('app_php/modules_list','array:php53u-mysql,php53u-pecl-memcache') #Unsupported input value
+add_inputs('lb/session_stickiness','text:false')
+add_inputs('web_apache/mpm','text:prefork')
+add_inputs('db/admin/user','text:adminuser')
+add_inputs('db/admin/password','text:adminpassword')
+add_inputs('db/application/user','text:appuser123') #The selected credential does not exist on this account
+add_inputs('db/application/password','text:apppasword123') #The selected credential does not exist on this account
+add_inputs('db/backup/lineage','text:$DBLINAGE')
+add_inputs('db/dns/master/fqdn','text:'"#{@dbfqdn}") #Cannot be missing
+add_inputs('db/dns/master/id','text:'"#{@ddnsid}")
+add_inputs('db/dump/container','cred:DUMP_CONTAINER')
+add_inputs('db/dump/database_name','text:'"#{@dbschema}")
+add_inputs('db/dump/prefix','text:sampledb')
+add_inputs('db/dump/storage_account_id','cred:AWS_ACCESS_KEY_ID')
+add_inputs('db/dump/storage_account_secret','cred:AWS_SECRET_ACCESS_KEY')
+add_inputs('db/replication/user','text:repluser')
+add_inputs('db/replication/password','text:replpassword')
+add_inputs('db/provider_type','text:db_mysql_5.5') #Cannot be missing
+#add_inputs('db/provider_type','text:"db_mysql_5.5"') #Cannot be missing
+add_inputs('repo/default/repository','text:git://github.com/rightscale/examples.git') #Cannot be missing!!
+#add_inputs('repo/default/repository','text:"git://github.com/rightscale/examples.git"') #Cannot be missing!!
+add_inputs('repo/default/revision','text:unified_php')
+add_inputs('sys_dns/choice','text:DNSMadeEasy')
+add_inputs('sys_dns/password','cred:DNS_PASSWORD')
+add_inputs('sys_dns/user','cred:DNS_USER')
+
+#deployment_set_inputs(@deployment, @inputs)
+#deployment_set_inputs(depname, @inputs)
+#@client.deployments(:deployment => {:name => depname}).show.inputs.multi_update(list_inputs(@inputs))
+@client.deployments(:id => '390992003').show.inputs.multi_update(list_inputs(@inputs))
+#@client.deployments(@deployment).show.inputs.multi_update(list_inputs(@inputs))
 
 #Launch the Servers
 puts "Starting Servers...."
