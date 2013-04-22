@@ -10,6 +10,11 @@ require '../extras/simple_functions.rb'
 
 # Written for API Course
 # John Fitzpatrick, April 2013
+#
+# TO DO
+# 1) Create SSH Key (prompt for name)
+# 2) Create Sec Group (prompt for name)
+# 3) Prompt for number of LBs and App Servers, and iterate through
 
 lb_server_template_href = @client.server_templates.index(:filter => ['name==Load Balancer with HAProxy (v13.2.1) [RSED]']).first.href
 app_server_template_href = @client.server_templates.index(:filter => ['name==PHP App Server (v13.2.1) [RSED]']).first.href
@@ -92,7 +97,7 @@ puts "Setting Inputs..."
 
 get_deployment(depname)
 
-add_inputs('app/database_name','text:#[dbschema]') #Cannot be missing (RuntimeError) JF: Had to add array to 'add_inputs'
+add_inputs('app/database_name','text:#[@dbschema]') #Cannot be missing (RuntimeError) JF: Had to add array to 'add_inputs'
 add_inputs('app_php/modules_list','array:php53u-mysql,php53u-pecl-memcache') #Unsupported input value
 add_inputs('lb/session_stickiness','text:false')
 add_inputs('web_apache/mpm','text:prefork')
@@ -125,12 +130,12 @@ deployment_set_inputs(@deployment, @inputs)
 
 #Launch the Servers
 puts "Starting Servers...."
-#newlb_server.show.launch
+newlb_server.show.launch
 "\n"
 puts "The Server '#{lbservname}' has been launched"
-#newapp_server.show.launch
+newapp_server.show.launch
 "\n"
 puts "The Server '#{appservname}' has been launched"
-#newdb_server.show.launch
+newdb_server.show.launch
 "\n"
 puts "The Server '#{dbservname}' has been launched"
