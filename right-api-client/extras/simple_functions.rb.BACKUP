@@ -23,13 +23,13 @@ end
 def validate_input(value)
   case value.split(':').first
     when 'key'
-      puts "key '#{value}'"
+      puts "key value"
     when 'text'
-      puts "text '#{value}'"
+      puts "text value"
     when 'cred'
-      puts "cred '#{value}'"
+      puts "cred"
     when 'array'
-      puts "array '#{value}'"
+      puts "array"
     else
       raise "Unsupported input value"
   end
