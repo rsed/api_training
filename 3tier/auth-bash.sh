@@ -25,7 +25,7 @@ echo ""
 
 cd /opt/api/3tier
 
-curl -i -H X-API-Version:1.5 -c ~/mycookie -X POST \
+curl -s -i -H X-API-Version:1.5 -c ~/mycookie -X POST \
 -d email=$EMAIL \
 -d password=$password \
 -d account_href=/api/accounts/$ACCOUNT \

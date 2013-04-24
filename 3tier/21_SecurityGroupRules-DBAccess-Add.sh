@@ -14,7 +14,7 @@ CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`
 cd /opt/api/3tier
 
 #Open port 3306 so App servers can access the Database
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d security_group_rule[group_name]="MySQL" \
 -d security_group_rule[protocol]=tcp \
 -d security_group_rule[cidr_ips]='0.0.0.0/0' \

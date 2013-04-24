@@ -11,7 +11,7 @@ SG=`grep Location output/01_SecurityGroup-Create.sh.out |cut -c 41-|tr -d '\r'` 
 cd /opt/api/3tier
 
 #Open port 22 for SSH Access
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d security_group_rule[group_name]="SSH" \
 -d security_group_rule[protocol]=tcp \
 -d security_group_rule[cidr_ips]='0.0.0.0/0' \
@@ -22,7 +22,7 @@ https://us-3.rightscale.com/api/clouds/$CLOUD/security_groups/$SG/security_group
 | tee output/${0##*/}.out
 
 #Open port 80 for web access to Load Balancers
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d security_group_rule[group_name]="Web Access" \
 -d security_group_rule[protocol]=tcp \
 -d security_group_rule[cidr_ips]='0.0.0.0/0' \
@@ -33,7 +33,7 @@ https://us-3.rightscale.com/api/clouds/$CLOUD/security_groups/$SG/security_group
 | tee -a output/${0##*/}.out
 
 #Open port 8000 for LB to APP Server communications
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d security_group_rule[group_name]="LB APP Server Comms" \
 -d security_group_rule[protocol]=tcp \
 -d security_group_rule[cidr_ips]='0.0.0.0/0' \
@@ -44,7 +44,7 @@ https://us-3.rightscale.com/api/clouds/$CLOUD/security_groups/$SG/security_group
 | tee -a output/${0##*/}.out
 
 #Allow ICMP so you can ping the servers
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d security_group_rule[group_name]="LB APP Server Comms" \
 -d security_group_rule[protocol]=icmp \
 -d security_group_rule[cidr_ips]='0.0.0.0/0' \
@@ -55,7 +55,7 @@ https://us-3.rightscale.com/api/clouds/$CLOUD/security_groups/$SG/security_group
 | tee -a output/${0##*/}.out
 
 #Open port 3306 so App servers can access the Database
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d security_group_rule[group_name]="MySQL" \
 -d security_group_rule[protocol]=tcp \
 -d security_group_rule[cidr_ips]='0.0.0.0/0' \

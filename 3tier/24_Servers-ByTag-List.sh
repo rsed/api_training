@@ -9,7 +9,7 @@ SEARCHTAG="loadbalancer:default=lb"
 
 cd /opt/api/3tier
 
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d resource_type=instances \
 -d tags[]=$SEARCHTAG \
 https://us-3.rightscale.com/api/tags/by_tag.xml \

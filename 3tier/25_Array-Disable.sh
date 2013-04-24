@@ -7,7 +7,7 @@ ARRAY=`grep Location output/22_Array-Create.sh.out |cut -c 30-|tr -d '\r'`
 
 cd /opt/api/3tier
 
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X PUT \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X PUT \
 -d server_array[state]=disabled \
 https://us-3.rightscale.com/api/server_arrays/$ARRAY \
 | tee output/${0##*/}.out

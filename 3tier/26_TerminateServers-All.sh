@@ -9,7 +9,7 @@ DEPLOYMENT=`grep Location output/06_Deployment-Create.sh.out |cut -c 28-|tr -d '
 
 cd /opt/api/3tier
 
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d deployment_href=$DEPLOYMENT \
 -d terminate_all=true \
 https://us-3.rightscale.com/api/clouds/$CLOUD/instances/multi_terminate \

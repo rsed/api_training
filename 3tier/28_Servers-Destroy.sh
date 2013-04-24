@@ -13,23 +13,23 @@ DBSERVER=`grep Location output/07_Servers-Create.sh.out |cut -c 24-|tr -d '\r' |
 
 cd /opt/api/3tier
 
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X DELETE \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X DELETE \
 https://us-3.rightscale.com/api/servers/$LB1 \
 | tee output/${0##*/}.out
 
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X DELETE \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X DELETE \
 https://us-3.rightscale.com/api/servers/$LB2 \
 | tee -a output/${0##*/}.out
 
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X DELETE \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X DELETE \
 https://us-3.rightscale.com/api/servers/$APP1 \
 | tee -a output/${0##*/}.out
 
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X DELETE \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X DELETE \
 https://us-3.rightscale.com/api/servers/$APP2 \
 | tee -a output/${0##*/}.out
 
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X DELETE \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X DELETE \
 https://us-3.rightscale.com/api/servers/$DBSERVER \
 | tee -a output/${0##*/}.out
 

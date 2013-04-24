@@ -12,7 +12,7 @@ DEPLOYMENT=`grep Location output/06_Deployment-Create.sh.out |cut -c 28-|tr -d '
 cd /opt/api/3tier
 
 # Update Inputs in LB Category
-curl -i -H X-API-Version:1.5 -b ~/mycookie \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie \
 -d inputs[][name]="lb/session_stickiness" \
 -d inputs[][value]="text:false" \
 -X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update  \
@@ -20,7 +20,7 @@ curl -i -H X-API-Version:1.5 -b ~/mycookie \
 
 
 # Update Inputs in Web Apache  Category
-curl -i -H X-API-Version:1.5 -b ~/mycookie \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie \
 -d inputs[][name]="web_apache/mpm" \
 -d inputs[][value]="text:prefork" \
 -X PUT https://us-3.rightscale.com/api/deployments/$DEPLOYMENT/inputs/multi_update  \

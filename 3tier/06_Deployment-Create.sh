@@ -5,7 +5,7 @@ MYNAME=`grep MYNAME LabInfo | cut -c 8-|tr -d '\r'`     # Or, get your name form
 
 cd /opt/api/3tier
 
-curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 -d deployment[name]="$MYNAME 3 Tier Deployment" \
 -d deployment[description]="3 Tier Deployment created by API" \
 https://us-3.rightscale.com/api/deployments.xml \
