@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/bash 
 
-access_token=`./MyAccessToken.sh`
+access_token=`cat AccessToken`
  
-curl -H "X-API-Version:1.5" \
+curl  -s -H "X-API-Version:1.5" \
      -H "Authorization: Bearer $access_token" \
      --request GET "https://us-3.rightscale.com/api/session.xml"
 

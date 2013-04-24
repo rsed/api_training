@@ -1,6 +1,6 @@
 #!/bin/bash
 
-access_token=`./MyAccessToken.sh`
+access_token=`cat AccessToken`
  
 curl --include \
      -H "X-API-Version:1.5" \
