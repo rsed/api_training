@@ -54,3 +54,14 @@ curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
 https://us-3.rightscale.com/api/clouds/$CLOUD/security_groups/$SG/security_group_rules \
 | tee -a output/${0##*/}.out
 
+#Open port 3306 so App servers can access the Database
+curl -i -H X-API-Version:1.5 -b ~/mycookie -X POST \
+-d security_group_rule[group_name]="MySQL" \
+-d security_group_rule[protocol]=tcp \
+-d security_group_rule[cidr_ips]='0.0.0.0/0' \
+-d security_group_rule[protocol_details][start_port]=3306 \
+-d security_group_rule[protocol_details][end_port]=3306 \
+-d security_group_rule[source_type]=cidr_ips \
+https://us-3.rightscale.com/api/clouds/$CLOUD/security_groups/$SG/security_group_rules \
+| tee -a output/${0##*/}.out
+
