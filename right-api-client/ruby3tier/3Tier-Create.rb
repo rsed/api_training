@@ -42,7 +42,7 @@ depname = STDIN.gets.chomp()
 #dbservname = STDIN.gets.chomp()
 
 lbservname="#{@myname}"' Load Balancer Server'
-appservname="#{@myname}"' Applicatione Server'
+appservname="#{@myname}"' Application Server'
 dbservname="#{@myname}"' Database Server'
 
 
