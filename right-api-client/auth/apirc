@@ -1,18 +1,17 @@
 defaults:
-  user: john.fitzpatrick@rightscale.com
-# pass: mypassword  #You do not need to populate this, as its read in from keyboard
+  user: myemail@example.com
   account: 33172
   accountname: accountname
   apiurl: 'https://us-3.rightscale.com'
 
-#defaults
+#defaults:
 #  user: myemail@example.com
 #  pass: mypassword
 #  account: 58650
 #  accountname: coursedev
 #  apiurl: 'https://my.rightscale.com'
 
-#defaults
+#defaults:
 #  user: myemail@example.com
 #  pass: mypassword
 #  account: 33172

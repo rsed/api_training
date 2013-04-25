@@ -50,7 +50,7 @@ puts "Creating Deployment...."
 deployment = @client.deployments.create({:deployment => {:name => depname}})
 deploy_href = @client.deployments.index(:filter => ['name=='"#{depname}"]).first.href
 
-puts "Deployment is '#{deploy_href}' created"
+puts "Deployment '#{deploy_href}' created"
 
 puts "Creating LB Server...."
 cloud = @client.clouds(:id => '1').show
