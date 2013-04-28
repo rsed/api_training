@@ -37,4 +37,3 @@ curl -s -i -H X-API-Version:1.5 -b ~/mycookie \
 -d inputs[][value]="text:$DBSCHEMA" \
 https://us-3.rightscale.com/api/clouds/$CLOUD/instances/multi_run_executable \
 | tee output/${0##*/}.out
-
