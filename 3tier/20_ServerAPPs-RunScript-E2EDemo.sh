@@ -1,4 +1,4 @@
-#!/bin/bash -e 
+#!/bin/bash -e
 
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
@@ -12,13 +12,16 @@
 # Or Enter Programatically
 MYNAME=`grep MYNAME LabInfo | cut -c 8-|tr -d '\r'`  
 CLOUD=`grep CLOUD LabInfo | cut -c 7-|tr -d '\r'`  
+DEPLOYMENT=`grep Location output/06_Deployment-Create.sh.out |cut -c 28-|tr -d '\r' | sed -n 1p`
 DBSCHEMA=`grep DBSCHEMA LabInfo | cut -c 10-|tr -d '\r'`
 DBFQDN=`grep DBFQDN LabInfo | cut -c 8-|tr -d '\r'`
 E2ESCRIPTID=`grep Location output/19_RightScript-APP-Import.sh.out|cut -c 30-|tr -d '\r'` # ID for RightScript
 
 cd /opt/api/3tier
 
-curl -s -i -H X-API-Version:1.5 -b ~/mycookie -d filter[]="name==APP" -X POST \
+curl -s -i -H X-API-Version:1.5 -b ~/mycookie \
+-d filter[]="name==APP" \
+-d filter[]="deployment_href==/api/deployments/$DEPLOYMENT" -X POST \
 -d right_script_href="/api/right_scripts/$E2ESCRIPTID" \
 -d inputs[][name]="DBADMIN_PASSWORD" \
 -d inputs[][value]="text:adminpassword" \
