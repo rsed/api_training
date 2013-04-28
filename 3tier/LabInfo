@@ -18,5 +18,3 @@ DBLINAGE=johnlinage
 
 #Database schema name, e.g. jdoeschema
 DBSCHEMA=johnschema
-
-
