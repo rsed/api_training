@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash  
 
 # This script is for use in the API Training Course
 # Written by John Fitzpatrick, March 2013
