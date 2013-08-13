@@ -14,7 +14,7 @@ There are 5 labs in this course:-
 * RSED-L-API-004-ManagingUsers
 * RSED-L-API-005-APITools-RightAPIClient
 
-t the end of each elearning module you will instructed which lab to perform next
+At the end of each elearning module you will instructed which lab to perform next
 
 The Lab PDFs are in the directory 'Lab Instruction PDFs'
 
