@@ -3,11 +3,11 @@ api_training
 This repo contains the Lab Files for the RightScale API Training Course.
 
 There are 5 labs in this course:-
-RSED-L-API-001-GettingStarted-SessionCreation
-RSED-L-API-002-BrowsingCloudsDeploymentsServers
-RSED-L-API-003-3Tier-Arrays-Monitoring
-RSED-L-API-004-ManagingUsers
-RSED-L-API-005-APITools-RightAPIClient
+* RSED-L-API-001-GettingStarted-SessionCreation
+* RSED-L-API-002-BrowsingCloudsDeploymentsServers
+* RSED-L-API-003-3Tier-Arrays-Monitoring
+* RSED-L-API-004-ManagingUsers
+* RSED-L-API-005-APITools-RightAPIClient
 
 The PDFs are in the directory 'Lab Instruction PDFs'
 
