@@ -1,0 +1,26 @@
+            : 
+            id: 3648
+--
+            : This AbilityScreen tests Configuration Management (Puppet or Chef) and General Scripting (Any Language)
+            id: 3262
+--
+            : Extending Chef
+            id: 3253
+--
+            : 
+            id: 3154
+--
+            : Local Cookbook Development [Windows]
+            id: 3216
+--
+            : Deploying Cookbooks
+            id: 3503
+--
+            : Deploying Cookbooks-Legacy
+            id: 3678
+--
+            : Local Cookbook Development (Legacy)
+            id: 3679
+--
+            : Auditing with Inspec
+            id: 3694

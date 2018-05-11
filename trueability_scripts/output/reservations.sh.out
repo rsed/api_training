@@ -1,0 +1,1481 @@
+{
+    "assessments": [
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://79181978-a49a-11e7-bbd9-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-09-28T22:15:02.159Z",
+            "ended": true,
+            "ended_at": null,
+            "error": false,
+            "id": 57442,
+            "provisioning_time": 1139,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": null,
+            "state": "archived",
+            "url": "https://79181978-a49a-11e7-bbd9-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "fitzpatrick@chef.io",
+                "first_name": "John",
+                "full_name": "John Fitzpatrick",
+                "gravatar_url": "https://secure.gravatar.com/avatar/608130c278bccafa9b32a0ff442a9523.png?d=identicon&r=PG&s=120",
+                "id": 42760,
+                "last_name": "Fitzpatrick",
+                "time_zone": "Europe/London",
+                "uuid": "2c340449-7ae2-4f49-af52-1c41b4b037af"
+            },
+            "uuid": "79181978-a49a-11e7-bbd9-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://6bbbf1ec-a47b-11e7-a3cc-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-09-28T18:32:45.346Z",
+            "ended": true,
+            "ended_at": null,
+            "error": false,
+            "id": 57426,
+            "provisioning_time": 1116,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": null,
+            "state": "archived",
+            "url": "https://6bbbf1ec-a47b-11e7-a3cc-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "marcus@trueability.com",
+                "first_name": "Marcus",
+                "full_name": "Marcus Robertson",
+                "gravatar_url": "https://secure.gravatar.com/avatar/ad909f7bf6527fd77ad4795d0eb3724c.png?d=identicon&r=PG&s=120",
+                "id": 3,
+                "last_name": "Robertson",
+                "time_zone": "America/Chicago",
+                "uuid": "33a3b6a7-5ded-4eb9-b909-9f617f7786a4"
+            },
+            "uuid": "6bbbf1ec-a47b-11e7-a3cc-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://0b6e2abc-a47b-11e7-ae4b-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-09-28T18:30:03.776Z",
+            "ended": true,
+            "ended_at": null,
+            "error": false,
+            "id": 57421,
+            "provisioning_time": 8924,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": null,
+            "state": "archived",
+            "url": "https://0b6e2abc-a47b-11e7-ae4b-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "marcus@trueability.com",
+                "first_name": "Marcus",
+                "full_name": "Marcus Robertson",
+                "gravatar_url": "https://secure.gravatar.com/avatar/ad909f7bf6527fd77ad4795d0eb3724c.png?d=identicon&r=PG&s=120",
+                "id": 3,
+                "last_name": "Robertson",
+                "time_zone": "America/Chicago",
+                "uuid": "33a3b6a7-5ded-4eb9-b909-9f617f7786a4"
+            },
+            "uuid": "0b6e2abc-a47b-11e7-ae4b-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://7c39784e-a46e-11e7-9af6-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-09-28T17:00:09.553Z",
+            "ended": true,
+            "ended_at": null,
+            "error": false,
+            "id": 57364,
+            "provisioning_time": 1591,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": null,
+            "state": "archived",
+            "url": "https://7c39784e-a46e-11e7-9af6-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "fitzpatrick@chef.io",
+                "first_name": "John",
+                "full_name": "John Fitzpatrick",
+                "gravatar_url": "https://secure.gravatar.com/avatar/608130c278bccafa9b32a0ff442a9523.png?d=identicon&r=PG&s=120",
+                "id": 42760,
+                "last_name": "Fitzpatrick",
+                "time_zone": "Europe/London",
+                "uuid": "2c340449-7ae2-4f49-af52-1c41b4b037af"
+            },
+            "uuid": "7c39784e-a46e-11e7-9af6-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://74d205ce-a416-11e7-af0e-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-09-28T06:30:01.425Z",
+            "ended": true,
+            "ended_at": null,
+            "error": false,
+            "id": 57355,
+            "provisioning_time": 1029,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": null,
+            "state": "archived",
+            "url": "https://74d205ce-a416-11e7-af0e-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "marcus@trueability.com",
+                "first_name": "Marcus",
+                "full_name": "Marcus Robertson",
+                "gravatar_url": "https://secure.gravatar.com/avatar/ad909f7bf6527fd77ad4795d0eb3724c.png?d=identicon&r=PG&s=120",
+                "id": 3,
+                "last_name": "Robertson",
+                "time_zone": "America/Chicago",
+                "uuid": "33a3b6a7-5ded-4eb9-b909-9f617f7786a4"
+            },
+            "uuid": "74d205ce-a416-11e7-af0e-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://6552a7c2-a464-11e7-908c-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-09-28T15:47:56.165Z",
+            "ended": true,
+            "ended_at": "2017-09-29T14:30:48Z",
+            "error": false,
+            "id": 57361,
+            "provisioning_time": 1288,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-09-29T14:30:44Z",
+            "state": "archived",
+            "url": "https://6552a7c2-a464-11e7-908c-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "marcus@trueability.com",
+                "first_name": "Marcus",
+                "full_name": "Marcus Robertson",
+                "gravatar_url": "https://secure.gravatar.com/avatar/ad909f7bf6527fd77ad4795d0eb3724c.png?d=identicon&r=PG&s=120",
+                "id": 3,
+                "last_name": "Robertson",
+                "time_zone": "America/Chicago",
+                "uuid": "33a3b6a7-5ded-4eb9-b909-9f617f7786a4"
+            },
+            "uuid": "6552a7c2-a464-11e7-908c-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://9914861a-a415-11e7-ac0e-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-09-28T06:23:52.759Z",
+            "ended": true,
+            "ended_at": "2017-09-29T14:30:10Z",
+            "error": false,
+            "id": 57354,
+            "provisioning_time": 1862,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-09-29T14:30:07Z",
+            "state": "archived",
+            "url": "https://9914861a-a415-11e7-ac0e-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "marcus@trueability.com",
+                "first_name": "Marcus",
+                "full_name": "Marcus Robertson",
+                "gravatar_url": "https://secure.gravatar.com/avatar/ad909f7bf6527fd77ad4795d0eb3724c.png?d=identicon&r=PG&s=120",
+                "id": 3,
+                "last_name": "Robertson",
+                "time_zone": "America/Chicago",
+                "uuid": "33a3b6a7-5ded-4eb9-b909-9f617f7786a4"
+            },
+            "uuid": "9914861a-a415-11e7-ac0e-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://bd575832-a464-11e7-99b6-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-09-28T15:50:23.836Z",
+            "ended": true,
+            "ended_at": "2017-09-28T16:21:03Z",
+            "error": false,
+            "id": 57362,
+            "provisioning_time": 1288,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-09-28T16:20:47Z",
+            "state": "archived",
+            "url": "https://bd575832-a464-11e7-99b6-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "marcus@trueability.com",
+                "first_name": "Marcus",
+                "full_name": "Marcus Robertson",
+                "gravatar_url": "https://secure.gravatar.com/avatar/ad909f7bf6527fd77ad4795d0eb3724c.png?d=identicon&r=PG&s=120",
+                "id": 3,
+                "last_name": "Robertson",
+                "time_zone": "America/Chicago",
+                "uuid": "33a3b6a7-5ded-4eb9-b909-9f617f7786a4"
+            },
+            "uuid": "bd575832-a464-11e7-99b6-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://5a9a82e4-b0be-11e7-82d9-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-10-14T09:02:06.842Z",
+            "ended": true,
+            "ended_at": "2017-10-14T22:00:08Z",
+            "error": false,
+            "id": 57557,
+            "provisioning_time": 1842,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-10-14T21:00:08Z",
+            "state": "archived",
+            "url": "https://5a9a82e4-b0be-11e7-82d9-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "dmitry.savinkov@vms-lab.com",
+                "first_name": "Dzmitry",
+                "full_name": "Dzmitry Savinkou",
+                "gravatar_url": "https://secure.gravatar.com/avatar/38b791286e4f28f4dc39e7d9670b7b82.png?d=identicon&r=PG&s=120",
+                "id": 104023,
+                "last_name": "Savinkou",
+                "time_zone": "America/Los_Angeles",
+                "uuid": "a733c50d-a26a-41ba-a4a8-5061a0d3adbe"
+            },
+            "uuid": "5a9a82e4-b0be-11e7-82d9-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://b76d680c-b397-11e7-861b-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-10-18T00:03:05.689Z",
+            "ended": true,
+            "ended_at": "2017-10-18T12:41:28Z",
+            "error": false,
+            "id": 57599,
+            "provisioning_time": 1179,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-10-18T12:01:32Z",
+            "state": "archived",
+            "url": "https://b76d680c-b397-11e7-861b-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "rosen.rusev@sap.com",
+                "first_name": "Rosen",
+                "full_name": "Rosen Rusev",
+                "gravatar_url": "https://secure.gravatar.com/avatar/badf7a6dd6dc8ccefcf2e2737f3e3768.png?d=identicon&r=PG&s=120",
+                "id": 103989,
+                "last_name": "Rusev",
+                "time_zone": "Europe/Sofia",
+                "uuid": "d9fb5d90-9858-4012-8204-f9e6ba1dc1a7"
+            },
+            "uuid": "b76d680c-b397-11e7-861b-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://12bbf9f8-b0be-11e7-a68f-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-10-14T09:00:06.269Z",
+            "ended": true,
+            "ended_at": "2017-10-14T22:01:07Z",
+            "error": false,
+            "id": 57556,
+            "provisioning_time": 2622,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-10-14T21:01:07Z",
+            "state": "archived",
+            "url": "https://12bbf9f8-b0be-11e7-a68f-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "chandra.allaka@gmail.com",
+                "first_name": "Chandra",
+                "full_name": "Chandra Allaka",
+                "gravatar_url": "https://secure.gravatar.com/avatar/03eca0210fd133c7fdf5ab1dff1a721b.png?d=identicon&r=PG&s=120",
+                "id": 104048,
+                "last_name": "Allaka",
+                "time_zone": "Australia/Sydney",
+                "uuid": "230b3cf4-6b4f-405c-88b2-db2ce6b26236"
+            },
+            "uuid": "12bbf9f8-b0be-11e7-a68f-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://a3f0c8e8-a5ad-11e7-a562-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-09-30T07:04:45.647Z",
+            "ended": true,
+            "ended_at": "2017-09-30T19:29:38Z",
+            "error": false,
+            "id": 57465,
+            "provisioning_time": 1561,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-09-30T19:01:07Z",
+            "state": "archived",
+            "url": "https://a3f0c8e8-a5ad-11e7-a562-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "jleopold@shadow-soft.com",
+                "first_name": "James",
+                "full_name": "James Leopold",
+                "gravatar_url": "https://secure.gravatar.com/avatar/cb101e6a086027b70d3e24db0bc2e4cc.png?d=identicon&r=PG&s=120",
+                "id": 103947,
+                "last_name": "Leopold",
+                "time_zone": "America/New_York",
+                "uuid": "d1b40ac9-515e-4aa9-84c4-7662830bf725"
+            },
+            "uuid": "a3f0c8e8-a5ad-11e7-a562-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://957f4a68-b003-11e7-97be-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-10-13T10:45:09.759Z",
+            "ended": true,
+            "ended_at": "2017-10-13T23:28:58Z",
+            "error": false,
+            "id": 57548,
+            "provisioning_time": 1695,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-10-13T22:46:18Z",
+            "state": "archived",
+            "url": "https://957f4a68-b003-11e7-97be-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "joao.lima@vilivesoft.com",
+                "first_name": "Jo\u00e3o",
+                "full_name": "Jo\u00e3o Vinagre",
+                "gravatar_url": "https://secure.gravatar.com/avatar/bdcd8893a8914a1d3db5af7f7e6570a0.png?d=identicon&r=PG&s=120",
+                "id": 104029,
+                "last_name": "Vinagre",
+                "time_zone": "America/Sao_Paulo",
+                "uuid": "e499ad2e-ddd3-434f-a5bf-9922d4a3a828"
+            },
+            "uuid": "957f4a68-b003-11e7-97be-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://29a198aa-bab2-11e7-bd9f-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-10-27T01:00:02.347Z",
+            "ended": true,
+            "ended_at": "2017-10-27T14:00:19Z",
+            "error": false,
+            "id": 57681,
+            "provisioning_time": 1853,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-10-27T13:00:20Z",
+            "state": "archived",
+            "url": "https://29a198aa-bab2-11e7-bd9f-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "frances.oreilly@cmegroup.com",
+                "first_name": "Frances",
+                "full_name": "Frances O'Reilly",
+                "gravatar_url": "https://secure.gravatar.com/avatar/de3a5b6b97a8fe321a3ce6b5a93b2157.png?d=identicon&r=PG&s=120",
+                "id": 102365,
+                "last_name": "O'Reilly",
+                "time_zone": "Europe/London",
+                "uuid": "81f7176c-2410-4d53-ab04-5702626b03b6"
+            },
+            "uuid": "29a198aa-bab2-11e7-bd9f-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://117d5d7c-d7d6-11e7-ba11-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-12-03T03:00:07.447Z",
+            "ended": true,
+            "ended_at": "2017-12-03T15:59:36Z",
+            "error": false,
+            "id": 58215,
+            "provisioning_time": 1600,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-12-03T15:00:22Z",
+            "state": "archived",
+            "url": "https://117d5d7c-d7d6-11e7-ba11-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "nandagopal.akarapu@gmail.com",
+                "first_name": "Nanda Gopal",
+                "full_name": "Nanda Gopal Akarapu",
+                "gravatar_url": "https://secure.gravatar.com/avatar/59d66d2bd8b9045feee24ff15d086e90.png?d=identicon&r=PG&s=120",
+                "id": 102370,
+                "last_name": "Akarapu",
+                "time_zone": "America/New_York",
+                "uuid": "9a8a6b5b-cbc9-4993-b1e6-2dc9e0823408"
+            },
+            "uuid": "117d5d7c-d7d6-11e7-ba11-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://c9ba866c-a51d-11e7-aedf-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-09-29T13:55:01.517Z",
+            "ended": true,
+            "ended_at": "2017-09-29T15:09:32Z",
+            "error": false,
+            "id": 57452,
+            "provisioning_time": 1386,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-09-29T15:00:23Z",
+            "state": "archived",
+            "url": "https://c9ba866c-a51d-11e7-aedf-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "fitzpatrick@chef.io",
+                "first_name": "John",
+                "full_name": "John Fitzpatrick",
+                "gravatar_url": "https://secure.gravatar.com/avatar/608130c278bccafa9b32a0ff442a9523.png?d=identicon&r=PG&s=120",
+                "id": 42760,
+                "last_name": "Fitzpatrick",
+                "time_zone": "Europe/London",
+                "uuid": "2c340449-7ae2-4f49-af52-1c41b4b037af"
+            },
+            "uuid": "c9ba866c-a51d-11e7-aedf-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://5127eb72-a513-11e7-9989-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-09-29T12:40:04.261Z",
+            "ended": true,
+            "ended_at": "2017-09-29T14:32:13Z",
+            "error": false,
+            "id": 57451,
+            "provisioning_time": 1489,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-09-29T14:32:09Z",
+            "state": "archived",
+            "url": "https://5127eb72-a513-11e7-9989-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "marcus@trueability.com",
+                "first_name": "Marcus",
+                "full_name": "Marcus Robertson",
+                "gravatar_url": "https://secure.gravatar.com/avatar/ad909f7bf6527fd77ad4795d0eb3724c.png?d=identicon&r=PG&s=120",
+                "id": 3,
+                "last_name": "Robertson",
+                "time_zone": "America/Chicago",
+                "uuid": "33a3b6a7-5ded-4eb9-b909-9f617f7786a4"
+            },
+            "uuid": "5127eb72-a513-11e7-9989-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://f8b5512c-b59e-11e7-8de2-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-10-20T14:00:04.019Z",
+            "ended": true,
+            "ended_at": "2017-10-21T02:26:39Z",
+            "error": false,
+            "id": 57624,
+            "provisioning_time": 1213,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-10-21T02:00:12Z",
+            "state": "archived",
+            "url": "https://f8b5512c-b59e-11e7-8de2-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "dmitry.savinkov@vms-lab.com",
+                "first_name": "Dzmitry",
+                "full_name": "Dzmitry Savinkou",
+                "gravatar_url": "https://secure.gravatar.com/avatar/38b791286e4f28f4dc39e7d9670b7b82.png?d=identicon&r=PG&s=120",
+                "id": 104023,
+                "last_name": "Savinkou",
+                "time_zone": "America/Los_Angeles",
+                "uuid": "a733c50d-a26a-41ba-a4a8-5061a0d3adbe"
+            },
+            "uuid": "f8b5512c-b59e-11e7-8de2-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://f05ab456-9fa3-11e7-be2d-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-09-22T14:40:11.902Z",
+            "ended": true,
+            "ended_at": "2017-09-27T01:46:28Z",
+            "error": false,
+            "id": 57124,
+            "provisioning_time": 9211,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-09-27T01:46:24Z",
+            "state": "archived",
+            "url": "https://f05ab456-9fa3-11e7-be2d-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "marcus@trueability.com",
+                "first_name": "Marcus",
+                "full_name": "Marcus Robertson",
+                "gravatar_url": "https://secure.gravatar.com/avatar/ad909f7bf6527fd77ad4795d0eb3724c.png?d=identicon&r=PG&s=120",
+                "id": 3,
+                "last_name": "Robertson",
+                "time_zone": "America/Chicago",
+                "uuid": "33a3b6a7-5ded-4eb9-b909-9f617f7786a4"
+            },
+            "uuid": "f05ab456-9fa3-11e7-be2d-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://370ae682-9f9f-11e7-8e7f-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-09-22T14:06:23.014Z",
+            "ended": true,
+            "ended_at": "2017-09-22T15:13:15Z",
+            "error": false,
+            "id": 57123,
+            "provisioning_time": 988,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-09-22T15:07:43Z",
+            "state": "archived",
+            "url": "https://370ae682-9f9f-11e7-8e7f-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "marcus@trueability.com",
+                "first_name": "Marcus",
+                "full_name": "Marcus Robertson",
+                "gravatar_url": "https://secure.gravatar.com/avatar/ad909f7bf6527fd77ad4795d0eb3724c.png?d=identicon&r=PG&s=120",
+                "id": 3,
+                "last_name": "Robertson",
+                "time_zone": "America/Chicago",
+                "uuid": "33a3b6a7-5ded-4eb9-b909-9f617f7786a4"
+            },
+            "uuid": "370ae682-9f9f-11e7-8e7f-0e73cd6fa4f4"
+        },
+        {
+            "ability_screen": {
+                "ability_screen_variants": [
+                    {
+                        "ability_screen_id": 3679,
+                        "active": true,
+                        "created_at": "2017-02-24T19:29:34.335Z",
+                        "id": 55,
+                        "name": "Local Cookbook Development"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-22T04:40:21.473Z",
+                        "id": 56,
+                        "name": "Local Cookbook Development [B]"
+                    },
+                    {
+                        "ability_screen_id": 3679,
+                        "active": false,
+                        "created_at": "2017-08-02T20:20:20.513Z",
+                        "id": 57,
+                        "name": "Local Cookbook Development [A]"
+                    }
+                ],
+                "company": {
+                    "id": 86200,
+                    "name": "Chef"
+                },
+                "cutoff_score": 0.8,
+                "display_name": "Local Cookbook Development (Legacy)",
+                "external_description": "Local Cookbook Development (Legacy)",
+                "id": 3679,
+                "name": "Local Cookbook Development (Legacy)",
+                "state": "active"
+            },
+            "ability_screen_variant": {
+                "ability_screen_id": 3679,
+                "active": true,
+                "created_at": "2017-02-24T19:29:34.335Z",
+                "id": 55,
+                "name": "Local Cookbook Development"
+            },
+            "additional_time_minutes": 0.0,
+            "average_provisioning_time": 2201,
+            "console_url": "https://fdaee3f6-ac88-11e7-8e0d-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "content_url": null,
+            "created_at": "2017-10-09T00:30:02.969Z",
+            "ended": true,
+            "ended_at": "2017-10-09T13:06:43Z",
+            "error": false,
+            "id": 57522,
+            "provisioning_time": 1355,
+            "ready_to_start": false,
+            "started": true,
+            "started_at": "2017-10-09T12:30:45Z",
+            "state": "archived",
+            "url": "https://fdaee3f6-ac88-11e7-8e0d-0e73cd6fa4f4.ascreen.co/access/#/client/node1-vnc",
+            "user": {
+                "email": "mebuschle@gmail.com",
+                "first_name": "Mark",
+                "full_name": "Mark Buschle",
+                "gravatar_url": "https://secure.gravatar.com/avatar/f72a4f4b1de295520039c83e9f51f7db.png?d=identicon&r=PG&s=120",
+                "id": 102559,
+                "last_name": "Buschle",
+                "time_zone": "America/New_York",
+                "uuid": "a7b54551-4389-462b-b6d4-becaa98649ca"
+            },
+            "uuid": "fdaee3f6-ac88-11e7-8e0d-0e73cd6fa4f4"
+        }
+    ],
+    "meta": {
+        "current_page": 1,
+        "next_page": null,
+        "prev_page": null,
+        "total_count": 21,
+        "total_pages": 1
+    }
+}

@@ -1,22 +1,18 @@
-RightScale API Training
-============
-This repo contains links to the elearning modules as well as the Lab Files for the RightScale API Training Course.
+TrueAbility API
+===============
+# Base URL: https://app.trueability.com/api/v1
+# Reset password: https://app.trueability.com/password_resets/new
+# API access token: https://app.trueability.com/settings
+# API Docs https://app.trueability.com/api/docs/v1
 
-There are 3 PPTs in the course covering a number of concepts and theory surroounding the API
-* RSED-P-API-001-API-Intro	
-* RSED-P-API-002-API-WorkingWithAPI
-* RSED-P-API-003-API-right_api_client
+# Definitions
+- *AbilityScreen* — Performance based test of a user’s skills, using software and a live environment. The AbilityScreen defines the assessment requirements and the user instructions.
 
-There are 5 labs in this course:-
-* RSED-L-API-001-GettingStarted-SessionCreation
-* RSED-L-API-002-BrowsingCloudsDeploymentsServers
-* RSED-L-API-003-3Tier-Arrays-Monitoring
-* RSED-L-API-004-ManagingUsers
-* RSED-L-API-005-APITools-RightAPIClient
+- *Assessment* — An instance of an AbilityScreen. This consists of 0 or more scenarios, tasks the user must complete, 1 or more nodes (e.g. cloud servers) that comprise the environment.
 
-At the end of each PPT module you will instructed which lab to perform next
+- *Assessment Reservation* — Assessment build times vary greatly depending on the complexity of the AbilityScreen. In order to guarantee delivery, an assessment is requested via a reservation process.
 
-The Lab PDFs are in the directory 'Lab Instruction PDFs'
+## Reservations must be scheduled a minimum of 24 hours in advance.
+- *Node* — A server or resource in the cloud.
 
-The first document 'RSED-L-API-001-GettingStarted-SessionCreation' explains how to spin up an 'API Sender' server in AWS.  This server does a 'git clone' of this github repo so all the supporting files will be in place before starting the labs.
-
+- *Results* — Assessments are imaged and graded automatically following completion of the assessment. Imaging can take 15-30 minutes, grading typically takes 1-2 minutes. Scores will be available 30-35 minutes after the completion of the assessment.

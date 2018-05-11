@@ -1,0 +1,304 @@
+{
+    "ability_screens": [
+        {
+            "ability_screen_variants": [
+                {
+                    "ability_screen_id": 3648,
+                    "active": true,
+                    "created_at": "2017-08-01T20:10:41.280Z",
+                    "id": 30,
+                    "name": "Local Cookbook Development [B]"
+                }
+            ],
+            "company": {
+                "id": 86200,
+                "name": "Chef"
+            },
+            "cutoff_score": 0.8,
+            "display_name": "Local Cookbook Development B",
+            "external_description": "",
+            "id": 3648,
+            "name": "Local Cookbook Development B",
+            "state": "under_development"
+        },
+        {
+            "ability_screen_variants": [],
+            "company": {
+                "id": 86200,
+                "name": "Chef"
+            },
+            "cutoff_score": 0.0,
+            "display_name": "DevOps Engineer",
+            "external_description": "This AbilityScreen tests Configuration Management (Puppet or Chef) and General Scripting (Any Language)",
+            "id": 3262,
+            "name": "DevOps Engineer",
+            "state": "drafted"
+        },
+        {
+            "ability_screen_variants": [
+                {
+                    "ability_screen_id": 3253,
+                    "active": false,
+                    "created_at": "2017-02-24T19:30:50.737Z",
+                    "id": 2,
+                    "name": "Extending Chef"
+                },
+                {
+                    "ability_screen_id": 3253,
+                    "active": true,
+                    "created_at": "2017-08-22T17:16:29.952Z",
+                    "id": 39,
+                    "name": "Extending Chef [A]"
+                },
+                {
+                    "ability_screen_id": 3253,
+                    "active": false,
+                    "created_at": "2017-08-22T17:16:40.487Z",
+                    "id": 40,
+                    "name": "Extending Chef [B]"
+                }
+            ],
+            "company": {
+                "id": 86200,
+                "name": "Chef"
+            },
+            "cutoff_score": 0.8,
+            "display_name": "Extending Chef",
+            "external_description": "Extending Chef",
+            "id": 3253,
+            "name": "Extending Chef",
+            "state": "active"
+        },
+        {
+            "ability_screen_variants": [
+                {
+                    "ability_screen_id": 3154,
+                    "active": false,
+                    "created_at": "2017-02-24T19:29:34.335Z",
+                    "id": 1,
+                    "name": "Local Cookbook Development"
+                },
+                {
+                    "ability_screen_id": 3154,
+                    "active": true,
+                    "created_at": "2017-08-02T20:20:20.513Z",
+                    "id": 31,
+                    "name": "Local Cookbook Development [A]"
+                },
+                {
+                    "ability_screen_id": 3154,
+                    "active": false,
+                    "created_at": "2017-08-22T04:40:21.473Z",
+                    "id": 38,
+                    "name": "Local Cookbook Development [B]"
+                }
+            ],
+            "company": {
+                "id": 86200,
+                "name": "Chef"
+            },
+            "cutoff_score": 0.8,
+            "display_name": "Local Cookbook Development",
+            "external_description": "",
+            "id": 3154,
+            "name": "Local Cookbook Development",
+            "state": "active"
+        },
+        {
+            "ability_screen_variants": [
+                {
+                    "ability_screen_id": 3216,
+                    "active": true,
+                    "created_at": "2017-02-24T19:32:07.175Z",
+                    "id": 3,
+                    "name": "Local Cookbook Development [Windows] [A]"
+                },
+                {
+                    "ability_screen_id": 3216,
+                    "active": false,
+                    "created_at": "2017-08-21T20:35:12.406Z",
+                    "id": 36,
+                    "name": "Local Cookbook Development [Windows] [B]"
+                }
+            ],
+            "company": {
+                "id": 86200,
+                "name": "Chef"
+            },
+            "cutoff_score": 0.8,
+            "display_name": "Local Cookbook Development [Windows]",
+            "external_description": "Local Cookbook Development [Windows]",
+            "id": 3216,
+            "name": "Local Cookbook Development [Windows]",
+            "state": "active"
+        },
+        {
+            "ability_screen_variants": [
+                {
+                    "ability_screen_id": 3503,
+                    "active": true,
+                    "created_at": "2017-05-25T20:51:34.084Z",
+                    "id": 13,
+                    "name": "Deploying Cookbooks [B]"
+                },
+                {
+                    "ability_screen_id": 3503,
+                    "active": false,
+                    "created_at": "2017-09-04T04:03:28.072Z",
+                    "id": 44,
+                    "name": "Deploying Cookbooks [C]"
+                },
+                {
+                    "ability_screen_id": 3503,
+                    "active": false,
+                    "created_at": "2017-09-04T04:03:37.872Z",
+                    "id": 45,
+                    "name": "Deploying Cookbooks [D]"
+                },
+                {
+                    "ability_screen_id": 3503,
+                    "active": false,
+                    "created_at": "2017-09-04T04:03:42.540Z",
+                    "id": 46,
+                    "name": "Deploying Cookbooks [E]"
+                },
+                {
+                    "ability_screen_id": 3503,
+                    "active": false,
+                    "created_at": "2017-03-09T20:52:00.649Z",
+                    "id": 4,
+                    "name": "Deploying Cookbooks [A]"
+                }
+            ],
+            "company": {
+                "id": 86200,
+                "name": "Chef"
+            },
+            "cutoff_score": 0.8,
+            "display_name": "Deploying Cookbooks",
+            "external_description": "Deploying Cookbooks",
+            "id": 3503,
+            "name": "Deploying Cookbooks",
+            "state": "active"
+        },
+        {
+            "ability_screen_variants": [
+                {
+                    "ability_screen_id": 3678,
+                    "active": false,
+                    "created_at": "2017-09-04T04:03:28.072Z",
+                    "id": 51,
+                    "name": "Deploying Cookbooks [C]"
+                },
+                {
+                    "ability_screen_id": 3678,
+                    "active": false,
+                    "created_at": "2017-09-04T04:03:37.872Z",
+                    "id": 52,
+                    "name": "Deploying Cookbooks [D]"
+                },
+                {
+                    "ability_screen_id": 3678,
+                    "active": false,
+                    "created_at": "2017-09-04T04:03:42.540Z",
+                    "id": 53,
+                    "name": "Deploying Cookbooks [E]"
+                },
+                {
+                    "ability_screen_id": 3678,
+                    "active": false,
+                    "created_at": "2017-05-25T20:51:34.084Z",
+                    "id": 50,
+                    "name": "Deploying Cookbooks [B]"
+                },
+                {
+                    "ability_screen_id": 3678,
+                    "active": true,
+                    "created_at": "2017-03-09T20:52:00.649Z",
+                    "id": 54,
+                    "name": "Deploying Cookbooks [A]"
+                }
+            ],
+            "company": {
+                "id": 86200,
+                "name": "Chef"
+            },
+            "cutoff_score": 0.8,
+            "display_name": "Deploying Cookbooks (Legacy)",
+            "external_description": "Deploying Cookbooks-Legacy",
+            "id": 3678,
+            "name": "Deploying Cookbooks (Legacy)",
+            "state": "active"
+        },
+        {
+            "ability_screen_variants": [
+                {
+                    "ability_screen_id": 3679,
+                    "active": true,
+                    "created_at": "2017-02-24T19:29:34.335Z",
+                    "id": 55,
+                    "name": "Local Cookbook Development"
+                },
+                {
+                    "ability_screen_id": 3679,
+                    "active": false,
+                    "created_at": "2017-08-22T04:40:21.473Z",
+                    "id": 56,
+                    "name": "Local Cookbook Development [B]"
+                },
+                {
+                    "ability_screen_id": 3679,
+                    "active": false,
+                    "created_at": "2017-08-02T20:20:20.513Z",
+                    "id": 57,
+                    "name": "Local Cookbook Development [A]"
+                }
+            ],
+            "company": {
+                "id": 86200,
+                "name": "Chef"
+            },
+            "cutoff_score": 0.8,
+            "display_name": "Local Cookbook Development (Legacy)",
+            "external_description": "Local Cookbook Development (Legacy)",
+            "id": 3679,
+            "name": "Local Cookbook Development (Legacy)",
+            "state": "active"
+        },
+        {
+            "ability_screen_variants": [
+                {
+                    "ability_screen_id": 3694,
+                    "active": true,
+                    "created_at": "2017-08-02T20:20:20.513Z",
+                    "id": 92,
+                    "name": "Auditing with Inspec [A]"
+                },
+                {
+                    "ability_screen_id": 3694,
+                    "active": false,
+                    "created_at": "2018-02-23T22:33:25.356Z",
+                    "id": 100,
+                    "name": "Auditing with Inspec [B]"
+                }
+            ],
+            "company": {
+                "id": 86200,
+                "name": "Chef"
+            },
+            "cutoff_score": 0.8,
+            "display_name": "Auditing with Inspec",
+            "external_description": "Auditing with Inspec",
+            "id": 3694,
+            "name": "Auditing with Inspec",
+            "state": "active"
+        }
+    ],
+    "meta": {
+        "current_page": 1,
+        "next_page": null,
+        "prev_page": null,
+        "total_count": 9,
+        "total_pages": 1
+    }
+}
